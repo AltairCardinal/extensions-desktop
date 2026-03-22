@@ -29,7 +29,11 @@ for dir in "$EXT_SRC/lib-multisrc"/*/; do
     cp "$REPO_ROOT/patches/lib-multisrc-build-jvm.gradle.kts" "$dir/build.gradle.kts" 2>/dev/null || true
 done
 
-# 6. Replace lib build files (simple kotlin libs)
+# 6. Replace the buildSrc lib-android convention plugin with a JVM version
+cp "$REPO_ROOT/patches/lib-android-build-jvm.gradle.kts" \
+   "$EXT_SRC/buildSrc/src/main/kotlin/lib-android.gradle.kts"
+
+# 7. Replace lib build files (simple kotlin libs)
 for dir in "$EXT_SRC/lib"/*/; do
     name=$(basename "$dir")
     build_file="$dir/build.gradle.kts"
@@ -47,13 +51,13 @@ for dir in "$EXT_SRC/lib"/*/; do
     fi
 done
 
-# 7. Patch settings.gradle.kts: add android-compat module
+# 8. Patch settings.gradle.kts: add android-compat module
 if ! grep -q "android-compat" "$EXT_SRC/settings.gradle.kts"; then
     echo "" >> "$EXT_SRC/settings.gradle.kts"
     echo 'include(":android-compat")' >> "$EXT_SRC/settings.gradle.kts"
 fi
 
-# 8. Replace root build.gradle.kts with a JVM-safe version that still provides
+# 9. Replace root build.gradle.kts with a JVM-safe version that still provides
 # the Kotlin Gradle plugin via buildscript, which common.gradle applies.
 cat > "$EXT_SRC/build.gradle.kts" << 'EOF'
 allprojects {
