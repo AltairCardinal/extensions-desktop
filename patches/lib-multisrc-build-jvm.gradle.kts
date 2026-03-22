@@ -27,5 +27,4 @@ dependencies {
     implementation(project(":core"))
     implementation(project(":android-compat"))
     compileOnly(versionCatalogs.named("libs").findBundle("common").get())
-    implementation(versionCatalogs.named("libs").findBundle("common").get())
 }

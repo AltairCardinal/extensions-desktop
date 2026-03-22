@@ -51,26 +51,14 @@ dependencies {
     implementation(project(":core"))
     implementation(project(":android-compat"))
     compileOnly(libs.bundles.common)
-    implementation(libs.bundles.common)
 }
 
-// ─── Fat JAR (includes android-compat + core + deps; NOT okhttp/kotlin-stdlib) ─
+// ─── Fat JAR (includes local project outputs only; shared libraries stay compileOnly) ─
 jar {
     archiveFileName = "${pkgName}-v${versionName}.jar"
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
     from {
         configurations.runtimeClasspath.collect { f ->
-            // Exclude large shared libs already in Mihon's classloader
-            def name = f.name
-            if (name.contains('kotlin-stdlib') ||
-                name.contains('okhttp') ||
-                name.contains('okio') ||
-                name.contains('jsoup') ||
-                name.contains('injekt') ||
-                name.contains('rxjava') ||
-                name.contains('coil')) {
-                return []
-            }
             f.isDirectory() ? f : zipTree(f)
         }
     }

@@ -19,5 +19,4 @@ kotlin {
 dependencies {
     implementation(project(":android-compat"))
     compileOnly(versionCatalogs.named("libs").findBundle("common").get())
-    implementation(versionCatalogs.named("libs").findBundle("common").get())
 }
