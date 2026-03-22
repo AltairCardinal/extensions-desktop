@@ -42,67 +42,15 @@ jobs:
           scripts/patch.sh
 
       - name: Build JVM extensions
-        working-directory: extensions-source
         run: |
-          chmod +x gradlew
-          # Build all src modules; continue past individual failures
-          ./gradlew $(
-            find src -name build.gradle | sed 's|/build.gradle$||' | sed 's|/|:|g' | sed 's|^|:|' | sed 's|$|:jar|' | tr '\n' ' '
-          ) --continue --parallel --quiet || true
+          chmod +x scripts/build-extensions.sh
+          scripts/build-extensions.sh
 
-      - name: Collect JARs and generate index
+      - name: Prepare publish tree
         run: |
           mkdir -p repo/apk
-
-          # Parse metadata and collect successful JARs
-          python3 - <<'PYEOF'
-          import os, json, glob, re
-
-          out = []
-          jar_dest = "repo/apk"
-          os.makedirs(jar_dest, exist_ok=True)
-
-          for build_gradle in glob.glob("extensions-source/src/*/*/build.gradle"):
-              parts = build_gradle.split("/")  # [ext-src, src, lang, extname, build.gradle]
-              lang = parts[2]
-              ext_dir = parts[3]
-
-              # Find built JAR
-              jars = glob.glob(f"extensions-source/src/{lang}/{ext_dir}/build/libs/*.jar")
-              if not jars:
-                  continue
-              jar_path = jars[0]
-              jar_name = os.path.basename(jar_path)
-
-              # Parse metadata from build.gradle
-              content = open(build_gradle).read()
-              version_code = int((re.search(r"extVersionCode\s*=\s*(\d+)", content) or [None, 1])[1])
-              name_m = re.search(r"extName\s*=\s*['\"]([^'\"]+)['\"]", content)
-              ext_name = name_m.group(1) if name_m else ext_dir
-              is_nsfw = 1 if re.search(r"isNsfw\s*=\s*true", content) else 0
-              pkg = f"eu.kanade.tachiyomi.extension.{lang}.{ext_dir}"
-              version_name = f"1.4.{version_code}"
-
-              # Copy JAR
-              import shutil
-              shutil.copy2(jar_path, f"{jar_dest}/{jar_name}")
-
-              out.append({
-                  "name": f"Tachiyomi: {ext_name}",
-                  "pkg": pkg,
-                  "apk": jar_name,
-                  "lang": lang,
-                  "code": version_code,
-                  "version": version_name,
-                  "nsfw": is_nsfw,
-                  "sources": []
-              })
-
-          with open("repo/index.min.json", "w") as f:
-              json.dump(out, f, separators=(",", ":"))
-
-          print(f"✓ Generated index with {len(out)} extensions")
-          PYEOF
+          cp out/index.min.json repo/index.min.json
+          cp out/apk/*.jar repo/apk/
 
       - name: Commit and push to repo branch
         run: |
@@ -131,7 +79,7 @@ jobs:
 
       - name: Summary
         run: |
-          COUNT=$(find repo/apk -name "*.jar" 2>/dev/null | wc -l || echo 0)
+          COUNT=$(find out/apk -name "*.jar" 2>/dev/null | wc -l || echo 0)
           echo "### Build complete" >> $GITHUB_STEP_SUMMARY
           echo "**Extensions built:** ${COUNT}" >> $GITHUB_STEP_SUMMARY
           echo "**Repo branch updated** with \`index.min.json\` + JARs" >> $GITHUB_STEP_SUMMARY

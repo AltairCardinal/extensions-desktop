@@ -4,7 +4,7 @@
 set -euo pipefail
 
 REPO_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
-EXT_SRC="$REPO_ROOT/extensions-source"
+EXT_SRC="${EXT_SRC:-$REPO_ROOT/extensions-source}"
 
 echo "▶ Patching extensions-source for JVM compilation..."
 
@@ -53,16 +53,25 @@ if ! grep -q "android-compat" "$EXT_SRC/settings.gradle.kts"; then
     echo 'include(":android-compat")' >> "$EXT_SRC/settings.gradle.kts"
 fi
 
-# 8. Remove Android buildscript from root build.gradle.kts
+# 8. Replace root build.gradle.kts with a JVM-safe version that still provides
+# the Kotlin Gradle plugin via buildscript, which common.gradle applies.
 cat > "$EXT_SRC/build.gradle.kts" << 'EOF'
-plugins {
-    kotlin("jvm") version "2.1.0" apply false
-}
 allprojects {
     repositories {
         mavenCentral()
         google()
         maven(url = "https://jitpack.io")
+    }
+}
+
+buildscript {
+    repositories {
+        mavenCentral()
+        google()
+        maven(url = "https://jitpack.io")
+    }
+    dependencies {
+        classpath(libs.gradle.kotlin)
     }
 }
 EOF
