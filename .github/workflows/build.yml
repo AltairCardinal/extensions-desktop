@@ -1,0 +1,140 @@
+name: Build JVM Extensions
+
+on:
+  schedule:
+    - cron: '0 3 * * 0'   # Every Sunday 03:00 UTC
+  workflow_dispatch:        # Allow manual trigger
+  push:
+    branches: [main]
+    paths:
+      - 'android-compat/**'
+      - 'patches/**'
+      - 'scripts/**'
+      - '.github/workflows/build.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout extensions-desktop
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Clone extensions-source
+        run: |
+          git clone --depth=1 https://github.com/keiyoushi/extensions-source.git extensions-source
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: gradle
+
+      - name: Apply JVM patches
+        run: |
+          chmod +x scripts/patch.sh
+          scripts/patch.sh
+
+      - name: Build JVM extensions
+        working-directory: extensions-source
+        run: |
+          chmod +x gradlew
+          # Build all src modules; continue past individual failures
+          ./gradlew $(
+            find src -name build.gradle -printf ':src:%P ' | sed 's|/build.gradle||g' | tr ' ' '\n' | sed 's|$|:jar|' | tr '\n' ' '
+          ) --continue --parallel --quiet || true
+
+      - name: Collect JARs and generate index
+        run: |
+          mkdir -p repo/apk
+
+          # Parse metadata and collect successful JARs
+          python3 - <<'PYEOF'
+          import os, json, glob, re
+
+          out = []
+          jar_dest = "repo/apk"
+          os.makedirs(jar_dest, exist_ok=True)
+
+          for build_gradle in glob.glob("extensions-source/src/*/*/build.gradle"):
+              parts = build_gradle.split("/")  # [ext-src, src, lang, extname, build.gradle]
+              lang = parts[2]
+              ext_dir = parts[3]
+
+              # Find built JAR
+              jars = glob.glob(f"extensions-source/src/{lang}/{ext_dir}/build/libs/*.jar")
+              if not jars:
+                  continue
+              jar_path = jars[0]
+              jar_name = os.path.basename(jar_path)
+
+              # Parse metadata from build.gradle
+              content = open(build_gradle).read()
+              version_code = int((re.search(r"extVersionCode\s*=\s*(\d+)", content) or [None, 1])[1])
+              name_m = re.search(r"extName\s*=\s*['\"]([^'\"]+)['\"]", content)
+              ext_name = name_m.group(1) if name_m else ext_dir
+              is_nsfw = 1 if re.search(r"isNsfw\s*=\s*true", content) else 0
+              pkg = f"eu.kanade.tachiyomi.extension.{lang}.{ext_dir}"
+              version_name = f"1.4.{version_code}"
+
+              # Copy JAR
+              import shutil
+              shutil.copy2(jar_path, f"{jar_dest}/{jar_name}")
+
+              out.append({
+                  "name": f"Tachiyomi: {ext_name}",
+                  "pkg": pkg,
+                  "apk": jar_name,
+                  "lang": lang,
+                  "code": version_code,
+                  "version": version_name,
+                  "nsfw": is_nsfw,
+                  "sources": []
+              })
+
+          with open("repo/index.min.json", "w") as f:
+              json.dump(out, f, separators=(",", ":"))
+
+          print(f"✓ Generated index with {len(out)} extensions")
+          PYEOF
+
+      - name: Commit and push to repo branch
+        run: |
+          # Configure git
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Orphan repo branch (index + JARs only, no source history)
+          git fetch origin repo 2>/dev/null || true
+          git checkout --orphan repo-new
+
+          # Keep only repo/ contents
+          git rm -rf --cached . > /dev/null 2>&1 || true
+          find . -maxdepth 1 -not -name 'repo' -not -name '.git' -not -name '.' | xargs rm -rf
+
+          mv repo/* .
+          rmdir repo
+
+          git add index.min.json apk/
+
+          COUNT=$(find apk -name "*.jar" | wc -l | tr -d ' ')
+          git commit -m "chore: update extensions (${COUNT} JARs) $(date -u +%Y-%m-%d)"
+
+          # Force-push to repo branch
+          git push origin repo-new:repo --force
+
+      - name: Summary
+        run: |
+          COUNT=$(find repo/apk -name "*.jar" 2>/dev/null | wc -l || echo 0)
+          echo "### Build complete" >> $GITHUB_STEP_SUMMARY
+          echo "**Extensions built:** ${COUNT}" >> $GITHUB_STEP_SUMMARY
+          echo "**Repo branch updated** with \`index.min.json\` + JARs" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Add this URL to Mihon Desktop:" >> $GITHUB_STEP_SUMMARY
+          echo "\`https://raw.githubusercontent.com/${{ github.repository }}/repo\`" >> $GITHUB_STEP_SUMMARY

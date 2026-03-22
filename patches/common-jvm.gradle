@@ -1,0 +1,78 @@
+// JVM replacement for common.gradle in extensions-source.
+// Compiles each extension as a self-contained fat JAR for Mihon Desktop.
+
+apply plugin: 'org.jetbrains.kotlin.jvm'
+
+kotlin {
+    compilerOptions {
+        jvmTarget = org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_11
+        freeCompilerArgs.add("-opt-in=kotlinx.serialization.ExperimentalSerializationApi")
+        freeCompilerArgs.add("-Xcontext-parameters")
+    }
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+}
+
+// ─── Extension metadata ───────────────────────────────────────────────────────
+def versionCode    = project.ext.find("extVersionCode") ?: 1
+def versionName    = "1.4.${versionCode}"
+def langDir        = project.parent.name          // e.g. "en"
+def extDir         = project.name                 // e.g. "mangadex"
+def pkgSuffix      = "${langDir}.${extDir}"
+def pkgName        = "eu.kanade.tachiyomi.extension.${pkgSuffix}"
+def extClassSuffix = (project.ext.find("extClass") ?: ".${extDir.capitalize()}").toString()
+def extClassName   = "${pkgName}${extClassSuffix}"
+
+Project theme = ext.has("themePkg") ? project(":lib-multisrc:${ext.themePkg}") : null
+if (theme != null) evaluationDependsOn(theme.path)
+
+// ─── Source sets ──────────────────────────────────────────────────────────────
+sourceSets {
+    main {
+        kotlin { srcDirs = ['src'] }
+        resources { srcDirs = ['res', 'assets'] }
+    }
+}
+
+// ─── Dependencies ─────────────────────────────────────────────────────────────
+dependencies {
+    if (theme != null) implementation(theme)
+    implementation(project(":core"))
+    implementation(project(":android-compat"))
+    compileOnly(libs.bundles.common)
+    implementation(libs.bundles.common)
+}
+
+// ─── Fat JAR (includes android-compat + core + deps; NOT okhttp/kotlin-stdlib) ─
+jar {
+    archiveFileName = "${pkgName}-v${versionName}.jar"
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    from {
+        configurations.runtimeClasspath.collect { f ->
+            // Exclude large shared libs already in Mihon's classloader
+            def name = f.name
+            if (name.contains('kotlin-stdlib') ||
+                name.contains('okhttp') ||
+                name.contains('okio') ||
+                name.contains('jsoup') ||
+                name.contains('injekt') ||
+                name.contains('rxjava') ||
+                name.contains('coil')) {
+                return []
+            }
+            f.isDirectory() ? f : zipTree(f)
+        }
+    }
+    exclude('META-INF/MANIFEST.MF', 'META-INF/*.SF', 'META-INF/*.DSA', 'META-INF/*.RSA', 'META-INF/versions/**')
+
+    // ServiceLoader registration so DesktopExtensionLoader finds the source
+    doFirst {
+        def svcDir = new File(temporaryDir, 'META-INF/services')
+        svcDir.mkdirs()
+        new File(svcDir, 'eu.kanade.tachiyomi.source.Source').text = "${extClassName}\n"
+    }
+    from(temporaryDir)
+}
