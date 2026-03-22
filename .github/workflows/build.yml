@@ -47,7 +47,7 @@ jobs:
           chmod +x gradlew
           # Build all src modules; continue past individual failures
           ./gradlew $(
-            find src -name build.gradle -printf ':src:%P ' | sed 's|/build.gradle||g' | tr ' ' '\n' | sed 's|$|:jar|' | tr '\n' ' '
+            find src -name build.gradle | sed 's|/build.gradle$||' | sed 's|/|:|g' | sed 's|^|:|' | sed 's|$|:jar|' | tr '\n' ' '
           ) --continue --parallel --quiet || true
 
       - name: Collect JARs and generate index
