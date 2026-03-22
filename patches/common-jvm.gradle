@@ -16,6 +16,14 @@ java {
     targetCompatibility = JavaVersion.VERSION_11
 }
 
+// Some extensions hook Android lifecycle tasks such as preBuild/assembleRelease.
+// Provide no-op JVM equivalents so those modules still configure successfully.
+['preBuild', 'assembleDebug', 'assembleRelease'].each { taskName ->
+    if (tasks.findByName(taskName) == null) {
+        tasks.register(taskName)
+    }
+}
+
 // ─── Extension metadata ───────────────────────────────────────────────────────
 def versionCode    = project.ext.find("extVersionCode") ?: 1
 def versionName    = "1.4.${versionCode}"
