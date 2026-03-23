@@ -51,6 +51,9 @@ jobs:
           mkdir -p repo/apk
           cp out/index.min.json repo/index.min.json
           cp out/apk/*.jar repo/apk/
+          if [ -f out/failed_modules.txt ]; then
+            cp out/failed_modules.txt repo/failed_modules.txt
+          fi
 
       - name: Commit and push to repo branch
         run: |
@@ -70,9 +73,13 @@ jobs:
           rmdir repo
 
           git add index.min.json apk/
+          if [ -f failed_modules.txt ]; then
+            git add failed_modules.txt
+          fi
 
           COUNT=$(find apk -name "*.jar" | wc -l | tr -d ' ')
-          git commit -m "chore: update extensions (${COUNT} JARs) $(date -u +%Y-%m-%d)"
+          FAIL_COUNT=$(wc -l < failed_modules.txt 2>/dev/null | tr -d ' ' || echo 0)
+          git commit -m "chore: update extensions (${COUNT} JARs, ${FAIL_COUNT} failed) $(date -u +%Y-%m-%d)"
 
           # Force-push to repo branch
           git push origin repo-new:repo --force
@@ -80,9 +87,16 @@ jobs:
       - name: Summary
         run: |
           COUNT=$(find out/apk -name "*.jar" 2>/dev/null | wc -l || echo 0)
+          FAIL_COUNT=$(wc -l < out/failed_modules.txt 2>/dev/null | tr -d ' ' || echo 0)
           echo "### Build complete" >> $GITHUB_STEP_SUMMARY
           echo "**Extensions built:** ${COUNT}" >> $GITHUB_STEP_SUMMARY
+          echo "**Extensions failed:** ${FAIL_COUNT}" >> $GITHUB_STEP_SUMMARY
           echo "**Repo branch updated** with \`index.min.json\` + JARs" >> $GITHUB_STEP_SUMMARY
+          if [ -f out/failed_modules.txt ]; then
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "First failed modules:" >> $GITHUB_STEP_SUMMARY
+            head -20 out/failed_modules.txt | sed 's/^/- /' >> $GITHUB_STEP_SUMMARY
+          fi
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "Add this URL to Mihon Desktop:" >> $GITHUB_STEP_SUMMARY
           echo "\`https://raw.githubusercontent.com/${{ github.repository }}/repo\`" >> $GITHUB_STEP_SUMMARY

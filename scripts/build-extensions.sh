@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-# Builds all extensions as JVM JARs.
-# Outputs JARs to out/apk/ and metadata JSON to out/index.min.json.
-# Run from the extensions-desktop repo root after patch.sh.
+# Builds extensions as JVM JARs with per-module isolation.
+# Outputs JARs to out/apk/, metadata JSON to out/index.min.json,
+# and failures to out/failed_modules.txt.
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
@@ -9,9 +9,12 @@ REPO_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
 EXT_SRC="${EXT_SRC:-$REPO_ROOT/extensions-source}"
 OUT_DIR="$REPO_ROOT/out"
 APK_DIR="$OUT_DIR/apk"
+FAILURES_FILE="$OUT_DIR/failed_modules.txt"
+LOG_DIR="$OUT_DIR/logs"
 
-mkdir -p "$APK_DIR"
-rm -f "$APK_DIR"/*.jar "$OUT_DIR/index.min.json"
+mkdir -p "$APK_DIR" "$LOG_DIR"
+rm -f "$APK_DIR"/*.jar "$OUT_DIR/index.min.json" "$FAILURES_FILE"
+rm -rf "$LOG_DIR"/*
 
 if [ ! -d "$EXT_SRC/src" ]; then
     echo "extensions-source/src not found: $EXT_SRC" >&2
@@ -29,15 +32,28 @@ if [ "${#module_files[@]}" -eq 0 ]; then
     exit 1
 fi
 
-declare -a gradle_tasks=()
+PASS=0
+FAIL=0
+
+echo "▶ Building ${#module_files[@]} JVM extension modules with isolated settings..."
+
 for file in "${module_files[@]}"; do
     module="${file%/*}"
-    module="${module//\//:}"
-    gradle_tasks+=(":${module}:jar")
-done
+    module_path="${module//\//:}"
+    module_task=":${module_path}:jar"
+    safe_name="${module_path//:/__}"
+    log_file="$LOG_DIR/${safe_name}.log"
 
-echo "▶ Building ${#gradle_tasks[@]} JVM extension modules..."
-./gradlew "${gradle_tasks[@]}" --continue --parallel --quiet || true
+    rm -rf "${module}/build"
+
+    if ./gradlew -Pdesktop.modules="${module_path}" "${module_task}" --quiet >"$log_file" 2>&1; then
+        echo "PASS ${module_path}"
+        PASS=$((PASS + 1))
+    else
+        echo "FAIL ${module_path}" | tee -a "$FAILURES_FILE"
+        FAIL=$((FAIL + 1))
+    fi
+done
 
 python3 - "$EXT_SRC" "$APK_DIR" "$OUT_DIR/index.min.json" <<'PY'
 import json
@@ -89,7 +105,7 @@ print(f"Built {len(entries)} extensions")
 PY
 
 COUNT=$(find "$APK_DIR" -name "*.jar" | wc -l | tr -d ' ')
-echo "✓ Done: ${COUNT} JARs collected"
+echo "✓ Done: ${COUNT} JARs collected, ${PASS} module tasks passed, ${FAIL} failed"
 
 if [ "$COUNT" -eq 0 ]; then
     echo "No JVM extension JARs were produced." >&2

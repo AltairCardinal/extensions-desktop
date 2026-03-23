@@ -51,11 +51,9 @@ for dir in "$EXT_SRC/lib"/*/; do
     fi
 done
 
-# 8. Patch settings.gradle.kts: add android-compat module
-if ! grep -q "android-compat" "$EXT_SRC/settings.gradle.kts"; then
-    echo "" >> "$EXT_SRC/settings.gradle.kts"
-    echo 'include(":android-compat")' >> "$EXT_SRC/settings.gradle.kts"
-fi
+# 8. Replace settings.gradle.kts with a JVM-aware version that supports
+# selective module inclusion via -Pdesktop.modules=...
+cp "$REPO_ROOT/patches/settings-jvm.gradle.kts" "$EXT_SRC/settings.gradle.kts"
 
 # 9. Replace root build.gradle.kts with a JVM-safe version that still provides
 # the Kotlin Gradle plugin via buildscript, which common.gradle applies.
