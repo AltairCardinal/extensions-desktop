@@ -15,4 +15,5 @@ kotlin {
 
 dependencies {
     implementation(kotlin("stdlib"))
+    compileOnly(libs.okhttp)
 }

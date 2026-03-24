@@ -46,6 +46,19 @@ sourceSets {
 }
 
 // ─── Dependencies ─────────────────────────────────────────────────────────────
+// Exclude Android-only AAR artifacts that cannot be used on JVM.
+// Their APIs are stubbed in android-compat instead.
+configurations.all {
+    exclude group: 'com.github.stevenyomi', module: 'baozibanner'
+    exclude group: 'app.cash.quickjs', module: 'quickjs-android'
+    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+        // Drop any transitive Android-only quickjs variant
+        if (details.requested.group == 'app.cash.quickjs') {
+            details.useVersion('0.0.0')
+        }
+    }
+}
+
 dependencies {
     if (theme != null) implementation(theme)
     implementation(project(":core"))
