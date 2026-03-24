@@ -2,101 +2,259 @@ name: Build JVM Extensions
 
 on:
   schedule:
-    - cron: '0 3 * * 0'   # Every Sunday 03:00 UTC
-  workflow_dispatch:        # Allow manual trigger
+    - cron: '0 */6 * * *'  # Every 6 hours
+  workflow_dispatch:
+    inputs:
+      force_full_rebuild:
+        description: 'Force rebuild all extensions'
+        type: boolean
+        default: false
   push:
     branches: [main]
     paths:
       - 'android-compat/**'
+      - 'desktop-api/**'
       - 'patches/**'
       - 'scripts/**'
-      - '.github/workflows/build.yml'
+      - '.github/**'
 
 permissions:
   contents: write
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
+concurrency:
+  group: build-extensions
+  cancel-in-progress: true
 
+env:
+  CI_CHUNK_SIZE: '50'
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    outputs:
+      matrix: ${{ steps.generate.outputs.matrix }}
+      delete: ${{ steps.generate.outputs.delete }}
+      upstream_sha: ${{ steps.generate.outputs.upstream_sha }}
+      should_build: ${{ steps.generate.outputs.should_build }}
     steps:
       - name: Checkout extensions-desktop
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: Clone extensions-source
+        run: git clone https://github.com/keiyoushi/extensions-source.git extensions-source
+
+      - name: Get last built upstream SHA
+        id: last-sha
         run: |
-          git clone --depth=1 https://github.com/keiyoushi/extensions-source.git extensions-source
+          git fetch origin repo 2>/dev/null || true
+          LAST_SHA=$(git show origin/repo:upstream-commit.txt 2>/dev/null | tr -d '[:space:]' || echo "")
+          echo "sha=$LAST_SHA" >> $GITHUB_OUTPUT
+          echo "Last upstream SHA: ${LAST_SHA:-<none>}"
+
+      - name: Determine build scope
+        id: scope
+        run: |
+          IS_FULL=false
+          if [ "${{ github.event_name }}" = "push" ]; then
+            IS_FULL=true
+            echo "Full rebuild: push trigger (shim/patch changes)"
+          fi
+          if [ "${{ inputs.force_full_rebuild }}" = "true" ]; then
+            IS_FULL=true
+            echo "Full rebuild: manually requested"
+          fi
+          if [ -z "${{ steps.last-sha.outputs.sha }}" ]; then
+            IS_FULL=true
+            echo "Full rebuild: no previous upstream SHA found"
+          fi
+          echo "full=$IS_FULL" >> $GITHUB_OUTPUT
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Generate build matrix
+        id: generate
+        run: |
+          cd extensions-source
+          python ../scripts/generate-modules.py \
+            . \
+            "${{ steps.last-sha.outputs.sha }}" \
+            "${{ steps.scope.outputs.full }}"
+
+  build:
+    needs: prepare
+    if: needs.prepare.outputs.should_build == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      matrix: ${{ fromJSON(needs.prepare.outputs.matrix) }}
+    steps:
+      - name: Checkout extensions-desktop
+        uses: actions/checkout@v4
+
+      - name: Clone extensions-source
+        run: git clone --depth=1 https://github.com/keiyoushi/extensions-source.git extensions-source
 
       - name: Set up JDK 17
         uses: actions/setup-java@v4
         with:
           java-version: '17'
-          distribution: 'temurin'
-          cache: gradle
+          distribution: temurin
+
+      - name: Gradle cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+            extensions-source/.gradle
+          key: gradle-${{ hashFiles('patches/*.gradle*', 'desktop-api/build.gradle.kts') }}-${{ matrix.chunk.number }}
+          restore-keys: |
+            gradle-${{ hashFiles('patches/*.gradle*', 'desktop-api/build.gradle.kts') }}-
+            gradle-
 
       - name: Apply JVM patches
         run: |
           chmod +x scripts/patch.sh
           scripts/patch.sh
 
-      - name: Build JVM extensions
+      - name: Build extensions chunk
         run: |
-          chmod +x scripts/build-extensions.sh
-          scripts/build-extensions.sh
+          cd extensions-source
+          # Read modules from matrix
+          MODULES_JSON='${{ toJSON(matrix.chunk.modules) }}'
+          # Convert JSON array to space-separated list
+          MODULES=$(echo "$MODULES_JSON" | python3 -c "import sys,json; print(' '.join(json.load(sys.stdin)))")
 
-      - name: Prepare publish tree
+          # Build comma-separated for -Pdesktop.modules
+          COMMA_MODULES=$(echo "$MODULES" | tr ' ' ',')
+
+          # Build :module:jar tasks
+          JAR_TASKS=""
+          for mod in $MODULES; do
+            JAR_TASKS="$JAR_TASKS :${mod}:jar"
+          done
+
+          echo "Building ${#MODULES[@]} modules in chunk ${{ matrix.chunk.number }}..."
+          echo "Modules: $COMMA_MODULES"
+
+          ./gradlew \
+            -Pdesktop.modules="$COMMA_MODULES" \
+            $JAR_TASKS \
+            --continue \
+            --no-daemon \
+            --quiet \
+            || true
+
+      - name: Collect chunk output
         run: |
-          mkdir -p repo/apk
-          cp out/index.min.json repo/index.min.json
-          cp out/apk/*.jar repo/apk/
-          if [ -f out/failed_modules.txt ]; then
-            cp out/failed_modules.txt repo/failed_modules.txt
+          MODULES_JSON='${{ toJSON(matrix.chunk.modules) }}'
+          MODULES=$(echo "$MODULES_JSON" | python3 -c "import sys,json; print(' '.join(json.load(sys.stdin)))")
+          python3 scripts/collect-chunk-output.py extensions-source chunk-output $MODULES
+
+      - name: Upload chunk artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: chunk-${{ matrix.chunk.number }}
+          path: chunk-output/
+          retention-days: 1
+
+  publish:
+    needs: [prepare, build]
+    if: always() && needs.prepare.outputs.should_build == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout extensions-desktop
+        uses: actions/checkout@v4
+
+      - name: Download all chunk artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: artifacts
+          pattern: chunk-*
+
+      - name: Checkout repo branch
+        run: |
+          git fetch origin repo 2>/dev/null || true
+          if git rev-parse origin/repo >/dev/null 2>&1; then
+            git worktree add repo-branch origin/repo
+          else
+            echo "No repo branch exists, creating initial structure..."
+            mkdir -p repo-branch/apk
+            echo '[]' > repo-branch/index.min.json
+            echo "" > repo-branch/upstream-commit.txt
+            cd repo-branch
+            git init
+            git add -A
+            git commit -m "init repo branch"
+            cd ..
           fi
 
-      - name: Commit and push to repo branch
+      - name: Merge artifacts into repo
         run: |
-          # Configure git
+          python3 scripts/merge-repo.py \
+            repo-branch \
+            artifacts \
+            '${{ needs.prepare.outputs.delete }}' \
+            '${{ needs.prepare.outputs.upstream_sha }}'
+
+      - name: Push repo branch
+        run: |
+          cd repo-branch
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
 
-          # Orphan repo branch (index + JARs only, no source history)
-          git fetch origin repo 2>/dev/null || true
-          git checkout --orphan repo-new
-
-          # Keep only repo/ contents
-          git rm -rf --cached . > /dev/null 2>&1 || true
-          find . -maxdepth 1 -not -name 'repo' -not -name '.git' -not -name '.' | xargs rm -rf
-
-          mv repo/* .
-          rmdir repo
-
-          git add index.min.json apk/
+          JAR_COUNT=$(find apk -name "*.jar" 2>/dev/null | wc -l | tr -d ' ')
+          FAIL_COUNT=0
           if [ -f failed_modules.txt ]; then
-            git add failed_modules.txt
+            FAIL_COUNT=$(wc -l < failed_modules.txt | tr -d ' ')
           fi
 
-          COUNT=$(find apk -name "*.jar" | wc -l | tr -d ' ')
-          FAIL_COUNT=$(wc -l < failed_modules.txt 2>/dev/null | tr -d ' ' || echo 0)
-          git commit -m "chore: update extensions (${COUNT} JARs, ${FAIL_COUNT} failed) $(date -u +%Y-%m-%d)"
+          git diff --cached --quiet && echo "No changes to commit" && exit 0
 
-          # Force-push to repo branch
-          git push origin repo-new:repo --force
+          git commit -m "update: ${JAR_COUNT} extensions (${FAIL_COUNT} failed) $(date -u +%Y-%m-%d)"
+          git push origin HEAD:repo --force
 
       - name: Summary
         run: |
-          COUNT=$(find out/apk -name "*.jar" 2>/dev/null | wc -l || echo 0)
-          FAIL_COUNT=$(wc -l < out/failed_modules.txt 2>/dev/null | tr -d ' ' || echo 0)
-          echo "### Build complete" >> $GITHUB_STEP_SUMMARY
-          echo "**Extensions built:** ${COUNT}" >> $GITHUB_STEP_SUMMARY
-          echo "**Extensions failed:** ${FAIL_COUNT}" >> $GITHUB_STEP_SUMMARY
-          echo "**Repo branch updated** with \`index.min.json\` + JARs" >> $GITHUB_STEP_SUMMARY
-          if [ -f out/failed_modules.txt ]; then
-            echo "" >> $GITHUB_STEP_SUMMARY
-            echo "First failed modules:" >> $GITHUB_STEP_SUMMARY
-            head -20 out/failed_modules.txt | sed 's/^/- /' >> $GITHUB_STEP_SUMMARY
+          JAR_COUNT=$(find repo-branch/apk -name "*.jar" 2>/dev/null | wc -l | tr -d ' ')
+          FAIL_COUNT=0
+          if [ -f repo-branch/failed_modules.txt ]; then
+            FAIL_COUNT=$(wc -l < repo-branch/failed_modules.txt | tr -d ' ')
           fi
+
+          # Count new JARs from this build
+          NEW_COUNT=0
+          for chunk in artifacts/chunk-*/apk; do
+            if [ -d "$chunk" ]; then
+              NEW_COUNT=$((NEW_COUNT + $(find "$chunk" -name "*.jar" | wc -l | tr -d ' ')))
+            fi
+          done
+
+          echo "### Build complete" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
+          echo "| Metric | Count |" >> $GITHUB_STEP_SUMMARY
+          echo "|--------|-------|" >> $GITHUB_STEP_SUMMARY
+          echo "| Total extensions in repo | ${JAR_COUNT} |" >> $GITHUB_STEP_SUMMARY
+          echo "| New/updated this run | ${NEW_COUNT} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Failed this run | ${FAIL_COUNT} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Upstream SHA | \`${{ needs.prepare.outputs.upstream_sha }}\` |" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+
+          if [ -f repo-branch/failed_modules.txt ] && [ -s repo-branch/failed_modules.txt ]; then
+            echo "<details><summary>Failed modules</summary>" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            sed 's/^/- /' repo-branch/failed_modules.txt >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "</details>" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+          fi
+
           echo "Add this URL to Mihon Desktop:" >> $GITHUB_STEP_SUMMARY
           echo "\`https://raw.githubusercontent.com/${{ github.repository }}/repo\`" >> $GITHUB_STEP_SUMMARY
