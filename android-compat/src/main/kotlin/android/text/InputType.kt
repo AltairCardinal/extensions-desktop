@@ -1,0 +1,11 @@
+package android.text
+
+object InputType {
+    const val TYPE_CLASS_NUMBER = 0x00000002
+    const val TYPE_CLASS_TEXT = 0x00000001
+    const val TYPE_NUMBER_FLAG_DECIMAL = 0x00002000
+    const val TYPE_TEXT_FLAG_NO_SUGGESTIONS = 0x00080000
+    const val TYPE_TEXT_VARIATION_PASSWORD = 0x00000080
+    const val TYPE_TEXT_VARIATION_URI = 0x00000010
+    const val TYPE_TEXT_VARIATION_EMAIL_ADDRESS = 0x00000020
+}

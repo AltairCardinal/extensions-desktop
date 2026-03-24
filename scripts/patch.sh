@@ -26,11 +26,27 @@ cp "$REPO_ROOT/patches/core-build-jvm.gradle.kts" "$EXT_SRC/core/build.gradle.kt
 cp "$REPO_ROOT/patches/preferences-jvm.kt" \
    "$EXT_SRC/core/src/main/kotlin/keiyoushi/utils/Preferences.kt"
 
-# 5. Replace lib-multisrc build files with JVM versions
+# 5. Replace lib-multisrc build files with JVM versions,
+#    preserving any project(":lib:...") dependencies from the original.
 for dir in "$EXT_SRC/lib-multisrc"/*/; do
     name=$(basename "$dir")
-    # Each lib-multisrc module has a build.gradle.kts
-    cp "$REPO_ROOT/patches/lib-multisrc-build-jvm.gradle.kts" "$dir/build.gradle.kts" 2>/dev/null || true
+    build_file="$dir/build.gradle.kts"
+    # Extract extra lib project dependencies from git (original, unpatched version)
+    extra_deps=""
+    original=$(cd "$EXT_SRC" && git show "HEAD:lib-multisrc/$name/build.gradle.kts" 2>/dev/null || true)
+    if [ -n "$original" ]; then
+        extra_deps=$(echo "$original" | grep -oE 'project\(":lib:[^"]+"\)' | grep -v ':lib:i18n' | sort -u || true)
+    fi
+    cp "$REPO_ROOT/patches/lib-multisrc-build-jvm.gradle.kts" "$build_file" 2>/dev/null || true
+    # Append extra lib deps if any
+    if [ -n "$extra_deps" ]; then
+        echo "" >> "$build_file"
+        echo "dependencies {" >> "$build_file"
+        while IFS= read -r dep; do
+            echo "    implementation($dep)" >> "$build_file"
+        done <<< "$extra_deps"
+        echo "}" >> "$build_file"
+    fi
 done
 
 # 6. Replace the buildSrc lib-android convention plugin with a JVM version

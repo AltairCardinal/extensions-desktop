@@ -22,11 +22,11 @@ interface Source {
     suspend fun getPageList(chapter: SChapter): List<Page> = fetchPageList(chapter).awaitSingle()
 
     @Deprecated("Use the non-RxJava API instead", ReplaceWith("getMangaDetails"))
-    fun fetchMangaDetails(manga: SManga): Observable<SManga> = throw IllegalStateException("Not used")
+    fun fetchMangaDetails(manga: SManga): Observable<SManga>
 
     @Deprecated("Use the non-RxJava API instead", ReplaceWith("getChapterList"))
-    fun fetchChapterList(manga: SManga): Observable<List<SChapter>> = throw IllegalStateException("Not used")
+    fun fetchChapterList(manga: SManga): Observable<List<SChapter>>
 
     @Deprecated("Use the non-RxJava API instead", ReplaceWith("getPageList"))
-    fun fetchPageList(chapter: SChapter): Observable<List<Page>> = throw IllegalStateException("Not used")
+    fun fetchPageList(chapter: SChapter): Observable<List<Page>>
 }

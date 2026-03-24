@@ -14,6 +14,8 @@ import okhttp3.OkHttpClient
 import okhttp3.Request
 import okhttp3.Response
 import rx.Observable
+import java.net.URI
+import java.net.URISyntaxException
 import java.security.MessageDigest
 import uy.kohesive.injekt.injectLazy
 
@@ -94,11 +96,49 @@ abstract class HttpSource : CatalogueSource {
 
     open fun imageUrlRequest(page: Page): Request = GET(page.url, headers)
 
+    protected open fun imageRequest(page: Page): Request {
+        return GET(page.imageUrl!!, headers)
+    }
+
     protected abstract fun imageUrlParse(response: Response): String
 
     open fun getImageUrl(page: Page): Observable<String> {
         return client.newCall(imageUrlRequest(page)).asObservableSuccess().map(::imageUrlParse)
     }
+
+    open fun fetchImageUrl(page: Page): Observable<String> {
+        return client.newCall(imageUrlRequest(page)).asObservableSuccess().map(::imageUrlParse)
+    }
+
+    fun SChapter.setUrlWithoutDomain(url: String) {
+        this.url = getUrlWithoutDomain(url)
+    }
+
+    fun SManga.setUrlWithoutDomain(url: String) {
+        this.url = getUrlWithoutDomain(url)
+    }
+
+    private fun getUrlWithoutDomain(orig: String): String {
+        return try {
+            val uri = URI(orig.replace(" ", "%20"))
+            var out = uri.path
+            if (uri.query != null) out += "?" + uri.query
+            if (uri.fragment != null) out += "#" + uri.fragment
+            out
+        } catch (e: URISyntaxException) {
+            orig
+        }
+    }
+
+    open fun getMangaUrl(manga: SManga): String {
+        return mangaDetailsRequest(manga).url.toString()
+    }
+
+    open fun getChapterUrl(chapter: SChapter): String {
+        return pageListRequest(chapter).url.toString()
+    }
+
+    open fun prepareNewChapter(chapter: SChapter, manga: SManga) {}
 
     override open fun getFilterList(): FilterList = FilterList()
 }
