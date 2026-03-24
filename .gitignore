@@ -1,0 +1,14 @@
+# Build outputs
+out/
+build/
+.gradle/
+
+# Cloned upstream repo (populated at build time)
+extensions-source/
+
+# IDE
+.idea/
+*.iml
+
+# OS
+.DS_Store

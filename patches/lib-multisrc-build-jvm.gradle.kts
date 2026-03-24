@@ -26,5 +26,13 @@ sourceSets {
 dependencies {
     implementation(project(":core"))
     implementation(project(":android-compat"))
-    compileOnly(versionCatalogs.named("libs").findBundle("common").get())
+    implementation(project(":desktop-api"))
+    implementation(project(":lib:i18n"))
+    compileOnly(libs.kotlin.stdlib)
+    compileOnly(libs.coroutines.core)
+    compileOnly(libs.rxjava)
+    compileOnly(libs.kotlin.protobuf)
+    compileOnly(libs.kotlin.json)
+    compileOnly(libs.jsoup)
+    compileOnly(libs.okhttp)
 }

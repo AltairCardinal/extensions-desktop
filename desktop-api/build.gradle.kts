@@ -1,6 +1,6 @@
-// JVM replacement for core/build.gradle.kts in extensions-source.
 plugins {
     kotlin("jvm")
+    id("kotlinx-serialization")
 }
 
 java {
@@ -18,12 +18,11 @@ kotlin {
 
 dependencies {
     implementation(project(":android-compat"))
-    implementation(project(":desktop-api"))
-    compileOnly(libs.kotlin.stdlib)
-    compileOnly(libs.coroutines.core)
-    compileOnly(libs.rxjava)
-    compileOnly(libs.kotlin.protobuf)
-    compileOnly(libs.kotlin.json)
-    compileOnly(libs.jsoup)
-    compileOnly(libs.okhttp)
+    implementation(libs.kotlin.stdlib)
+    implementation(libs.coroutines.core)
+    implementation(libs.kotlin.protobuf)
+    implementation(libs.kotlin.json)
+    implementation(libs.rxjava)
+    implementation(libs.jsoup)
+    implementation(libs.okhttp)
 }

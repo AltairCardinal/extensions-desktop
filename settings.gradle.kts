@@ -24,6 +24,7 @@ rootProject.name = "extensions-desktop"
 
 // android-compat shim — always included
 include(":android-compat")
+include(":desktop-api")
 
 // Extensions are included dynamically by the build script after patching
 // (settings are re-evaluated after patch.sh runs)

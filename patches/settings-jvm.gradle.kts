@@ -23,6 +23,7 @@ if (requestedModules.isEmpty()) {
 
 include(":core")
 include(":android-compat")
+include(":desktop-api")
 
 File(rootDir, "lib").eachDir { include("lib:${it.name}") }
 File(rootDir, "lib-multisrc").eachDir { include("lib-multisrc:${it.name}") }

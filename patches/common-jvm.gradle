@@ -50,7 +50,14 @@ dependencies {
     if (theme != null) implementation(theme)
     implementation(project(":core"))
     implementation(project(":android-compat"))
-    compileOnly(libs.bundles.common)
+    implementation(project(":desktop-api"))
+    compileOnly(libs.kotlin.stdlib)
+    compileOnly(libs.coroutines.core)
+    compileOnly(libs.rxjava)
+    compileOnly(libs.kotlin.protobuf)
+    compileOnly(libs.kotlin.json)
+    compileOnly(libs.jsoup)
+    compileOnly(libs.okhttp)
 }
 
 // ─── Fat JAR (includes local project outputs only; shared libraries stay compileOnly) ─

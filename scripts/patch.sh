@@ -12,6 +12,10 @@ echo "▶ Patching extensions-source for JVM compilation..."
 rm -rf "$EXT_SRC/android-compat"
 cp -r "$REPO_ROOT/android-compat" "$EXT_SRC/android-compat"
 
+# 1b. Copy desktop-api into extensions-source so JVM builds can avoid Android-only AARs
+rm -rf "$EXT_SRC/desktop-api"
+cp -r "$REPO_ROOT/desktop-api" "$EXT_SRC/desktop-api"
+
 # 2. Replace common.gradle with JVM version
 cp "$REPO_ROOT/patches/common-jvm.gradle" "$EXT_SRC/common.gradle"
 
