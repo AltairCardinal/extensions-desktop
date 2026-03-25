@@ -13,6 +13,8 @@ class Bitmap(val image: BufferedImage) {
     enum class CompressFormat { JPEG, PNG, WEBP, WEBP_LOSSY, WEBP_LOSSLESS }
     enum class Config { ARGB_8888, RGB_565, ALPHA_8, RGBA_F16 }
 
+    val config: Config = Config.ARGB_8888
+
     fun getPixel(x: Int, y: Int): Int = image.getRGB(x, y)
     fun setPixel(x: Int, y: Int, color: Int) { image.setRGB(x, y, color) }
     fun recycle() {}

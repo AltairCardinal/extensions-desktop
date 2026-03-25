@@ -47,5 +47,8 @@ class Uri private constructor(private val uriString: String) {
         @JvmStatic fun parse(uriString: String): Uri = Uri(uriString)
         @JvmStatic fun fromParts(scheme: String, ssp: String, fragment: String?): Uri =
             Uri("$scheme:$ssp${if (fragment != null) "#$fragment" else ""}")
+        @JvmStatic fun encode(s: String): String = java.net.URLEncoder.encode(s, "UTF-8").replace("+", "%20")
+        @JvmStatic fun encode(s: String, allow: String?): String = encode(s)
+        @JvmStatic fun decode(s: String): String = java.net.URLDecoder.decode(s, "UTF-8")
     }
 }

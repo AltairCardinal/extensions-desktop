@@ -19,6 +19,7 @@ open class Preference(open val context: android.content.Context = android.conten
     fun getOnPreferenceChangeListener(): OnPreferenceChangeListener? = changeListener
 
     fun setEnabled(enabled: Boolean) { isEnabled = enabled }
+    fun setVisible(visible: Boolean) { isVisible = visible }
     fun notifyChanged() {}
     open fun setDefaultValue(defaultValue: Any?) {}
 
@@ -52,9 +53,13 @@ class EditTextPreference(context: android.content.Context = android.content.Cont
     fun setOnBindEditTextListener(listener: ((EditTextProxy) -> Unit)?) { bindListener = listener }
     override fun setDefaultValue(defaultValue: Any?) { if (text == null) text = defaultValue as? String ?: "" }
 
-    /** Minimal proxy for android.widget.EditText so extensions can set inputType. */
+    /** Minimal proxy for android.widget.EditText so extensions can configure input. */
     class EditTextProxy {
         var inputType: Int = 0
+        var error: CharSequence? = null
+        val rootView: android.view.View = android.view.View()
+        fun addTextChangedListener(watcher: android.text.TextWatcher?) {}
+        fun removeTextChangedListener(watcher: android.text.TextWatcher?) {}
     }
 }
 

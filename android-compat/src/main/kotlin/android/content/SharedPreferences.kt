@@ -10,7 +10,7 @@ interface SharedPreferences {
     fun getFloat(key: String, defValue: Float): Float
     fun getStringSet(key: String, defValues: Set<String>?): Set<String>?
     fun getAll(): Map<String, *>
-    fun contains(key: String): Boolean
+    operator fun contains(key: String): Boolean
     fun registerOnSharedPreferenceChangeListener(listener: OnSharedPreferenceChangeListener) {}
     fun unregisterOnSharedPreferenceChangeListener(listener: OnSharedPreferenceChangeListener) {}
     fun edit(): Editor
@@ -47,7 +47,7 @@ class JavaSharedPreferences(node: String) : SharedPreferences {
         return if (raw.isEmpty()) emptySet() else raw.split("\u001F").toSet()
     }
     override fun getAll(): Map<String, *> = prefs.keys().associateWith { prefs.get(it, null) }
-    override fun contains(key: String): Boolean = prefs.get(key, null) != null
+    override operator fun contains(key: String): Boolean = prefs.get(key, null) != null
     override fun edit(): SharedPreferences.Editor = EditorImpl()
 
     private inner class EditorImpl : SharedPreferences.Editor {

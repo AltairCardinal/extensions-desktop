@@ -31,20 +31,28 @@ cp "$REPO_ROOT/patches/preferences-jvm.kt" \
 for dir in "$EXT_SRC/lib-multisrc"/*/; do
     name=$(basename "$dir")
     build_file="$dir/build.gradle.kts"
-    # Extract extra lib project dependencies from git (original, unpatched version)
+    # Extract extra dependencies from git (original, unpatched version):
+    # - project(":lib:...") references (excluding i18n which is bundled)
+    # - direct Maven coordinates like "org.brotli:dec:0.1.2"
     extra_deps=""
+    maven_deps=""
     original=$(cd "$EXT_SRC" && git show "HEAD:lib-multisrc/$name/build.gradle.kts" 2>/dev/null || true)
     if [ -n "$original" ]; then
         extra_deps=$(echo "$original" | grep -oE 'project\(":lib:[^"]+"\)' | grep -v ':lib:i18n' | sort -u || true)
+        # Capture direct Maven dep strings: "group:artifact:version" patterns inside implementation(...)
+        maven_deps=$(echo "$original" | grep -oE '"[a-zA-Z0-9._-]+:[a-zA-Z0-9._-]+:[0-9][^"]*"' | sort -u || true)
     fi
     cp "$REPO_ROOT/patches/lib-multisrc-build-jvm.gradle.kts" "$build_file" 2>/dev/null || true
-    # Append extra lib deps if any
-    if [ -n "$extra_deps" ]; then
+    # Append extra deps if any
+    if [ -n "$extra_deps" ] || [ -n "$maven_deps" ]; then
         echo "" >> "$build_file"
         echo "dependencies {" >> "$build_file"
         while IFS= read -r dep; do
-            echo "    implementation($dep)" >> "$build_file"
+            [ -n "$dep" ] && echo "    implementation($dep)" >> "$build_file"
         done <<< "$extra_deps"
+        while IFS= read -r dep; do
+            [ -n "$dep" ] && echo "    implementation($dep)" >> "$build_file"
+        done <<< "$maven_deps"
         echo "}" >> "$build_file"
     fi
 done
@@ -98,5 +106,38 @@ buildscript {
     }
 }
 EOF
+
+# 10. Apply targeted source-level patches for JVM smart-cast / null-safety issues
+# 10a. lib/publus: assign url.fragment to local val before Base64.decode to allow smart cast
+PUBLUS="$EXT_SRC/lib/publus/src/keiyoushi/lib/publus/Publus.kt"
+if [ -f "$PUBLUS" ]; then
+    python3 - "$PUBLUS" << 'PYEOF'
+import sys, re
+path = sys.argv[1]
+src = open(path).read()
+# Replace the null-check + decode pattern to use a local val
+src = src.replace(
+    'if (url.fragment.isNullOrEmpty()) {\n                return chain.proceed(request)\n            }',
+    'val urlFragment = url.fragment\n            if (urlFragment.isNullOrEmpty()) {\n                return chain.proceed(request)\n            }'
+)
+src = src.replace('Base64.decode(url.fragment, Base64.URL_SAFE)', 'Base64.decode(urlFragment, Base64.URL_SAFE)')
+open(path, 'w').write(src)
+PYEOF
+fi
+
+# 10b. ru/nudemoon: add null-safe call for getCookie()
+NUDEMOON_FILE=$(find "$EXT_SRC/src/ru/nudemoon" -name "*.kt" 2>/dev/null | head -1)
+if [ -n "$NUDEMOON_FILE" ]; then
+    python3 - "$NUDEMOON_FILE" << 'PYEOF'
+import sys
+path = sys.argv[1]
+src = open(path).read()
+src = src.replace(
+    'cookieManager.getCookie(baseUrl).contains("fusion_user").not()',
+    '(cookieManager.getCookie(baseUrl)?.contains("fusion_user") != true)'
+)
+open(path, 'w').write(src)
+PYEOF
+fi
 
 echo "✓ Patch complete."

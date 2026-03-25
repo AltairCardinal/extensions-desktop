@@ -4,6 +4,6 @@ import okhttp3.Response
 import org.jsoup.Jsoup
 import org.jsoup.nodes.Document
 
-fun Response.asJsoup(): Document = use { response ->
-    Jsoup.parse(response.body.string(), response.request.url.toString())
+fun Response.asJsoup(html: String? = null): Document = use { response ->
+    Jsoup.parse(html ?: response.body.string(), response.request.url.toString())
 }
