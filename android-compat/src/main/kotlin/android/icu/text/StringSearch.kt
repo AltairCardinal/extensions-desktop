@@ -6,9 +6,11 @@ import java.text.StringCharacterIterator
 class StringSearch(
     pattern: String,
     target: StringCharacterIterator,
+    @Suppress("UNUSED_PARAMETER") collator: Collator? = null,
 ) {
     var pattern: String = pattern
     var target: StringCharacterIterator = target
+    var isOverlapping: Boolean = false
     var matchedText: String = ""
         private set
 
