@@ -1,6 +1,5 @@
 package eu.kanade.tachiyomi.source.model
 
-import android.net.Uri
 import eu.kanade.tachiyomi.network.ProgressListener
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.Transient
@@ -10,7 +9,7 @@ open class Page(
     val index: Int,
     val url: String = "",
     var imageUrl: String? = null,
-    @Transient var uri: Uri? = null,
+    @Transient var uri: Any? = null, // Any? matches source-api; android.net.Uri assignments still compile via Any
 ) : ProgressListener {
     val number: Int
         get() = index + 1

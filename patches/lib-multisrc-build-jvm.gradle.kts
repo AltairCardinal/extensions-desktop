@@ -1,6 +1,7 @@
 // JVM replacement for lib-multisrc/*.gradle.kts files.
 plugins {
     kotlin("jvm")
+    kotlin("plugin.serialization")
 }
 
 java {

@@ -94,6 +94,7 @@ buildscript {
     }
     dependencies {
         classpath(libs.gradle.kotlin)
+        classpath(libs.gradle.serialization)
     }
 }
 EOF

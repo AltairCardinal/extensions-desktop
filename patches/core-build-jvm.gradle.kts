@@ -1,6 +1,7 @@
 // JVM replacement for core/build.gradle.kts in extensions-source.
 plugins {
     kotlin("jvm")
+    kotlin("plugin.serialization")
 }
 
 java {

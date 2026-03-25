@@ -2,6 +2,8 @@
 // Compiles each extension as a self-contained fat JAR for Mihon Desktop.
 
 apply plugin: 'org.jetbrains.kotlin.jvm'
+apply plugin: 'org.jetbrains.kotlin.plugin.serialization'
+
 
 kotlin {
     compilerOptions {

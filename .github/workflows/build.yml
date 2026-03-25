@@ -258,3 +258,38 @@ jobs:
 
           echo "Add this URL to Mihon Desktop:" >> $GITHUB_STEP_SUMMARY
           echo "\`https://raw.githubusercontent.com/${{ github.repository }}/repo\`" >> $GITHUB_STEP_SUMMARY
+
+  validate:
+    needs: [prepare, publish]
+    if: always() && needs.prepare.outputs.should_build == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout extensions-desktop
+        uses: actions/checkout@v4
+
+      - name: Download all chunk artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: artifacts
+          pattern: chunk-*
+
+      - name: Collect all JARs
+        run: |
+          mkdir -p all-jars
+          find artifacts -name "*.jar" -exec cp {} all-jars/ \;
+          echo "Total JARs to validate: $(ls all-jars/*.jar 2>/dev/null | wc -l)"
+
+      - name: Validate JAR structure
+        run: |
+          python3 scripts/validate-jars.py all-jars/ | tee validation-report.txt
+          EXIT_CODE=${PIPESTATUS[0]}
+
+          # Write to step summary
+          echo "### JAR Validation Report" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
+          cat validation-report.txt >> $GITHUB_STEP_SUMMARY
+          echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
+
+          exit $EXIT_CODE
