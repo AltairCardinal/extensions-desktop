@@ -33,5 +33,4 @@ open class EditText(context: Context = Context()) : TextView(context) {
     var inputType: Int = 0
     fun setSelection(index: Int) {}
     fun setSelection(start: Int, stop: Int) {}
-    override val rootView: View get() = this
 }

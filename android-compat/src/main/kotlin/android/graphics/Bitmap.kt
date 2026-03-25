@@ -63,7 +63,7 @@ object BitmapFactory {
         decodeStream(stream)
 
     @JvmStatic
-    fun decodeByteArray(data: ByteArray, offset: Int, length: Int): Bitmap =
+    fun decodeByteArray(data: ByteArray, offset: Int, length: Int): Bitmap? =
         decodeStream(java.io.ByteArrayInputStream(data, offset, length))
 
     class Options {

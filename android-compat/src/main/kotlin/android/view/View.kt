@@ -5,7 +5,7 @@ import android.content.Context
 /** JVM stub for android.view.View. */
 open class View(val context: Context = Context()) {
     var visibility: Int = VISIBLE
-    val rootView: View get() = this
+    open val rootView: View get() = this
 
     @Suppress("UNCHECKED_CAST")
     fun <T : View> findViewById(id: Int): T? = null

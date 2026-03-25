@@ -6,7 +6,7 @@ import android.os.Bundle
 
 open class Activity : Context() {
     val intent: Intent = Intent()
-    val packageName: String = ""
+    override val packageName: String = ""
 
     open fun onCreate(savedInstanceState: Bundle?) {}
     open fun finish() {}
