@@ -14,18 +14,13 @@ open class TextView(context: Context = Context()) : View(context) {
 
     fun setTextColor(color: Int) {}
     fun setTextSize(unit: Int, size: Float) { textSize = size }
-    fun setGravity(gravity: Int) { this.gravity = gravity }
     fun setPadding(left: Int, top: Int, right: Int, bottom: Int) {}
-    fun setMaxLines(maxLines: Int) { this.maxLines = maxLines }
     fun setHint(hint: CharSequence?) {}
     fun setHint(resId: Int) {}
     fun setLines(lines: Int) {}
     fun setSingleLine(singleLine: Boolean) {}
-    fun setMovementMethod(movement: android.text.method.MovementMethod?) { movementMethod = movement }
     fun addTextChangedListener(watcher: android.text.TextWatcher?) {}
     fun removeTextChangedListener(watcher: android.text.TextWatcher?) {}
-    fun getText(): CharSequence? = text
-    fun setText(text: CharSequence?) { this.text = text }
     fun setText(resId: Int) {}
 }
 
