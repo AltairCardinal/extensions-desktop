@@ -49,18 +49,12 @@ class CheckBoxPreference(context: android.content.Context = android.content.Cont
 
 class EditTextPreference(context: android.content.Context = android.content.Context()) : DialogPreference(context) {
     var text: String? = null
-    private var bindListener: ((EditTextProxy) -> Unit)? = null
-    fun setOnBindEditTextListener(listener: ((EditTextProxy) -> Unit)?) { bindListener = listener }
+    private var bindListener: ((android.widget.EditText) -> Unit)? = null
+    fun setOnBindEditTextListener(listener: ((android.widget.EditText) -> Unit)?) { bindListener = listener }
     override fun setDefaultValue(defaultValue: Any?) { if (text == null) text = defaultValue as? String ?: "" }
 
-    /** Minimal proxy for android.widget.EditText so extensions can configure input. */
-    class EditTextProxy {
-        var inputType: Int = 0
-        var error: CharSequence? = null
-        val rootView: android.view.View = android.view.View()
-        fun addTextChangedListener(watcher: android.text.TextWatcher?) {}
-        fun removeTextChangedListener(watcher: android.text.TextWatcher?) {}
-    }
+    /** @deprecated kept for binary compat — EditText is now used directly. */
+    class EditTextProxy : android.widget.EditText()
 }
 
 class ListPreference(context: android.content.Context = android.content.Context()) : DialogPreference(context) {

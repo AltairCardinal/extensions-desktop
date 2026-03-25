@@ -6,8 +6,10 @@ open class LruCache<K, V>(private val maxSize: Int) {
         override fun removeEldestEntry(eldest: Map.Entry<K, V>?) = size > maxSize
     }
 
+    protected open fun create(key: K): V? = null
+
     @Synchronized
-    fun get(key: K): V? = map[key]
+    fun get(key: K): V? = map[key] ?: create(key)?.also { put(key, it) }
 
     @Synchronized
     fun put(key: K, value: V): V? = map.put(key, value)

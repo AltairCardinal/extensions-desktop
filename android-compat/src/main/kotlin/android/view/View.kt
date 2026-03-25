@@ -8,7 +8,7 @@ open class View(val context: Context = Context()) {
     open val rootView: View get() = this
 
     @Suppress("UNCHECKED_CAST")
-    fun <T : View> findViewById(id: Int): T? = null
+    fun <T> findViewById(id: Int): T? = null
 
     companion object {
         const val VISIBLE = 0

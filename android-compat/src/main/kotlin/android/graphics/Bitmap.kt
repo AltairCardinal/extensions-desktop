@@ -52,18 +52,20 @@ class Bitmap(val image: BufferedImage) {
 }
 
 object BitmapFactory {
+    private val EMPTY get() = Bitmap(BufferedImage(1, 1, BufferedImage.TYPE_INT_ARGB))
+
     @JvmStatic
-    fun decodeStream(stream: InputStream?): Bitmap? {
-        if (stream == null) return null
-        return Bitmap(ImageIO.read(stream) ?: BufferedImage(1, 1, BufferedImage.TYPE_INT_ARGB))
+    fun decodeStream(stream: InputStream?): Bitmap {
+        if (stream == null) return EMPTY
+        return Bitmap(ImageIO.read(stream) ?: return EMPTY)
     }
 
     @JvmStatic
-    fun decodeStream(stream: InputStream?, outPadding: Rect?, opts: Options?): Bitmap? =
+    fun decodeStream(stream: InputStream?, outPadding: Rect?, opts: Options?): Bitmap =
         decodeStream(stream)
 
     @JvmStatic
-    fun decodeByteArray(data: ByteArray, offset: Int, length: Int): Bitmap? =
+    fun decodeByteArray(data: ByteArray, offset: Int, length: Int): Bitmap =
         decodeStream(java.io.ByteArrayInputStream(data, offset, length))
 
     class Options {
@@ -98,6 +100,14 @@ class Canvas(val bitmap: Bitmap) {
     fun save(): Int = 0
     fun restore() {}
     fun translate(dx: Float, dy: Float) { g2d.translate(dx.toDouble(), dy.toDouble()) }
+    fun drawPoint(x: Float, y: Float, paint: Paint) {
+        g2d.color = java.awt.Color(paint.color, true)
+        g2d.fillRect(x.toInt(), y.toInt(), 1, 1)
+    }
+    fun drawLine(startX: Float, startY: Float, stopX: Float, stopY: Float, paint: Paint) {
+        g2d.color = java.awt.Color(paint.color, true)
+        g2d.drawLine(startX.toInt(), startY.toInt(), stopX.toInt(), stopY.toInt())
+    }
 }
 
 open class Paint {
@@ -112,6 +122,7 @@ open class Paint {
 
     fun measureText(text: String): Float = text.length * textSize * 0.6f
     fun setTypeface(typeface: Typeface?): Typeface? { this.typeface = typeface; return typeface }
+    fun setARGB(a: Int, r: Int, g: Int, b: Int) { color = Color.argb(a, r, g, b) }
 }
 
 class Typeface private constructor() {

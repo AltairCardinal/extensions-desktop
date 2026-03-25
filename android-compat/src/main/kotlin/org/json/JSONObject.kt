@@ -59,6 +59,9 @@ class JSONObject(private val data: MutableMap<String, Any?> = mutableMapOf()) {
     fun keys(): Iterator<String> = data.keys.iterator()
     fun length(): Int = data.size
 
+    operator fun get(key: String): Any? = data[key]
+    operator fun set(key: String, value: Any?) { data[key] = value }
+
     fun put(key: String, value: Any?): JSONObject { data[key] = value; return this }
 
     override fun toString(): String {
@@ -120,7 +123,8 @@ class JSONArray(private val data: MutableList<Any?> = mutableListOf()) {
     }
 
     fun length(): Int = data.size
-    fun get(index: Int): Any = data[index] ?: throw JSONException("Value at $index is null")
+    operator fun get(index: Int): Any = data[index] ?: throw JSONException("Value at $index is null")
+    operator fun set(index: Int, value: Any?) { if (index < data.size) data[index] = value else data.add(value) }
     fun getString(index: Int): String = data[index]?.toString() ?: throw JSONException("No string at $index")
     fun getInt(index: Int): Int = (data[index] as? Number)?.toInt() ?: getString(index).toInt()
     fun getLong(index: Int): Long = (data[index] as? Number)?.toLong() ?: getString(index).toLong()
