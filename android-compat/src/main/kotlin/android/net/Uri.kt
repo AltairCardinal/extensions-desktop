@@ -35,7 +35,7 @@ class Uri private constructor(private val uriString: String) {
         private var authority: String? = null
         private var path: String? = null
         private var encodedQueryStr: String? = null
-        private val queryParams = mutableListOf<Pair<String, String>>()
+        private val queryParams = mutableListOf<Pair<String, String?>>()
 
         constructor(existingUri: String) : this() {
             val uri = parse(existingUri)
@@ -72,7 +72,7 @@ class Uri private constructor(private val uriString: String) {
             when {
                 encodedQueryStr != null -> sb.append("?$encodedQueryStr")
                 queryParams.isNotEmpty() -> sb.append("?" + queryParams.joinToString("&") {
-                    "${java.net.URLEncoder.encode(it.first, "UTF-8")}=${java.net.URLEncoder.encode(it.second, "UTF-8")}"
+                    "${java.net.URLEncoder.encode(it.first, "UTF-8")}=${java.net.URLEncoder.encode(it.second ?: "", "UTF-8")}"
                 })
             }
             return Uri(sb.toString())
