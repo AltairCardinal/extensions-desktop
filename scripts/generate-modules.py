@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-Compute which extension modules need rebuilding based on upstream diff.
+Compute which extension modules need rebuilding based on upstream diff or build-state.
 
 Usage:
-    python generate-modules.py <extensions-source-path> <last-upstream-sha> <is-full-rebuild>
+    python generate-modules.py <extensions-source-path> <last-upstream-sha> <is-full-rebuild> [build-state-path]
 
 Outputs (to GITHUB_OUTPUT if CI=true, else stdout):
     matrix   - JSON build matrix with chunked module lists
@@ -210,10 +210,87 @@ def get_module_list(ref: str) -> tuple[list, list]:
     return list(modules), list(deleted)
 
 
+def get_extension_version(module_path: str) -> Optional[int]:
+    """Read extVersionCode (or overrideVersionCode) from src/LANG/EXT/build.gradle."""
+    parts = module_path.split(":")
+    if len(parts) != 3:
+        return None
+    _, lang, ext = parts
+    build_file = Path("src") / lang / ext / "build.gradle"
+    if not build_file.is_file():
+        return None
+    content = build_file.read_text("utf-8", errors="ignore")
+    match = re.search(r"(?:extVersionCode|overrideVersionCode)\s*=\s*(\d+)", content)
+    if match:
+        return int(match.group(1))
+    return None
+
+
+def get_modules_from_build_state(build_state: dict) -> tuple[list, list]:
+    """
+    Use version-based logic to decide which modules to rebuild.
+
+    Rules:
+    - NOT in build-state → build (new extension)
+    - status == "built" AND built_version < current_version → build (updated)
+    - status == "failed" AND failed_version < current_version → build (retry)
+    - status == "built" AND built_version == current_version → SKIP
+    - status == "failed" AND failed_version == current_version → SKIP (known failure)
+    """
+    all_modules, all_deleted = get_all_modules()
+
+    modules_to_build = []
+    for module_path in all_modules:
+        current_version = get_extension_version(module_path)
+
+        if module_path not in build_state:
+            # New extension — always build
+            print(f"  NEW: {module_path}", file=sys.stderr)
+            modules_to_build.append(module_path)
+            continue
+
+        state = build_state[module_path]
+        recorded_version = state.get("version")
+        status = state.get("status")
+
+        if recorded_version is None or current_version is None:
+            # Cannot compare versions — rebuild to be safe
+            print(f"  VERSION_UNKNOWN: {module_path}", file=sys.stderr)
+            modules_to_build.append(module_path)
+            continue
+
+        if status == "built":
+            if recorded_version < current_version:
+                print(
+                    f"  UPDATED (built {recorded_version} → {current_version}): {module_path}",
+                    file=sys.stderr,
+                )
+                modules_to_build.append(module_path)
+            else:
+                # built_version == current_version — skip
+                pass
+        elif status == "failed":
+            if recorded_version < current_version:
+                print(
+                    f"  RETRY_FAILED (failed v{recorded_version} → now v{current_version}): {module_path}",
+                    file=sys.stderr,
+                )
+                modules_to_build.append(module_path)
+            else:
+                # Same version, known failure — skip
+                pass
+        else:
+            # Unknown status — rebuild
+            print(f"  UNKNOWN_STATUS: {module_path}", file=sys.stderr)
+            modules_to_build.append(module_path)
+
+    return modules_to_build, all_deleted
+
+
 def main():
-    if len(sys.argv) != 4:
+    if len(sys.argv) < 4:
         print(
-            f"Usage: {sys.argv[0]} <extensions-source-path> <last-sha> <is-full>",
+            f"Usage: {sys.argv[0]} <extensions-source-path> <last-sha> <is-full> [build-state-path]",
             file=sys.stderr,
         )
         sys.exit(1)
@@ -221,6 +298,7 @@ def main():
     ext_source_path = sys.argv[1]
     last_sha = sys.argv[2]
     is_full = sys.argv[3].lower() == "true"
+    build_state_path = sys.argv[4] if len(sys.argv) > 4 else None
 
     os.chdir(ext_source_path)
 
@@ -229,6 +307,32 @@ def main():
     if is_full or not last_sha:
         print("Full rebuild requested", file=sys.stderr)
         modules, deleted = get_all_modules()
+    elif build_state_path and Path(build_state_path).is_file():
+        # Version-based incremental build using build-state.json
+        print(
+            f"Version-based incremental build using {build_state_path}",
+            file=sys.stderr,
+        )
+        try:
+            build_state = json.loads(Path(build_state_path).read_text("utf-8"))
+        except (json.JSONDecodeError, OSError) as e:
+            print(f"Failed to load build-state.json ({e}), falling back to SHA diff", file=sys.stderr)
+            build_state = None
+
+        if build_state is not None and build_state:
+            modules, deleted = get_modules_from_build_state(build_state)
+        elif build_state == {}:
+            # Empty build state — full rebuild
+            print("Empty build-state.json, doing full rebuild", file=sys.stderr)
+            modules, deleted = get_all_modules()
+        else:
+            # Fallback to SHA-based diff
+            if last_sha == upstream_sha:
+                print("No upstream changes", file=sys.stderr)
+                modules, deleted = [], []
+            else:
+                print(f"Incremental build: {last_sha[:8]}..{upstream_sha[:8]}", file=sys.stderr)
+                modules, deleted = get_module_list(last_sha)
     elif last_sha == upstream_sha:
         print("No upstream changes", file=sys.stderr)
         modules, deleted = [], []

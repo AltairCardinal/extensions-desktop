@@ -1,0 +1,21 @@
+{
+  "src:all:comikey": "WebView — android.webkit.WebView not available on JVM",
+  "src:all:cubari": "WebView + JavascriptInterface — android.webkit.WebView not available on JVM",
+  "src:all:mangafire": "WebView — android.webkit.WebView not available on JVM",
+  "src:all:mangaup": "WebView — android.webkit.WebView not available on JVM",
+  "src:all:manhuarm": "WebView — OcrUrlInterceptor uses android.webkit.WebView",
+  "src:all:projectsuki": "android.icu.text — complex ICU API compatibility",
+  "src:en:bookwalker": "WebView + JavascriptInterface — android.webkit.WebView not available on JVM",
+  "src:en:infinityscans": "WebView — android.webkit.WebView not available on JVM",
+  "src:en:kagane": "WebView — android.webkit.WebView not available on JVM",
+  "src:en:mangago": "WebView — android.webkit.WebView not available on JVM",
+  "src:en:spyfakku": "WebView — android.webkit.WebView not available on JVM",
+  "src:es:bokugentranslation": "WebView — android.webkit.WebView not available on JVM",
+  "src:es:leercapitulo": "lib:synchrony dependency — QuickJS (app.cash.quickjs) is Android-only",
+  "src:es:mangasin": "lib:synchrony dependency — QuickJS (app.cash.quickjs) is Android-only",
+  "src:es:mangasnosekai": "lib:synchrony dependency — QuickJS (app.cash.quickjs) is Android-only",
+  "src:es:sakuramangas": "lib:synchrony dependency — QuickJS (app.cash.quickjs) is Android-only",
+  "src:fr:japscan": "WebView — android.webkit.WebView not available on JVM",
+  "src:ja:unext": "WebView — android.webkit.WebView not available on JVM",
+  "src:ja:zebrack": "WebView — android.webkit.WebView not available on JVM"
+}

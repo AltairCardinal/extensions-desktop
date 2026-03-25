@@ -44,6 +44,12 @@ jobs:
       - name: Clone extensions-source
         run: git clone https://github.com/keiyoushi/extensions-source.git extensions-source
 
+      - name: Fetch build state
+        run: |
+          git fetch origin repo 2>/dev/null || true
+          mkdir -p repo-state
+          git show origin/repo:build-state.json > repo-state/build-state.json 2>/dev/null || echo '{}' > repo-state/build-state.json
+
       - name: Get last built upstream SHA
         id: last-sha
         run: |
@@ -82,7 +88,8 @@ jobs:
           python ../scripts/generate-modules.py \
             . \
             "${{ steps.last-sha.outputs.sha }}" \
-            "${{ steps.scope.outputs.full }}"
+            "${{ steps.scope.outputs.full }}" \
+            "../repo-state/build-state.json"
 
   build:
     needs: prepare

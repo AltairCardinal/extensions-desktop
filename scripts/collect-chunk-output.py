@@ -7,6 +7,8 @@ Usage:
 
 Scans src/*/*/build/libs/ for JARs, copies them to <output-dir>/apk/,
 generates <output-dir>/index-partial.json, and writes success/failed lists.
+Also writes <output-dir>/versions.txt with module:version_code per line
+for both successful and failed modules.
 
 If module arguments are provided, only those modules are checked.
 Otherwise, all modules with JARs are collected.
@@ -57,6 +59,8 @@ def main():
     entries = []
     success = []
     failed = []
+    # Maps module_path -> version_code (for both success and failed)
+    versions: dict[str, int] = {}
 
     # Scan all extension directories
     for build_file in sorted(ext_src.glob("src/*/*/build.gradle")):
@@ -67,6 +71,9 @@ def main():
         # If specific modules requested, skip others
         if requested_modules is not None and module_path not in requested_modules:
             continue
+
+        meta = parse_build_gradle(build_file)
+        versions[module_path] = meta["version_code"]
 
         libs_dir = build_file.parent / "build" / "libs"
         jars = sorted(p for p in libs_dir.glob("*.jar") if p.is_file()) if libs_dir.exists() else []
@@ -80,7 +87,6 @@ def main():
         jar_name = jar_path.name
         shutil.copy2(jar_path, apk_dir / jar_name)
 
-        meta = parse_build_gradle(build_file)
         pkg = f"eu.kanade.tachiyomi.extension.{lang}.{ext}"
 
         entries.append(
@@ -106,6 +112,16 @@ def main():
     )
     (output_dir / "failed.txt").write_text(
         "\n".join(failed) + "\n" if failed else "", encoding="utf-8"
+    )
+
+    # Write versions.txt: module_path:version_code for all processed modules
+    versions_lines = [
+        f"{module_path}:{version_code}"
+        for module_path, version_code in sorted(versions.items())
+    ]
+    (output_dir / "versions.txt").write_text(
+        "\n".join(versions_lines) + "\n" if versions_lines else "",
+        encoding="utf-8",
     )
 
     print(f"Collected {len(entries)} JARs, {len(failed)} failed")
