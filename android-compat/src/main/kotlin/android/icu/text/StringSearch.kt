@@ -1,21 +1,47 @@
 package android.icu.text
 
-import java.text.BreakIterator as JBI
-import java.util.Locale
+import java.text.StringCharacterIterator
 
 /** JVM stub for android.icu.text.StringSearch. */
 class StringSearch(
-    private val pattern: String,
-    private val target: CharSequence,
-    private val locale: Locale = Locale.getDefault(),
+    pattern: String,
+    target: StringCharacterIterator,
 ) {
-    private var pos = 0
-    val matchedText: String get() = if (pos >= 0 && pos <= target.length) pattern else ""
+    var pattern: String = pattern
+    var target: StringCharacterIterator = target
+    var matchedText: String = ""
+        private set
 
-    fun next(): Int {
-        val start = if (pos < 0) 0 else pos + 1
-        val idx = target.toString().indexOf(pattern, start, ignoreCase = true)
-        pos = idx
-        return if (idx >= 0) idx else BreakIterator.DONE
+    private fun currentText(): String {
+        val t = target
+        return buildString {
+            var c = t.first()
+            while (c != java.text.CharacterIterator.DONE) { append(c); c = t.next() }
+        }
+    }
+
+    private var searchPos = 0
+
+    fun first(): Int {
+        searchPos = 0
+        return nextFrom(0)
+    }
+
+    fun next(): Int = nextFrom(searchPos + 1)
+
+    private fun nextFrom(start: Int): Int {
+        val text = currentText()
+        val idx = text.indexOf(pattern, start, ignoreCase = true)
+        return if (idx >= 0) {
+            searchPos = idx
+            matchedText = text.substring(idx, idx + pattern.length)
+            idx
+        } else {
+            DONE
+        }
+    }
+
+    companion object {
+        const val DONE = BreakIterator.DONE
     }
 }
