@@ -53,11 +53,13 @@ class Bitmap(val image: BufferedImage) {
 
 object BitmapFactory {
     @JvmStatic
-    fun decodeStream(stream: InputStream): Bitmap =
-        Bitmap(ImageIO.read(stream) ?: BufferedImage(1, 1, BufferedImage.TYPE_INT_ARGB))
+    fun decodeStream(stream: InputStream?): Bitmap? {
+        if (stream == null) return null
+        return Bitmap(ImageIO.read(stream) ?: BufferedImage(1, 1, BufferedImage.TYPE_INT_ARGB))
+    }
 
     @JvmStatic
-    fun decodeStream(stream: InputStream, outPadding: Rect?, opts: Options?): Bitmap =
+    fun decodeStream(stream: InputStream?, outPadding: Rect?, opts: Options?): Bitmap? =
         decodeStream(stream)
 
     @JvmStatic

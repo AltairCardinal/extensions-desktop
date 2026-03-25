@@ -66,6 +66,7 @@ dependencies {
     implementation(project(":core"))
     implementation(project(":android-compat"))
     implementation(project(":desktop-api"))
+    implementation(project(":lib:i18n"))
     compileOnly(libs.kotlin.stdlib)
     compileOnly(libs.coroutines.core)
     compileOnly(libs.rxjava)

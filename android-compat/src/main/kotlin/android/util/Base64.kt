@@ -9,8 +9,8 @@ object Base64 {
     const val NO_CLOSE: Int = 16
 
     @JvmStatic
-    fun decode(input: String, flags: Int): ByteArray {
-        val cleaned = input.replace("\n", "").replace("\r", "")
+    fun decode(input: String?, flags: Int): ByteArray {
+        val cleaned = (input ?: "").replace("\n", "").replace("\r", "")
         val decoder = if (flags and URL_SAFE != 0) {
             java.util.Base64.getUrlDecoder()
         } else {
