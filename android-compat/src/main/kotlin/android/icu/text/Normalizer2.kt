@@ -18,5 +18,11 @@ abstract class Normalizer2 {
             override fun normalize(src: CharSequence) = java.text.Normalizer.normalize(src, java.text.Normalizer.Form.NFKC)
             override fun isNormalized(s: CharSequence) = java.text.Normalizer.isNormalized(s, java.text.Normalizer.Form.NFKC)
         }
+        @JvmStatic fun getNFKCCasefoldInstance(): Normalizer2 = object : Normalizer2() {
+            override fun normalize(src: CharSequence) =
+                java.text.Normalizer.normalize(src, java.text.Normalizer.Form.NFKC).lowercase()
+            override fun isNormalized(s: CharSequence) =
+                java.text.Normalizer.isNormalized(s, java.text.Normalizer.Form.NFKC) && s.toString() == s.toString().lowercase()
+        }
     }
 }
