@@ -11,7 +11,6 @@ src:ja:zebrack
 src:all:mangafire
 src:all:mangaup
 src:all:manhuarm
-src:all:projectsuki
 src:pt:randomscan
 src:pt:rfdragonscan
 src:pt:sakuramangas
