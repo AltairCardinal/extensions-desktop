@@ -9,5 +9,5 @@ interface TextWatcher {
 
 /** JVM stub for android.text.Editable. */
 interface Editable : CharSequence {
-    fun toString(): String
+    override fun toString(): String
 }
