@@ -111,6 +111,22 @@ def main():
         upstream_sha + "\n", encoding="utf-8"
     )
 
+    # Ensure repo.json exists (required by Mihon Desktop's CreateExtensionRepo validation)
+    repo_meta_path = repo_dir / "repo.json"
+    if not repo_meta_path.exists():
+        repo_meta = {
+            "meta": {
+                "name": "Mihon Desktop Extensions",
+                "shortName": "MihonDesktop",
+                "website": "https://github.com/AltairCardinal/extensions-desktop",
+                "signingKeyFingerprint": "0000000000000000000000000000000000000000000000000000000000000000",
+            }
+        }
+        repo_meta_path.write_text(
+            json.dumps(repo_meta, ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
+        )
+
     if all_failed:
         (repo_dir / "failed_modules.txt").write_text(
             "\n".join(all_failed) + "\n", encoding="utf-8"
