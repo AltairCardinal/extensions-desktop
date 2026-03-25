@@ -7,7 +7,7 @@ JVM-compiled extensions for [Mihon Desktop](https://github.com/AltairCardinal/mi
 In Mihon Desktop → More → Extension Repos → Add:
 
 ```
-https://raw.githubusercontent.com/AltairCardinal/extensions-desktop/repo
+https://raw.githubusercontent.com/AltairCardinal/extensions-desktop/repo/index.min.json
 ```
 
 ## How it works
