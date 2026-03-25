@@ -20,6 +20,12 @@ class Bitmap(val image: BufferedImage) {
     fun recycle() {}
     val isRecycled: Boolean = false
 
+    fun copy(config: Config, isMutable: Boolean): Bitmap {
+        val copy = BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB)
+        copy.createGraphics().apply { drawImage(image, 0, 0, null); dispose() }
+        return Bitmap(copy)
+    }
+
     fun eraseColor(color: Int) {
         val g = image.createGraphics()
         g.color = java.awt.Color(color, true)
@@ -97,9 +103,10 @@ class Canvas(val bitmap: Bitmap) {
         g2d.fillRect(0, 0, width, height)
     }
 
-    fun save(): Int = 0
+    fun save(): Int { g2d.transform.let { /* push */ }; return 0 }
     fun restore() {}
     fun translate(dx: Float, dy: Float) { g2d.translate(dx.toDouble(), dy.toDouble()) }
+    fun rotate(degrees: Float) { g2d.rotate(Math.toRadians(degrees.toDouble())) }
     fun drawPoint(x: Float, y: Float, paint: Paint) {
         g2d.color = java.awt.Color(paint.color, true)
         g2d.fillRect(x.toInt(), y.toInt(), 1, 1)
@@ -107,6 +114,10 @@ class Canvas(val bitmap: Bitmap) {
     fun drawLine(startX: Float, startY: Float, stopX: Float, stopY: Float, paint: Paint) {
         g2d.color = java.awt.Color(paint.color, true)
         g2d.drawLine(startX.toInt(), startY.toInt(), stopX.toInt(), stopY.toInt())
+    }
+    fun drawText(text: String, x: Float, y: Float, paint: Paint) {
+        g2d.color = java.awt.Color(paint.color, true)
+        g2d.drawString(text, x, y)
     }
 }
 
@@ -119,6 +130,21 @@ open class Paint {
     var typeface: Typeface? = null
 
     enum class Style { FILL, STROKE, FILL_AND_STROKE }
+
+    class FontMetrics {
+        var top: Float = 0f
+        var ascent: Float = 0f
+        var descent: Float = 0f
+        var bottom: Float = 0f
+        var leading: Float = 0f
+    }
+
+    val fontMetrics: FontMetrics get() = FontMetrics().apply {
+        top = -textSize
+        ascent = -textSize * 0.8f
+        descent = textSize * 0.2f
+        bottom = textSize * 0.25f
+    }
 
     fun measureText(text: String): Float = text.length * textSize * 0.6f
     fun setTypeface(typeface: Typeface?): Typeface? { this.typeface = typeface; return typeface }
@@ -137,6 +163,8 @@ class Typeface private constructor() {
 
         @JvmStatic fun create(family: String?, style: Int): Typeface = Typeface()
         @JvmStatic fun create(typeface: Typeface?, style: Int): Typeface = Typeface()
+        @JvmStatic fun createFromFile(file: java.io.File): Typeface? = Typeface()
+        @JvmStatic fun createFromFile(path: String): Typeface? = Typeface()
     }
 }
 

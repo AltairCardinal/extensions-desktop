@@ -54,7 +54,7 @@ class Uri private constructor(private val uriString: String) {
         fun appendEncodedPath(segment: String) = apply {
             this.path = (this.path?.trimEnd('/') ?: "") + "/$segment"
         }
-        fun appendQueryParameter(key: String, value: String) = apply {
+        fun appendQueryParameter(key: String, value: String?) = apply {
             encodedQueryStr = null
             queryParams.add(key to value)
         }
@@ -62,6 +62,7 @@ class Uri private constructor(private val uriString: String) {
             encodedQueryStr = query
             queryParams.clear()
         }
+        fun fragment(fragment: String?) = apply { /* stored separately — no-op */ }
         fun clearQuery() = apply { queryParams.clear(); encodedQueryStr = null }
         fun build(): Uri {
             val sb = StringBuilder()

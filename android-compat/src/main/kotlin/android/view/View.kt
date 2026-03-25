@@ -7,6 +7,8 @@ open class View(val context: Context = Context()) {
     var visibility: Int = VISIBLE
     open val rootView: View get() = this
 
+    open val parent: ViewGroup? get() = null
+
     @Suppress("UNCHECKED_CAST")
     fun <T> findViewById(id: Int): T? = null
 

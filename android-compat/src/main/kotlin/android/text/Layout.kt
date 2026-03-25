@@ -12,4 +12,10 @@ open class Layout {
     open fun getLineTop(line: Int): Int = 0
     open fun getLineBottom(line: Int): Int = 0
     open fun draw(canvas: android.graphics.Canvas) {}
+
+    companion object {
+        const val HYPHENATION_FREQUENCY_NONE = 0
+        const val HYPHENATION_FREQUENCY_NORMAL = 1
+        const val HYPHENATION_FREQUENCY_FULL = 2
+    }
 }

@@ -11,5 +11,4 @@ open class ViewGroup(context: Context = Context()) : View(context) {
     fun removeView(view: View) { children.remove(view) }
     fun removeAllViews() { children.clear() }
     fun getChildAt(index: Int): View? = children.getOrNull(index)
-    val parent: ViewGroup? get() = null
 }

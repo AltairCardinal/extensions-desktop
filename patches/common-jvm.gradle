@@ -75,6 +75,27 @@ dependencies {
     compileOnly(libs.jsoup)
     compileOnly(libs.okhttp)
 }
+// Auto-detect lib:* dependencies from import statements in source files
+def srcDir = project.file('src')
+if (srcDir.exists()) {
+    def libImportPattern = ~/import keiyoushi\.lib\.([a-z0-9]+)\./
+    def detectedLibs = new HashSet()
+    srcDir.eachFileRecurse { f ->
+        if (f.name.endsWith('.kt')) {
+            f.readLines().each { line ->
+                def m = line =~ libImportPattern
+                if (m) detectedLibs << m[0][1]
+            }
+        }
+    }
+    detectedLibs.each { libName ->
+        def libProject = rootProject.findProject(":lib:${libName}")
+        if (libProject != null) {
+            dependencies.add('implementation', libProject)
+        }
+    }
+}
+
 
 // ─── Fat JAR (includes local project outputs only; shared libraries stay compileOnly) ─
 jar {
