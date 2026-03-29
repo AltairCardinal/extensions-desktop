@@ -1656,8 +1656,8 @@
   },
   "src:fr:scanmanga": {
     "status": "built",
-    "timestamp": "2026-03-28",
-    "version": 18
+    "timestamp": "2026-03-29",
+    "version": 19
   },
   "src:fr:scanr": {
     "status": "built",
@@ -2921,8 +2921,8 @@
   },
   "src:all:sakuramanhwa": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 3
+    "timestamp": "2026-03-29",
+    "version": 4
   },
   "src:all:sandraandwoo": {
     "status": "built",
