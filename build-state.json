@@ -1381,8 +1381,8 @@
   },
   "src:es:submanhwa": {
     "status": "built",
-    "timestamp": "2026-03-28",
-    "version": 4
+    "timestamp": "2026-03-30",
+    "version": 5
   },
   "src:es:swordofoblivion": {
     "status": "built",
@@ -1656,8 +1656,8 @@
   },
   "src:fr:scanmanga": {
     "status": "built",
-    "timestamp": "2026-03-29",
-    "version": 19
+    "timestamp": "2026-03-30",
+    "version": 20
   },
   "src:fr:scanr": {
     "status": "built",
@@ -2116,8 +2116,8 @@
   },
   "src:id:softkomik": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 6
+    "timestamp": "2026-03-30",
+    "version": 7
   },
   "src:id:soulscans": {
     "status": "built",
@@ -3906,8 +3906,8 @@
   },
   "src:tr:mangadenizi": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 6
+    "timestamp": "2026-03-30",
+    "version": 7
   },
   "src:tr:mangadusleri": {
     "status": "built",
@@ -4296,8 +4296,8 @@
   },
   "src:vi:truyengg": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 10
+    "timestamp": "2026-03-30",
+    "version": 11
   },
   "src:vi:truyenhentai18": {
     "status": "built",
@@ -4306,8 +4306,8 @@
   },
   "src:vi:truyenqq": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 21
+    "timestamp": "2026-03-30",
+    "version": 22
   },
   "src:vi:truyentranh3q": {
     "status": "built",
@@ -5056,8 +5056,8 @@
   },
   "src:en:atsumaru": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 12
+    "timestamp": "2026-03-30",
+    "version": 13
   },
   "src:en:aurora": {
     "status": "built",
@@ -5311,8 +5311,8 @@
   },
   "src:en:erosscans": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 5
+    "timestamp": "2026-03-30",
+    "version": 6
   },
   "src:en:evascans": {
     "status": "built",
@@ -6499,5 +6499,15 @@
     "status": "built",
     "timestamp": "2026-03-28",
     "version": 1
+  },
+  "src:en:comicasura": {
+    "status": "built",
+    "timestamp": "2026-03-30",
+    "version": 0
+  },
+  "src:es:mangalector": {
+    "status": "built",
+    "timestamp": "2026-03-30",
+    "version": 0
   }
 }
