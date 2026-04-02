@@ -246,8 +246,8 @@
   },
   "src:en:nyxscans": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 1
+    "timestamp": "2026-04-02",
+    "version": 2
   },
   "src:en:oglaf": {
     "status": "built",
@@ -761,8 +761,8 @@
   },
   "src:en:valirscans": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 0
+    "timestamp": "2026-04-02",
+    "version": 1
   },
   "src:en:vanillascans": {
     "status": "built",
@@ -1241,8 +1241,8 @@
   },
   "src:es:manhwaonline": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 0
+    "timestamp": "2026-04-02",
+    "version": 1
   },
   "src:es:manhwaweb": {
     "status": "built",
@@ -2116,8 +2116,8 @@
   },
   "src:id:softkomik": {
     "status": "built",
-    "timestamp": "2026-03-30",
-    "version": 7
+    "timestamp": "2026-04-02",
+    "version": 8
   },
   "src:id:soulscans": {
     "status": "built",
@@ -2471,8 +2471,8 @@
   },
   "src:ja:mangagun": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 7
+    "timestamp": "2026-04-02",
+    "version": 8
   },
   "src:ja:mangakuro": {
     "status": "built",
@@ -3241,8 +3241,8 @@
   },
   "src:pt:mediocretoons": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 16
+    "timestamp": "2026-04-02",
+    "version": 17
   },
   "src:pt:minitwoscan": {
     "status": "built",
@@ -4161,8 +4161,8 @@
   },
   "src:vi:doctruyen3q": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 20
+    "timestamp": "2026-04-02",
+    "version": 21
   },
   "src:vi:doctruyen5s": {
     "status": "built",
@@ -4251,8 +4251,8 @@
   },
   "src:vi:newtruyentranh": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 4
+    "timestamp": "2026-04-02",
+    "version": 5
   },
   "src:vi:nhattruyen": {
     "status": "built",
@@ -4286,8 +4286,8 @@
   },
   "src:vi:toptruyen": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 22
+    "timestamp": "2026-04-02",
+    "version": 23
   },
   "src:vi:tranh18": {
     "status": "built",
@@ -4336,8 +4336,8 @@
   },
   "src:vi:vcomycs": {
     "status": "built",
-    "timestamp": "2026-03-28",
-    "version": 5
+    "timestamp": "2026-04-02",
+    "version": 6
   },
   "src:vi:vihentai": {
     "status": "built",
@@ -4351,8 +4351,8 @@
   },
   "src:vi:vlogtruyen": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 25
+    "timestamp": "2026-04-02",
+    "version": 26
   },
   "src:vi:yurigarden": {
     "status": "built",
@@ -5026,8 +5026,8 @@
   },
   "src:en:arvenscans": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 39
+    "timestamp": "2026-04-02",
+    "version": 40
   },
   "src:en:aryascans": {
     "status": "built",
@@ -5066,8 +5066,8 @@
   },
   "src:en:azcomic": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 1
+    "timestamp": "2026-04-02",
+    "version": 2
   },
   "src:en:azuki": {
     "status": "built",
@@ -6333,10 +6333,9 @@
     "version": 13
   },
   "src:es:bokugentranslation": {
-    "status": "failed",
-    "timestamp": "2026-03-25",
-    "reason": "compilation error",
-    "version": 1
+    "status": "built",
+    "timestamp": "2026-04-02",
+    "version": 17
   },
   "src:es:leercapitulo": {
     "status": "failed",
@@ -6462,8 +6461,8 @@
   },
   "src:es:zonatmoto": {
     "status": "built",
-    "timestamp": "2026-03-28",
-    "version": 1
+    "timestamp": "2026-04-02",
+    "version": 2
   },
   "src:ja:dokiraw": {
     "status": "built",
@@ -6482,8 +6481,8 @@
   },
   "src:vi:damconuong": {
     "status": "built",
-    "timestamp": "2026-03-28",
-    "version": 1
+    "timestamp": "2026-04-02",
+    "version": 2
   },
   "src:vi:moetruyen": {
     "status": "built",
