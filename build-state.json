@@ -156,8 +156,8 @@
   },
   "src:all:hentai3": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 2
+    "timestamp": "2026-04-03",
+    "version": 3
   },
   "src:all:hentaicosplay": {
     "status": "built",
@@ -1101,8 +1101,8 @@
   },
   "src:es:hentaimode": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 3
+    "timestamp": "2026-04-03",
+    "version": 4
   },
   "src:es:hmangakyomi": {
     "status": "built",
@@ -2031,8 +2031,8 @@
   },
   "src:id:noromax": {
     "status": "built",
-    "timestamp": "2026-03-28",
-    "version": 4
+    "timestamp": "2026-04-03",
+    "version": 5
   },
   "src:id:okyykomik": {
     "status": "built",
@@ -2066,8 +2066,8 @@
   },
   "src:id:riztranslation": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 1
+    "timestamp": "2026-04-03",
+    "version": 2
   },
   "src:id:roseveil": {
     "status": "built",
@@ -2116,8 +2116,8 @@
   },
   "src:id:softkomik": {
     "status": "built",
-    "timestamp": "2026-04-02",
-    "version": 8
+    "timestamp": "2026-04-03",
+    "version": 9
   },
   "src:id:soulscans": {
     "status": "built",
@@ -2246,8 +2246,8 @@
   },
   "src:ja:comicboost": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 1
+    "timestamp": "2026-04-03",
+    "version": 2
   },
   "src:ja:comicborder": {
     "status": "built",
@@ -2291,8 +2291,8 @@
   },
   "src:ja:comicnettai": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 1
+    "timestamp": "2026-04-03",
+    "version": 2
   },
   "src:ja:comico": {
     "status": "built",
@@ -2336,8 +2336,8 @@
   },
   "src:ja:docomo": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 1
+    "timestamp": "2026-04-03",
+    "version": 2
   },
   "src:ja:drecomics": {
     "status": "built",
@@ -2536,8 +2536,8 @@
   },
   "src:ja:pashup": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 1
+    "timestamp": "2026-04-03",
+    "version": 2
   },
   "src:ja:piccoma": {
     "status": "built",
@@ -2691,8 +2691,8 @@
   },
   "src:ko:rawdex": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 1
+    "timestamp": "2026-04-03",
+    "version": 2
   },
   "src:ko:toon11": {
     "status": "built",
@@ -5026,8 +5026,8 @@
   },
   "src:en:arvenscans": {
     "status": "built",
-    "timestamp": "2026-04-02",
-    "version": 40
+    "timestamp": "2026-04-03",
+    "version": 41
   },
   "src:en:aryascans": {
     "status": "built",
@@ -6357,9 +6357,9 @@
   },
   "src:fr:japscan": {
     "status": "failed",
-    "timestamp": "2026-03-28",
+    "timestamp": "2026-04-03",
     "reason": "compilation error",
-    "version": 59
+    "version": 60
   },
   "src:ja:unext": {
     "status": "failed",
@@ -6486,8 +6486,8 @@
   },
   "src:vi:moetruyen": {
     "status": "built",
-    "timestamp": "2026-03-28",
-    "version": 1
+    "timestamp": "2026-04-03",
+    "version": 2
   },
   "src:vi:otakusic": {
     "status": "built",
@@ -6507,6 +6507,11 @@
   "src:es:mangalector": {
     "status": "built",
     "timestamp": "2026-03-30",
+    "version": 0
+  },
+  "src:it:ddtteam": {
+    "status": "built",
+    "timestamp": "2026-04-03",
     "version": 0
   }
 }

@@ -4,8 +4,8 @@ JVM-compatible extensions for [Mihon Desktop](https://github.com/AltairCardinal/
 
 ## Stats
 
-- Total extensions: 22
-- Compilation failures: 0 (0 fixable, 0 permanently unsupported)
+- Total extensions: 19
+- Compilation failures: 1 (1 fixable, 0 permanently unsupported)
 
 ## Installation
 
@@ -32,7 +32,7 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | leercapitulo | es | v14 | compilation error | 2026-03-25 |
 | mangasin | es | v5 | compilation error | 2026-03-25 |
 | mangasnosekai | es | v16 | compilation error | 2026-03-25 |
-| japscan | fr | v59 | compilation error | 2026-03-25 |
+| japscan | fr | v60 | compilation error | 2026-03-25 |
 | unext | ja | v2 | compilation error | 2026-03-25 |
 | zebrack | ja | v1 | compilation error | 2026-03-25 |
 | randomscan | pt | v58 | compilation error | 2026-03-25 |
