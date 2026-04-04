@@ -4,8 +4,8 @@ JVM-compatible extensions for [Mihon Desktop](https://github.com/AltairCardinal/
 
 ## Stats
 
-- Total extensions: 19
-- Compilation failures: 1 (1 fixable, 0 permanently unsupported)
+- Total extensions: 10
+- Compilation failures: 0 (0 fixable, 0 permanently unsupported)
 
 ## Installation
 

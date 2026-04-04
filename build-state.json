@@ -326,8 +326,8 @@
   },
   "src:en:philiascans": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 1
+    "timestamp": "2026-04-04",
+    "version": 2
   },
   "src:en:platinumcrown": {
     "status": "built",
@@ -2746,8 +2746,8 @@
   },
   "src:all:mangadex": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 206
+    "timestamp": "2026-04-04",
+    "version": 207
   },
   "src:all:mangadraft": {
     "status": "built",
@@ -5166,8 +5166,8 @@
   },
   "src:en:comix": {
     "status": "built",
-    "timestamp": "2026-03-28",
-    "version": 9
+    "timestamp": "2026-04-04",
+    "version": 10
   },
   "src:en:cucumbermanga": {
     "status": "built",
@@ -6513,5 +6513,10 @@
     "status": "built",
     "timestamp": "2026-04-03",
     "version": 0
+  },
+  "src:vi:daomeoden": {
+    "status": "built",
+    "timestamp": "2026-04-04",
+    "version": 1
   }
 }
