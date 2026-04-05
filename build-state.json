@@ -146,8 +146,8 @@
   },
   "src:all:hdoujin": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 1
+    "timestamp": "2026-04-05",
+    "version": 2
   },
   "src:all:hennojin": {
     "status": "built",
@@ -246,8 +246,8 @@
   },
   "src:en:nyxscans": {
     "status": "built",
-    "timestamp": "2026-04-02",
-    "version": 2
+    "timestamp": "2026-04-05",
+    "version": 3
   },
   "src:en:oglaf": {
     "status": "built",
@@ -761,8 +761,8 @@
   },
   "src:en:valirscans": {
     "status": "built",
-    "timestamp": "2026-04-02",
-    "version": 1
+    "timestamp": "2026-04-05",
+    "version": 20
   },
   "src:en:vanillascans": {
     "status": "built",
@@ -1021,8 +1021,8 @@
   },
   "src:es:darkroomfansub": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 0
+    "timestamp": "2026-04-05",
+    "version": 1
   },
   "src:es:datgarscanlation": {
     "status": "built",
@@ -1456,8 +1456,8 @@
   },
   "src:es:yupmanga": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 2
+    "timestamp": "2026-04-05",
+    "version": 3
   },
   "src:es:yurionline": {
     "status": "built",
@@ -1566,8 +1566,8 @@
   },
   "src:fr:mangacorporation": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 0
+    "timestamp": "2026-04-05",
+    "version": 1
   },
   "src:fr:mangahubfr": {
     "status": "built",
@@ -1751,8 +1751,8 @@
   },
   "src:id:cosmicscansid": {
     "status": "built",
-    "timestamp": "2026-03-28",
-    "version": 18
+    "timestamp": "2026-04-05",
+    "version": 19
   },
   "src:id:crotpedia": {
     "status": "built",
@@ -1811,8 +1811,8 @@
   },
   "src:id:kiryuu": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 46
+    "timestamp": "2026-04-05",
+    "version": 47
   },
   "src:id:klikmanga": {
     "status": "built",
@@ -2341,13 +2341,13 @@
   },
   "src:ja:drecomics": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 1
+    "timestamp": "2026-04-05",
+    "version": 2
   },
   "src:ja:firecross": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 1
+    "timestamp": "2026-04-05",
+    "version": 2
   },
   "src:ja:flowercomics": {
     "status": "built",
@@ -2691,8 +2691,8 @@
   },
   "src:ko:rawdex": {
     "status": "built",
-    "timestamp": "2026-04-03",
-    "version": 2
+    "timestamp": "2026-04-05",
+    "version": 3
   },
   "src:ko:toon11": {
     "status": "built",
@@ -2796,8 +2796,8 @@
   },
   "src:all:manhwa18net": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 11
+    "timestamp": "2026-04-05",
+    "version": 12
   },
   "src:all:manhwaclubnet": {
     "status": "built",
@@ -4391,8 +4391,8 @@
   },
   "src:zh:bilimanga": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 6
+    "timestamp": "2026-04-05",
+    "version": 7
   },
   "src:zh:boylove": {
     "status": "built",
@@ -4466,8 +4466,8 @@
   },
   "src:zh:komiic": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 4
+    "timestamp": "2026-04-05",
+    "version": 5
   },
   "src:zh:mangabz": {
     "status": "built",
@@ -4746,8 +4746,8 @@
   },
   "src:ar:detectiveconanar": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 2
+    "timestamp": "2026-04-05",
+    "version": 3
   },
   "src:ar:dilar": {
     "status": "built",
@@ -4906,8 +4906,8 @@
   },
   "src:ar:teamx": {
     "status": "built",
-    "timestamp": "2026-03-28",
-    "version": 26
+    "timestamp": "2026-04-05",
+    "version": 27
   },
   "src:ar:waveteamy": {
     "status": "built",
@@ -5026,8 +5026,8 @@
   },
   "src:en:arvenscans": {
     "status": "built",
-    "timestamp": "2026-04-03",
-    "version": 41
+    "timestamp": "2026-04-05",
+    "version": 42
   },
   "src:en:aryascans": {
     "status": "built",
@@ -5696,8 +5696,8 @@
   },
   "src:en:madaradex": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 2
+    "timestamp": "2026-04-05",
+    "version": 3
   },
   "src:en:madarascans": {
     "status": "built",
@@ -6517,6 +6517,46 @@
   "src:vi:daomeoden": {
     "status": "built",
     "timestamp": "2026-04-04",
+    "version": 1
+  },
+  "src:ar:despairmanga": {
+    "status": "built",
+    "timestamp": "2026-04-05",
+    "version": 0
+  },
+  "src:en:mangabuddyme": {
+    "status": "built",
+    "timestamp": "2026-04-05",
+    "version": 0
+  },
+  "src:en:mlbblore": {
+    "status": "built",
+    "timestamp": "2026-04-05",
+    "version": 1
+  },
+  "src:es:whitepearltranslations": {
+    "status": "built",
+    "timestamp": "2026-04-05",
+    "version": 0
+  },
+  "src:vi:thienthaitruyen": {
+    "status": "built",
+    "timestamp": "2026-04-05",
+    "version": 1
+  },
+  "src:vi:truyenhentaivn": {
+    "status": "built",
+    "timestamp": "2026-04-05",
+    "version": 1
+  },
+  "src:vi:tuitruyen": {
+    "status": "built",
+    "timestamp": "2026-04-05",
+    "version": 1
+  },
+  "src:vi:yurineko": {
+    "status": "built",
+    "timestamp": "2026-04-05",
     "version": 1
   }
 }
