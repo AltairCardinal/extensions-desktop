@@ -4,8 +4,8 @@ JVM-compatible extensions for [Mihon Desktop](https://github.com/AltairCardinal/
 
 ## Stats
 
-- Total extensions: 32
-- Compilation failures: 0 (0 fixable, 0 permanently unsupported)
+- Total extensions: 16
+- Compilation failures: 1 (1 fixable, 0 permanently unsupported)
 
 ## Installation
 
@@ -18,7 +18,7 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 
 | Extension | Language | Version | Reason | First Failed |
 |-----------|----------|---------|--------|--------------|
-| comikey | all | v3 | compilation error | 2026-03-25 |
+| comikey | all | v4 | compilation error | 2026-03-25 |
 | cubari | all | v26 | compilation error | 2026-03-25 |
 | mangafire | all | v19 | compilation error | 2026-03-25 |
 | mangaup | all | v6 | compilation error | 2026-03-25 |

@@ -946,8 +946,8 @@
   },
   "src:es:barmanga": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 8
+    "timestamp": "2026-04-08",
+    "version": 9
   },
   "src:es:begatranslation": {
     "status": "built",
@@ -1121,8 +1121,8 @@
   },
   "src:es:ikuhentai": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 2
+    "timestamp": "2026-04-08",
+    "version": 3
   },
   "src:es:infrafandub": {
     "status": "built",
@@ -1486,8 +1486,8 @@
   },
   "src:fr:bigsolo": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 3
+    "timestamp": "2026-04-08",
+    "version": 4
   },
   "src:fr:bluesolo": {
     "status": "built",
@@ -1726,8 +1726,8 @@
   },
   "src:id:astralscans": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 0
+    "timestamp": "2026-04-08",
+    "version": 1
   },
   "src:id:bacakomik": {
     "status": "built",
@@ -2521,8 +2521,8 @@
   },
   "src:ja:nicovideoseiga": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 7
+    "timestamp": "2026-04-08",
+    "version": 8
   },
   "src:ja:nikkangecchan": {
     "status": "built",
@@ -3361,8 +3361,8 @@
   },
   "src:pt:spectralscan": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 58
+    "timestamp": "2026-04-08",
+    "version": 59
   },
   "src:pt:sssscanlator": {
     "status": "built",
@@ -3891,8 +3891,8 @@
   },
   "src:tr:laviniafansub": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 2
+    "timestamp": "2026-04-08",
+    "version": 3
   },
   "src:tr:lilyumfansub": {
     "status": "built",
@@ -4181,8 +4181,8 @@
   },
   "src:vi:goctruyentranhvui": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 10
+    "timestamp": "2026-04-08",
+    "version": 11
   },
   "src:vi:hentaicube": {
     "status": "built",
@@ -5686,8 +5686,8 @@
   },
   "src:en:luminaretranslations": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 1
+    "timestamp": "2026-04-08",
+    "version": 2
   },
   "src:en:lunatoons": {
     "status": "built",
@@ -5766,8 +5766,8 @@
   },
   "src:en:mangaclash": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 4
+    "timestamp": "2026-04-08",
+    "version": 5
   },
   "src:en:mangacloud": {
     "status": "built",
@@ -6316,9 +6316,9 @@
   },
   "src:all:comikey": {
     "status": "failed",
-    "timestamp": "2026-03-25",
+    "timestamp": "2026-04-08",
     "reason": "compilation error",
-    "version": 3
+    "version": 4
   },
   "src:all:cubari": {
     "status": "failed",
