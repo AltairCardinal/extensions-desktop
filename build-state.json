@@ -761,8 +761,8 @@
   },
   "src:en:valirscans": {
     "status": "built",
-    "timestamp": "2026-04-05",
-    "version": 20
+    "timestamp": "2026-04-09",
+    "version": 21
   },
   "src:en:vanillascans": {
     "status": "built",
@@ -6562,6 +6562,11 @@
   "src:vi:moontruyen": {
     "status": "built",
     "timestamp": "2026-04-08",
+    "version": 1
+  },
+  "src:vi:luottruyen": {
+    "status": "built",
+    "timestamp": "2026-04-09",
     "version": 1
   }
 }
