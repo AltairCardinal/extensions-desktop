@@ -3197,8 +3197,8 @@
   },
   "src:pt:mangaflix": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 2
+    "timestamp": "2026-04-11",
+    "version": 3
   },
   "src:pt:mangalivre": {
     "status": "built",
@@ -3362,8 +3362,8 @@
   },
   "src:pt:spectralscan": {
     "status": "built",
-    "timestamp": "2026-04-08",
-    "version": 59
+    "timestamp": "2026-04-11",
+    "version": 60
   },
   "src:pt:sssscanlator": {
     "status": "built",
@@ -5057,8 +5057,8 @@
   },
   "src:en:atsumaru": {
     "status": "built",
-    "timestamp": "2026-03-30",
-    "version": 13
+    "timestamp": "2026-04-11",
+    "version": 14
   },
   "src:en:aurora": {
     "status": "built",
@@ -5542,8 +5542,8 @@
   },
   "src:en:infernalvoidscans": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 41
+    "timestamp": "2026-04-11",
+    "version": 42
   },
   "src:en:irovedout": {
     "status": "built",
@@ -6624,5 +6624,10 @@
     "status": "built",
     "timestamp": "2026-04-09",
     "version": 1
+  },
+  "src:en:mangablaze": {
+    "status": "built",
+    "timestamp": "2026-04-11",
+    "version": 0
   }
 }
