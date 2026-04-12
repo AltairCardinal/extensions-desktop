@@ -1516,8 +1516,8 @@
   },
   "src:fr:furyosquad": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 3
+    "timestamp": "2026-04-12",
+    "version": 4
   },
   "src:fr:hentaiorigines": {
     "status": "built",
@@ -1671,8 +1671,8 @@
   },
   "src:fr:scantradunion": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 2
+    "timestamp": "2026-04-12",
+    "version": 3
   },
   "src:fr:scanvf": {
     "status": "built",
@@ -1711,8 +1711,8 @@
   },
   "src:id:Luvyaa": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 2
+    "timestamp": "2026-04-12",
+    "version": 3
   },
   "src:id:aarlas": {
     "status": "built",
@@ -1726,8 +1726,8 @@
   },
   "src:id:astralscans": {
     "status": "built",
-    "timestamp": "2026-04-11",
-    "version": 3
+    "timestamp": "2026-04-12",
+    "version": 5
   },
   "src:id:bacakomik": {
     "status": "built",
@@ -4162,8 +4162,8 @@
   },
   "src:vi:doctruyen3q": {
     "status": "built",
-    "timestamp": "2026-04-02",
-    "version": 21
+    "timestamp": "2026-04-12",
+    "version": 22
   },
   "src:vi:doctruyen5s": {
     "status": "built",
@@ -4172,8 +4172,8 @@
   },
   "src:vi:dualeotruyen": {
     "status": "built",
-    "timestamp": "2026-04-08",
-    "version": 14
+    "timestamp": "2026-04-12",
+    "version": 15
   },
   "src:vi:goctruyentranh": {
     "status": "built",
@@ -4187,8 +4187,8 @@
   },
   "src:vi:hentaicube": {
     "status": "built",
-    "timestamp": "2026-03-29",
-    "version": 25
+    "timestamp": "2026-04-12",
+    "version": 26
   },
   "src:vi:hentaivnplus": {
     "status": "built",
@@ -4222,8 +4222,8 @@
   },
   "src:vi:mehentai": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 4
+    "timestamp": "2026-04-12",
+    "version": 5
   },
   "src:vi:mimi": {
     "status": "built",
@@ -4252,8 +4252,8 @@
   },
   "src:vi:newtruyentranh": {
     "status": "built",
-    "timestamp": "2026-04-02",
-    "version": 5
+    "timestamp": "2026-04-12",
+    "version": 6
   },
   "src:vi:nhattruyen": {
     "status": "built",
@@ -4287,8 +4287,8 @@
   },
   "src:vi:toptruyen": {
     "status": "built",
-    "timestamp": "2026-04-02",
-    "version": 23
+    "timestamp": "2026-04-12",
+    "version": 24
   },
   "src:vi:tranh18": {
     "status": "built",
@@ -4347,13 +4347,13 @@
   },
   "src:vi:vinahentai": {
     "status": "built",
-    "timestamp": "2026-03-28",
-    "version": 2
+    "timestamp": "2026-04-12",
+    "version": 3
   },
   "src:vi:vlogtruyen": {
     "status": "built",
-    "timestamp": "2026-04-02",
-    "version": 26
+    "timestamp": "2026-04-12",
+    "version": 27
   },
   "src:vi:yurigarden": {
     "status": "built",
@@ -5047,8 +5047,8 @@
   },
   "src:en:asurascans": {
     "status": "built",
-    "timestamp": "2026-04-08",
-    "version": 59
+    "timestamp": "2026-04-12",
+    "version": 60
   },
   "src:en:athreascans": {
     "status": "built",
@@ -6482,8 +6482,8 @@
   },
   "src:vi:damconuong": {
     "status": "built",
-    "timestamp": "2026-04-02",
-    "version": 2
+    "timestamp": "2026-04-12",
+    "version": 3
   },
   "src:vi:moetruyen": {
     "status": "built",
@@ -6567,8 +6567,8 @@
   },
   "src:vi:luottruyen": {
     "status": "built",
-    "timestamp": "2026-04-09",
-    "version": 1
+    "timestamp": "2026-04-12",
+    "version": 2
   },
   "src:all:manhwa18uncensored": {
     "status": "built",
@@ -6663,6 +6663,21 @@
   "src:vi:truyentvn": {
     "status": "built",
     "timestamp": "2026-04-11",
+    "version": 1
+  },
+  "src:id:komikucc": {
+    "status": "built",
+    "timestamp": "2026-04-12",
+    "version": 1
+  },
+  "src:vi:cmanga": {
+    "status": "built",
+    "timestamp": "2026-04-12",
+    "version": 1
+  },
+  "src:vi:truyen18": {
+    "status": "built",
+    "timestamp": "2026-04-12",
     "version": 1
   }
 }
