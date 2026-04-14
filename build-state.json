@@ -1466,8 +1466,8 @@
   },
   "src:fr:animesama": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 14
+    "timestamp": "2026-04-14",
+    "version": 15
   },
   "src:fr:aralosbd": {
     "status": "built",
@@ -2482,8 +2482,8 @@
   },
   "src:ja:mangamura": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 0
+    "timestamp": "2026-04-14",
+    "version": 1
   },
   "src:ja:mangaone": {
     "status": "built",
@@ -2717,8 +2717,8 @@
   },
   "src:all:lunaranime": {
     "status": "built",
-    "timestamp": "2026-03-28",
-    "version": 4
+    "timestamp": "2026-04-14",
+    "version": 5
   },
   "src:all:luscious": {
     "status": "built",
@@ -2962,8 +2962,8 @@
   },
   "src:pt:apecomics": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 14
+    "timestamp": "2026-04-14",
+    "version": 44
   },
   "src:pt:apenasumafa": {
     "status": "built",
@@ -3262,8 +3262,8 @@
   },
   "src:pt:mugiwarasoficial": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 0
+    "timestamp": "2026-04-14",
+    "version": 1
   },
   "src:pt:muitohentai": {
     "status": "built",
@@ -3332,8 +3332,8 @@
   },
   "src:pt:plumacomics": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 44
+    "timestamp": "2026-04-14",
+    "version": 45
   },
   "src:pt:pointzerotoons": {
     "status": "built",
@@ -3437,8 +3437,8 @@
   },
   "src:pt:xxxyaoi": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 0
+    "timestamp": "2026-04-14",
+    "version": 1
   },
   "src:pt:yaoifanclub": {
     "status": "built",
@@ -3867,8 +3867,8 @@
   },
   "src:tr:hayalistic": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 3
+    "timestamp": "2026-04-14",
+    "version": 4
   },
   "src:tr:holyscans": {
     "status": "built",
@@ -4342,8 +4342,8 @@
   },
   "src:vi:vihentai": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 1
+    "timestamp": "2026-04-14",
+    "version": 2
   },
   "src:vi:vinahentai": {
     "status": "built",
@@ -5166,9 +5166,10 @@
     "version": 34
   },
   "src:en:comix": {
-    "status": "built",
-    "timestamp": "2026-04-04",
-    "version": 10
+    "status": "failed",
+    "timestamp": "2026-04-14",
+    "reason": "compilation error",
+    "version": 11
   },
   "src:en:cucumbermanga": {
     "status": "built",
@@ -5387,8 +5388,8 @@
   },
   "src:en:greedscans": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 0
+    "timestamp": "2026-04-14",
+    "version": 1
   },
   "src:en:grimscans": {
     "status": "built",
@@ -5512,8 +5513,8 @@
   },
   "src:en:hiperdex": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 27
+    "timestamp": "2026-04-14",
+    "version": 28
   },
   "src:en:hiveworks": {
     "status": "built",
@@ -5802,8 +5803,8 @@
   },
   "src:en:mangadistrict": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 15
+    "timestamp": "2026-04-14",
+    "version": 16
   },
   "src:en:mangadotnet": {
     "status": "built",
@@ -6436,9 +6437,9 @@
   },
   "src:en:mangago": {
     "status": "failed",
-    "timestamp": "2026-03-25",
+    "timestamp": "2026-04-14",
     "reason": "compilation error",
-    "version": 30
+    "version": 31
   },
   "src:en:mangatrend": {
     "status": "built",
@@ -6679,5 +6680,45 @@
     "status": "built",
     "timestamp": "2026-04-12",
     "version": 1
+  },
+  "src:en:comiccx": {
+    "status": "built",
+    "timestamp": "2026-04-14",
+    "version": 1
+  },
+  "src:en:hentaireadio": {
+    "status": "built",
+    "timestamp": "2026-04-14",
+    "version": 1
+  },
+  "src:en:newmanhwa": {
+    "status": "built",
+    "timestamp": "2026-04-14",
+    "version": 0
+  },
+  "src:es:enchiladascan": {
+    "status": "built",
+    "timestamp": "2026-04-14",
+    "version": 1
+  },
+  "src:es:nexusscanlation": {
+    "status": "built",
+    "timestamp": "2026-04-14",
+    "version": 1
+  },
+  "src:id:komikdewasaart": {
+    "status": "built",
+    "timestamp": "2026-04-14",
+    "version": 0
+  },
+  "src:vi:baotangtruyen": {
+    "status": "built",
+    "timestamp": "2026-04-14",
+    "version": 1
+  },
+  "src:zh:kuaikanmanhua": {
+    "status": "built",
+    "timestamp": "2026-04-14",
+    "version": 11
   }
 }

@@ -4,8 +4,8 @@ JVM-compatible extensions for [Mihon Desktop](https://github.com/AltairCardinal/
 
 ## Stats
 
-- Total extensions: 24
-- Compilation failures: 0 (0 fixable, 0 permanently unsupported)
+- Total extensions: 26
+- Compilation failures: 2 (2 fixable, 0 permanently unsupported)
 
 ## Installation
 
@@ -25,9 +25,10 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | manhuarm | all | v18 | compilation error | 2026-03-25 |
 | mangapro | ar | v47 | compilation error | 2026-03-25 |
 | bookwalker | en | v5 | compilation error | 2026-03-25 |
+| comix | en | v11 | compilation error | 2026-04-14 |
 | infinityscans | en | v7 | compilation error | 2026-03-25 |
 | kagane | en | v23 | compilation error | 2026-03-25 |
-| mangago | en | v30 | compilation error | 2026-03-25 |
+| mangago | en | v31 | compilation error | 2026-03-25 |
 | spyfakku | en | v13 | compilation error | 2026-03-25 |
 | leercapitulo | es | v14 | compilation error | 2026-03-25 |
 | mangasin | es | v5 | compilation error | 2026-03-25 |

@@ -1,0 +1,2 @@
+src:en:comix
+src:en:mangago
