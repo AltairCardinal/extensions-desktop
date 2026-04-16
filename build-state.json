@@ -961,8 +961,8 @@
   },
   "src:es:bloomscans": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 0
+    "timestamp": "2026-04-16",
+    "version": 1
   },
   "src:es:brakeout": {
     "status": "built",
@@ -1426,8 +1426,8 @@
   },
   "src:es:traduccionesmoonlight": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 45
+    "timestamp": "2026-04-16",
+    "version": 46
   },
   "src:es:tumanhwasclub": {
     "status": "built",
@@ -1456,8 +1456,8 @@
   },
   "src:es:yupmanga": {
     "status": "built",
-    "timestamp": "2026-04-11",
-    "version": 5
+    "timestamp": "2026-04-16",
+    "version": 6
   },
   "src:es:yurionline": {
     "status": "built",
@@ -1581,8 +1581,8 @@
   },
   "src:fr:mangamoins": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 1
+    "timestamp": "2026-04-16",
+    "version": 2
   },
   "src:fr:manganova": {
     "status": "built",
@@ -2127,8 +2127,8 @@
   },
   "src:id:themanga": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 46
+    "timestamp": "2026-04-16",
+    "version": 47
   },
   "src:id:tooncubus": {
     "status": "built",
@@ -2232,8 +2232,8 @@
   },
   "src:ja:bigcomics": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 0
+    "timestamp": "2026-04-16",
+    "version": 1
   },
   "src:ja:ciaoplus": {
     "status": "built",
@@ -2987,8 +2987,8 @@
   },
   "src:pt:astratoons": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 7
+    "timestamp": "2026-04-16",
+    "version": 8
   },
   "src:pt:atemporal": {
     "status": "built",
@@ -3222,8 +3222,8 @@
   },
   "src:pt:mangasbrasuka": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 0
+    "timestamp": "2026-04-16",
+    "version": 1
   },
   "src:pt:mangastop": {
     "status": "built",
@@ -3497,8 +3497,8 @@
   },
   "src:ru:inkstory": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 1
+    "timestamp": "2026-04-16",
+    "version": 2
   },
   "src:ru:mangabuff": {
     "status": "built",
@@ -4687,8 +4687,8 @@
   },
   "src:all:yabai": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 2
+    "timestamp": "2026-04-16",
+    "version": 3
   },
   "src:all:yaoimangaonline": {
     "status": "built",
@@ -5027,8 +5027,8 @@
   },
   "src:en:arvenscans": {
     "status": "built",
-    "timestamp": "2026-04-05",
-    "version": 42
+    "timestamp": "2026-04-16",
+    "version": 61
   },
   "src:en:aryascans": {
     "status": "built",
@@ -5978,8 +5978,8 @@
   },
   "src:en:mangarawclub": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 29
+    "timestamp": "2026-04-16",
+    "version": 30
   },
   "src:en:mangaread": {
     "status": "built",
@@ -6720,5 +6720,25 @@
     "status": "built",
     "timestamp": "2026-04-14",
     "version": 11
+  },
+  "src:en:timelesstoons": {
+    "status": "built",
+    "timestamp": "2026-04-16",
+    "version": 0
+  },
+  "src:vi:hanultruyen": {
+    "status": "built",
+    "timestamp": "2026-04-16",
+    "version": 1
+  },
+  "src:vi:medamtruyen": {
+    "status": "built",
+    "timestamp": "2026-04-16",
+    "version": 1
+  },
+  "src:zh:jcomic": {
+    "status": "built",
+    "timestamp": "2026-04-16",
+    "version": 1
   }
 }
