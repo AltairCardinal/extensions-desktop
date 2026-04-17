@@ -2597,8 +2597,8 @@
   },
   "src:ja:rawxz": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 4
+    "timestamp": "2026-04-17",
+    "version": 50
   },
   "src:ja:rimacomiplus": {
     "status": "built",
@@ -4977,8 +4977,8 @@
   },
   "src:en:allanime": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 11
+    "timestamp": "2026-04-17",
+    "version": 12
   },
   "src:en:allporncomic": {
     "status": "built",
@@ -6739,6 +6739,21 @@
   "src:zh:jcomic": {
     "status": "built",
     "timestamp": "2026-04-16",
+    "version": 1
+  },
+  "src:en:manhwazone": {
+    "status": "built",
+    "timestamp": "2026-04-17",
+    "version": 1
+  },
+  "src:vi:fastscan": {
+    "status": "built",
+    "timestamp": "2026-04-17",
+    "version": 1
+  },
+  "src:vi:meosua": {
+    "status": "built",
+    "timestamp": "2026-04-17",
     "version": 1
   }
 }
