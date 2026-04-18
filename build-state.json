@@ -1727,8 +1727,8 @@
   },
   "src:id:astralscans": {
     "status": "built",
-    "timestamp": "2026-04-12",
-    "version": 5
+    "timestamp": "2026-04-18",
+    "version": 6
   },
   "src:id:bacakomik": {
     "status": "built",
@@ -4158,8 +4158,8 @@
   },
   "src:uk:zenko": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 3
+    "timestamp": "2026-04-18",
+    "version": 4
   },
   "src:vi:doctruyen3q": {
     "status": "built",
@@ -6394,9 +6394,9 @@
   },
   "src:all:manhuarm": {
     "status": "failed",
-    "timestamp": "2026-03-25",
+    "timestamp": "2026-04-18",
     "reason": "compilation error",
-    "version": 18
+    "version": 19
   },
   "src:pt:randomscan": {
     "status": "failed",
@@ -6780,6 +6780,12 @@
   "src:ja:ebookjapan": {
     "status": "built",
     "timestamp": "2026-04-18",
+    "version": 1
+  },
+  "src:en:reimanga": {
+    "status": "failed",
+    "timestamp": "2026-04-18",
+    "reason": "compilation error",
     "version": 1
   }
 }

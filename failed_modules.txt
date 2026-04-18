@@ -1,7 +1,2 @@
-src:all:beauty3600000
-src:all:mangafire
-src:vi:loppytoon
-src:vi:mimihentai
-src:vi:newtruyentranh
-src:vi:yurigarden
-src:vi:yurineko
+src:all:manhuarm
+src:en:reimanga
