@@ -1,2 +1,3 @@
-src:all:manhuarm
-src:en:reimanga
+src:es:kazokuden
+src:id:softkomik
+src:vi:yurineko
