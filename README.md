@@ -4,8 +4,8 @@ JVM-compatible extensions for [Mihon Desktop](https://github.com/AltairCardinal/
 
 ## Stats
 
-- Total extensions: 19
-- Compilation failures: 3 (3 fixable, 0 permanently unsupported)
+- Total extensions: 32
+- Compilation failures: 5 (5 fixable, 0 permanently unsupported)
 
 ## Installation
 
@@ -24,6 +24,7 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | mangafire | all | v20 | compilation error | 2026-03-25 |
 | mangaup | all | v6 | compilation error | 2026-03-25 |
 | manhuarm | all | v19 | compilation error | 2026-03-25 |
+| anyonemanga | ar | v0 | compilation error | 2026-04-23 |
 | mangapro | ar | v47 | compilation error | 2026-03-25 |
 | bookwalker | en | v5 | compilation error | 2026-03-25 |
 | comix | en | v11 | compilation error | 2026-04-14 |
@@ -40,9 +41,13 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | softkomik | id | v11 | compilation error | 2026-04-09 |
 | unext | ja | v2 | compilation error | 2026-03-25 |
 | zebrack | ja | v1 | compilation error | 2026-03-25 |
+| mangalivre | pt | v15 | compilation error | 2026-04-23 |
+| mrtenzus | pt | v0 | compilation error | 2026-04-23 |
+| nebulosascan | pt | v0 | compilation error | 2026-04-23 |
 | randomscan | pt | v58 | compilation error | 2026-03-25 |
 | rfdragonscan | pt | v0 | compilation error | 2026-03-25 |
 | sakuramangas | pt | v4 | compilation error | 2026-03-25 |
+| tiamanhwa | pt | v3 | compilation error | 2026-04-23 |
 | loppytoon | vi | v2 | compilation error | 2026-04-18 |
 | mimihentai | vi | v3 | compilation error | 2026-04-18 |
 | newtruyentranh | vi | v7 | compilation error | 2026-04-18 |
