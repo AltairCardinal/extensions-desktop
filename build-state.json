@@ -1142,8 +1142,8 @@
   },
   "src:es:insanosscan": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 0
+    "timestamp": "2026-04-23",
+    "version": 31
   },
   "src:es:inventariooculto": {
     "status": "built",
@@ -1312,8 +1312,8 @@
   },
   "src:es:plottwistnofansub": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 10
+    "timestamp": "2026-04-23",
+    "version": 11
   },
   "src:es:ragnarokscanlation": {
     "status": "built",
@@ -1458,7 +1458,7 @@
   "src:es:yupmanga": {
     "status": "built",
     "timestamp": "2026-04-23",
-    "version": 7
+    "version": 8
   },
   "src:es:yurionline": {
     "status": "built",
@@ -6893,5 +6893,15 @@
     "timestamp": "2026-04-23",
     "reason": "compilation error",
     "version": 0
+  },
+  "src:ru:ninegrid": {
+    "status": "built",
+    "timestamp": "2026-04-23",
+    "version": 1
+  },
+  "src:vi:kirakira": {
+    "status": "built",
+    "timestamp": "2026-04-23",
+    "version": 1
   }
 }

@@ -1,5 +1,0 @@
-src:ar:anyonemanga
-src:pt:mangalivre
-src:pt:mrtenzus
-src:pt:nebulosascan
-src:pt:tiamanhwa
