@@ -1067,8 +1067,8 @@
   },
   "src:es:eternalmangas": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 1
+    "timestamp": "2026-04-25",
+    "version": 2
   },
   "src:es:gistamishouse": {
     "status": "built",
@@ -4160,13 +4160,13 @@
   },
   "src:uk:zenko": {
     "status": "built",
-    "timestamp": "2026-04-18",
-    "version": 4
+    "timestamp": "2026-04-25",
+    "version": 5
   },
   "src:vi:doctruyen3q": {
     "status": "built",
-    "timestamp": "2026-04-12",
-    "version": 22
+    "timestamp": "2026-04-25",
+    "version": 23
   },
   "src:vi:doctruyen5s": {
     "status": "built",
@@ -4175,8 +4175,8 @@
   },
   "src:vi:dualeotruyen": {
     "status": "built",
-    "timestamp": "2026-04-12",
-    "version": 15
+    "timestamp": "2026-04-25",
+    "version": 16
   },
   "src:vi:goctruyentranh": {
     "status": "built",
@@ -4283,8 +4283,8 @@
   },
   "src:vi:sayhentai": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 16
+    "timestamp": "2026-04-25",
+    "version": 17
   },
   "src:vi:teamlanhlung": {
     "status": "built",
@@ -4293,8 +4293,8 @@
   },
   "src:vi:toptruyen": {
     "status": "built",
-    "timestamp": "2026-04-12",
-    "version": 24
+    "timestamp": "2026-04-25",
+    "version": 25
   },
   "src:vi:tranh18": {
     "status": "built",
@@ -4353,8 +4353,8 @@
   },
   "src:vi:vinahentai": {
     "status": "built",
-    "timestamp": "2026-04-12",
-    "version": 3
+    "timestamp": "2026-04-25",
+    "version": 4
   },
   "src:vi:vlogtruyen": {
     "status": "built",
@@ -6490,8 +6490,8 @@
   },
   "src:vi:damconuong": {
     "status": "built",
-    "timestamp": "2026-04-12",
-    "version": 3
+    "timestamp": "2026-04-25",
+    "version": 4
   },
   "src:vi:moetruyen": {
     "status": "built",
@@ -6741,8 +6741,8 @@
   },
   "src:vi:medamtruyen": {
     "status": "built",
-    "timestamp": "2026-04-16",
-    "version": 1
+    "timestamp": "2026-04-25",
+    "version": 2
   },
   "src:zh:jcomic": {
     "status": "built",
