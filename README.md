@@ -4,8 +4,8 @@ JVM-compatible extensions for [Mihon Desktop](https://github.com/AltairCardinal/
 
 ## Stats
 
-- Total extensions: 7
-- Compilation failures: 0 (0 fixable, 0 permanently unsupported)
+- Total extensions: 25
+- Compilation failures: 10 (10 fixable, 0 permanently unsupported)
 
 ## Installation
 
@@ -21,23 +21,32 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | beauty3600000 | all | v3 | compilation error | 2026-04-18 |
 | comikey | all | v4 | compilation error | 2026-03-25 |
 | cubari | all | v26 | compilation error | 2026-03-25 |
+| hentaienvy | all | v0 | compilation error | 2026-04-26 |
 | mangafire | all | v20 | compilation error | 2026-03-25 |
 | mangaup | all | v6 | compilation error | 2026-03-25 |
 | manhuarm | all | v19 | compilation error | 2026-03-25 |
 | anyonemanga | ar | v0 | compilation error | 2026-04-23 |
 | mangapro | ar | v47 | compilation error | 2026-03-25 |
+| allanime | en | v14 | compilation error | 2026-04-26 |
 | bookwalker | en | v5 | compilation error | 2026-03-25 |
+| bunmanga | en | v0 | compilation error | 2026-04-26 |
 | comix | en | v11 | compilation error | 2026-04-14 |
 | infinityscans | en | v7 | compilation error | 2026-03-25 |
+| jnovel | en | v1 | compilation error | 2026-04-26 |
 | kagane | en | v23 | compilation error | 2026-03-25 |
 | mangago | en | v31 | compilation error | 2026-03-25 |
+| mangagofun | en | v0 | compilation error | 2026-04-26 |
+| mangaka | en | v0 | compilation error | 2026-04-26 |
+| manhwaget | en | v0 | compilation error | 2026-04-26 |
+| octopusmanga | en | v0 | compilation error | 2026-04-26 |
+| orionscans | en | v0 | compilation error | 2026-04-26 |
 | reimanga | en | v1 | compilation error | 2026-04-18 |
 | spyfakku | en | v13 | compilation error | 2026-03-25 |
 | kazokuden | es | v0 | compilation error | 2026-04-20 |
 | leercapitulo | es | v14 | compilation error | 2026-03-25 |
 | mangasin | es | v5 | compilation error | 2026-03-25 |
 | mangasnosekai | es | v16 | compilation error | 2026-03-25 |
-| japscan | fr | v63 | compilation error | 2026-03-25 |
+| japscan | fr | v64 | compilation error | 2026-03-25 |
 | softkomik | id | v11 | compilation error | 2026-04-09 |
 | unext | ja | v2 | compilation error | 2026-03-25 |
 | zebrack | ja | v1 | compilation error | 2026-03-25 |

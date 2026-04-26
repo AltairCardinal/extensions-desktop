@@ -1,0 +1,10 @@
+src:all:hentaienvy
+src:en:allanime
+src:en:bunmanga
+src:en:jnovel
+src:en:mangagofun
+src:en:mangaka
+src:en:manhwaget
+src:en:octopusmanga
+src:en:orionscans
+src:fr:japscan
