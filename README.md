@@ -4,8 +4,8 @@ JVM-compatible extensions for [Mihon Desktop](https://github.com/AltairCardinal/
 
 ## Stats
 
-- Total extensions: 25
-- Compilation failures: 10 (10 fixable, 0 permanently unsupported)
+- Total extensions: 34
+- Compilation failures: 11 (11 fixable, 0 permanently unsupported)
 
 ## Installation
 
@@ -18,16 +18,21 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 
 | Extension | Language | Version | Reason | First Failed |
 |-----------|----------|---------|--------|--------------|
-| beauty3600000 | all | v3 | compilation error | 2026-04-18 |
+| beauty3600000 | all | v4 | compilation error | 2026-04-18 |
 | comikey | all | v4 | compilation error | 2026-03-25 |
 | cubari | all | v26 | compilation error | 2026-03-25 |
 | hentaienvy | all | v0 | compilation error | 2026-04-26 |
+| hentairox | all | v0 | compilation error | 2026-04-28 |
+| hentaizap | all | v0 | compilation error | 2026-04-28 |
+| koharu | all | v18 | compilation error | 2026-04-28 |
+| luscious | all | v31 | compilation error | 2026-04-28 |
 | mangafire | all | v20 | compilation error | 2026-03-25 |
 | mangaup | all | v6 | compilation error | 2026-03-25 |
 | manhuarm | all | v19 | compilation error | 2026-03-25 |
+| nhentaixxx | all | v0 | compilation error | 2026-04-28 |
 | anyonemanga | ar | v0 | compilation error | 2026-04-23 |
 | mangapro | ar | v47 | compilation error | 2026-03-25 |
-| allanime | en | v14 | compilation error | 2026-04-26 |
+| allanime | en | v15 | compilation error | 2026-04-26 |
 | bookwalker | en | v5 | compilation error | 2026-03-25 |
 | bunmanga | en | v0 | compilation error | 2026-04-26 |
 | comix | en | v11 | compilation error | 2026-04-14 |
@@ -46,7 +51,7 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | leercapitulo | es | v14 | compilation error | 2026-03-25 |
 | mangasin | es | v5 | compilation error | 2026-03-25 |
 | mangasnosekai | es | v16 | compilation error | 2026-03-25 |
-| japscan | fr | v64 | compilation error | 2026-03-25 |
+| japscan | fr | v65 | compilation error | 2026-03-25 |
 | softkomik | id | v11 | compilation error | 2026-04-09 |
 | unext | ja | v2 | compilation error | 2026-03-25 |
 | zebrack | ja | v1 | compilation error | 2026-03-25 |
@@ -57,8 +62,10 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | rfdragonscan | pt | v0 | compilation error | 2026-03-25 |
 | sakuramangas | pt | v4 | compilation error | 2026-03-25 |
 | tiamanhwa | pt | v3 | compilation error | 2026-04-23 |
+| nudemoon | ru | v27 | compilation error | 2026-04-28 |
+| hentaicube | vi | v27 | compilation error | 2026-04-28 |
 | loppytoon | vi | v2 | compilation error | 2026-04-18 |
 | mimihentai | vi | v3 | compilation error | 2026-04-18 |
 | newtruyentranh | vi | v7 | compilation error | 2026-04-18 |
 | yurigarden | vi | v5 | compilation error | 2026-04-18 |
-| yurineko | vi | v3 | compilation error | 2026-04-18 |
+| yurineko | vi | v4 | compilation error | 2026-04-18 |
