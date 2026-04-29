@@ -4,8 +4,8 @@ JVM-compatible extensions for [Mihon Desktop](https://github.com/AltairCardinal/
 
 ## Stats
 
-- Total extensions: 34
-- Compilation failures: 11 (11 fixable, 0 permanently unsupported)
+- Total extensions: 41
+- Compilation failures: 4 (4 fixable, 0 permanently unsupported)
 
 ## Installation
 
@@ -21,6 +21,7 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | beauty3600000 | all | v4 | compilation error | 2026-04-18 |
 | comikey | all | v4 | compilation error | 2026-03-25 |
 | cubari | all | v26 | compilation error | 2026-03-25 |
+| everiaclub | all | v11 | compilation error | 2026-04-29 |
 | hentaienvy | all | v0 | compilation error | 2026-04-26 |
 | hentairox | all | v0 | compilation error | 2026-04-28 |
 | hentaizap | all | v0 | compilation error | 2026-04-28 |
@@ -29,6 +30,7 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | mangafire | all | v20 | compilation error | 2026-03-25 |
 | mangaup | all | v6 | compilation error | 2026-03-25 |
 | manhuarm | all | v19 | compilation error | 2026-03-25 |
+| misskon | all | v3 | compilation error | 2026-04-29 |
 | nhentaixxx | all | v0 | compilation error | 2026-04-28 |
 | anyonemanga | ar | v0 | compilation error | 2026-04-23 |
 | mangapro | ar | v47 | compilation error | 2026-03-25 |
@@ -67,5 +69,5 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | loppytoon | vi | v2 | compilation error | 2026-04-18 |
 | mimihentai | vi | v3 | compilation error | 2026-04-18 |
 | newtruyentranh | vi | v7 | compilation error | 2026-04-18 |
-| yurigarden | vi | v5 | compilation error | 2026-04-18 |
-| yurineko | vi | v4 | compilation error | 2026-04-18 |
+| yurigarden | vi | v6 | compilation error | 2026-04-18 |
+| yurineko | vi | v5 | compilation error | 2026-04-18 |

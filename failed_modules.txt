@@ -1,11 +1,4 @@
-src:all:beauty3600000
-src:all:hentairox
-src:all:hentaizap
-src:all:koharu
-src:all:luscious
-src:all:nhentaixxx
-src:en:allanime
-src:fr:japscan
-src:ru:nudemoon
-src:vi:hentaicube
+src:all:everiaclub
+src:all:misskon
+src:vi:yurigarden
 src:vi:yurineko
