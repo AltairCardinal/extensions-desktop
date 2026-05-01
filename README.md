@@ -4,8 +4,8 @@ JVM-compatible extensions for [Mihon Desktop](https://github.com/AltairCardinal/
 
 ## Stats
 
-- Total extensions: 21
-- Compilation failures: 13 (13 fixable, 0 permanently unsupported)
+- Total extensions: 66
+- Compilation failures: 3 (3 fixable, 0 permanently unsupported)
 
 ## Installation
 
@@ -20,7 +20,7 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 |-----------|----------|---------|--------|--------------|
 | baobua | all | v5 | compilation error | 2026-05-01 |
 | beauty3600000 | all | v5 | compilation error | 2026-04-18 |
-| comikey | all | v4 | compilation error | 2026-03-25 |
+| comikey | all | v5 | compilation error | 2026-03-25 |
 | cubari | all | v26 | compilation error | 2026-03-25 |
 | everiaclub | all | v11 | compilation error | 2026-04-29 |
 | hentaienvy | all | v0 | compilation error | 2026-04-26 |
@@ -53,7 +53,7 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | reimanga | en | v1 | compilation error | 2026-04-18 |
 | spyfakku | en | v14 | compilation error | 2026-03-25 |
 | kazokuden | es | v0 | compilation error | 2026-04-20 |
-| leercapitulo | es | v14 | compilation error | 2026-03-25 |
+| leercapitulo | es | v15 | compilation error | 2026-03-25 |
 | mangasin | es | v5 | compilation error | 2026-03-25 |
 | mangasnosekai | es | v16 | compilation error | 2026-03-25 |
 | japscan | fr | v66 | compilation error | 2026-03-25 |
@@ -71,7 +71,7 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | laviniafansub | tr | v5 | compilation error | 2026-05-01 |
 | hentaicube | vi | v27 | compilation error | 2026-04-28 |
 | loppytoon | vi | v3 | compilation error | 2026-04-18 |
-| mimihentai | vi | v3 | compilation error | 2026-04-18 |
+| mimihentai | vi | v4 | compilation error | 2026-04-18 |
 | newtruyentranh | vi | v7 | compilation error | 2026-04-18 |
 | yurigarden | vi | v6 | compilation error | 2026-04-18 |
 | yurineko | vi | v5 | compilation error | 2026-04-18 |
