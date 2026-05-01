@@ -1,4 +1,13 @@
-src:all:everiaclub
-src:all:misskon
-src:vi:yurigarden
-src:vi:yurineko
+src:all:baobua
+src:all:beauty3600000
+src:all:mangafire
+src:en:allporncomic
+src:en:atsumaru
+src:en:kagane
+src:en:mangago
+src:en:spyfakku
+src:fr:japscan
+src:id:mgkomik
+src:ru:nudemoon
+src:tr:laviniafansub
+src:vi:loppytoon
