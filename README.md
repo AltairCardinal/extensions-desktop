@@ -4,8 +4,8 @@ JVM-compatible extensions for [Mihon Desktop](https://github.com/AltairCardinal/
 
 ## Stats
 
-- Total extensions: 66
-- Compilation failures: 3 (3 fixable, 0 permanently unsupported)
+- Total extensions: 51
+- Compilation failures: 6 (6 fixable, 0 permanently unsupported)
 
 ## Installation
 
@@ -24,13 +24,14 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | cubari | all | v26 | compilation error | 2026-03-25 |
 | everiaclub | all | v11 | compilation error | 2026-04-29 |
 | hentaienvy | all | v0 | compilation error | 2026-04-26 |
+| hentaiera | all | v2 | compilation error | 2026-05-02 |
 | hentairox | all | v0 | compilation error | 2026-04-28 |
 | hentaizap | all | v0 | compilation error | 2026-04-28 |
 | koharu | all | v18 | compilation error | 2026-04-28 |
 | luscious | all | v31 | compilation error | 2026-04-28 |
 | mangafire | all | v21 | compilation error | 2026-03-25 |
 | mangaup | all | v6 | compilation error | 2026-03-25 |
-| manhuarm | all | v19 | compilation error | 2026-03-25 |
+| manhuarm | all | v20 | compilation error | 2026-03-25 |
 | misskon | all | v3 | compilation error | 2026-04-29 |
 | nhentaixxx | all | v0 | compilation error | 2026-04-28 |
 | anyonemanga | ar | v0 | compilation error | 2026-04-23 |
@@ -48,15 +49,18 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | mangagofun | en | v0 | compilation error | 2026-04-26 |
 | mangaka | en | v0 | compilation error | 2026-04-26 |
 | manhwaget | en | v0 | compilation error | 2026-04-26 |
+| manhwareads | en | v0 | compilation error | 2026-05-02 |
 | octopusmanga | en | v0 | compilation error | 2026-04-26 |
 | orionscans | en | v0 | compilation error | 2026-04-26 |
 | reimanga | en | v1 | compilation error | 2026-04-18 |
 | spyfakku | en | v14 | compilation error | 2026-03-25 |
+| barmanga | es | v10 | compilation error | 2026-05-02 |
 | kazokuden | es | v0 | compilation error | 2026-04-20 |
 | leercapitulo | es | v15 | compilation error | 2026-03-25 |
 | mangasin | es | v5 | compilation error | 2026-03-25 |
 | mangasnosekai | es | v16 | compilation error | 2026-03-25 |
-| japscan | fr | v66 | compilation error | 2026-03-25 |
+| richtoscan | es | v4 | compilation error | 2026-05-02 |
+| japscan | fr | v67 | compilation error | 2026-03-25 |
 | mgkomik | id | v19 | compilation error | 2026-05-01 |
 | softkomik | id | v11 | compilation error | 2026-04-09 |
 | unext | ja | v2 | compilation error | 2026-03-25 |

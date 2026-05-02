@@ -1,3 +1,6 @@
-src:all:comikey
-src:es:leercapitulo
-src:vi:mimihentai
+src:all:hentaiera
+src:all:manhuarm
+src:en:manhwareads
+src:es:barmanga
+src:es:richtoscan
+src:fr:japscan
