@@ -1,4 +1,4 @@
-src:es:leercapitulo
-src:es:mangasin
-src:es:mangasnosekai
-src:pt:sakuramangas
+src:es:mhscans
+src:fr:japscan
+src:vi:lxhentai
+src:vi:yurigarden

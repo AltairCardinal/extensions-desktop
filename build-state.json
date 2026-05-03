@@ -641,8 +641,8 @@
   },
   "src:en:supermega": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 3
+    "timestamp": "2026-05-03",
+    "version": 4
   },
   "src:en:suryascans": {
     "status": "built",
@@ -1159,8 +1159,8 @@
   },
   "src:es:jeazscans": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 18
+    "timestamp": "2026-05-03",
+    "version": 66
   },
   "src:es:knightnoscanlation": {
     "status": "built",
@@ -1273,9 +1273,10 @@
     "version": 1
   },
   "src:es:mhscans": {
-    "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 10
+    "status": "failed",
+    "timestamp": "2026-05-03",
+    "reason": "compilation error",
+    "version": 11
   },
   "src:es:monopolyscan": {
     "status": "built",
@@ -1465,8 +1466,8 @@
   },
   "src:es:yupmanga": {
     "status": "built",
-    "timestamp": "2026-04-23",
-    "version": 8
+    "timestamp": "2026-05-03",
+    "version": 9
   },
   "src:es:yurionline": {
     "status": "built",
@@ -2387,8 +2388,8 @@
   },
   "src:ja:hachiraw": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 1
+    "timestamp": "2026-05-03",
+    "version": 2
   },
   "src:ja:ichicomi": {
     "status": "built",
@@ -2869,8 +2870,8 @@
   },
   "src:all:niadd": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 1
+    "timestamp": "2026-05-03",
+    "version": 2
   },
   "src:all:ninemanga": {
     "status": "built",
@@ -2879,8 +2880,8 @@
   },
   "src:all:novelcool": {
     "status": "built",
-    "timestamp": "2026-04-29",
-    "version": 5
+    "timestamp": "2026-05-03",
+    "version": 6
   },
   "src:all:pandachaika": {
     "status": "built",
@@ -3014,8 +3015,8 @@
   },
   "src:pt:bakai": {
     "status": "built",
-    "timestamp": "2026-05-02",
-    "version": 14
+    "timestamp": "2026-05-03",
+    "version": 15
   },
   "src:pt:blackoutcomics": {
     "status": "built",
@@ -3379,8 +3380,8 @@
   },
   "src:pt:sssscanlator": {
     "status": "built",
-    "timestamp": "2026-03-28",
-    "version": 41
+    "timestamp": "2026-05-03",
+    "version": 42
   },
   "src:pt:starlightscan": {
     "status": "built",
@@ -4228,9 +4229,10 @@
     "version": 3
   },
   "src:vi:lxhentai": {
-    "status": "built",
-    "timestamp": "2026-05-01",
-    "version": 27
+    "status": "failed",
+    "timestamp": "2026-05-03",
+    "reason": "compilation error",
+    "version": 28
   },
   "src:vi:manhuarock": {
     "status": "built",
@@ -4376,9 +4378,9 @@
   },
   "src:vi:yurigarden": {
     "status": "failed",
-    "timestamp": "2026-04-29",
+    "timestamp": "2026-05-03",
     "reason": "compilation error",
-    "version": 6
+    "version": 7
   },
   "src:vi:zettruyen": {
     "status": "built",
@@ -4587,8 +4589,8 @@
   },
   "src:zh:wnacg": {
     "status": "built",
-    "timestamp": "2026-05-02",
-    "version": 21
+    "timestamp": "2026-05-03",
+    "version": 22
   },
   "src:zh:yidan": {
     "status": "built",
@@ -6382,9 +6384,9 @@
   },
   "src:fr:japscan": {
     "status": "failed",
-    "timestamp": "2026-05-02",
+    "timestamp": "2026-05-03",
     "reason": "compilation error",
-    "version": 67
+    "version": 68
   },
   "src:ja:unext": {
     "status": "failed",

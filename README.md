@@ -4,7 +4,7 @@ JVM-compatible extensions for [Mihon Desktop](https://github.com/AltairCardinal/
 
 ## Stats
 
-- Total extensions: 6
+- Total extensions: 15
 - Compilation failures: 4 (4 fixable, 0 permanently unsupported)
 
 ## Installation
@@ -61,8 +61,9 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | leercapitulo | es | v16 | compilation error | 2026-03-25 |
 | mangasin | es | v6 | compilation error | 2026-03-25 |
 | mangasnosekai | es | v17 | compilation error | 2026-03-25 |
+| mhscans | es | v11 | compilation error | 2026-05-03 |
 | richtoscan | es | v4 | compilation error | 2026-05-02 |
-| japscan | fr | v67 | compilation error | 2026-03-25 |
+| japscan | fr | v68 | compilation error | 2026-03-25 |
 | mgkomik | id | v19 | compilation error | 2026-05-01 |
 | softkomik | id | v11 | compilation error | 2026-04-09 |
 | unext | ja | v2 | compilation error | 2026-03-25 |
@@ -77,7 +78,8 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | laviniafansub | tr | v5 | compilation error | 2026-05-01 |
 | hentaicube | vi | v27 | compilation error | 2026-04-28 |
 | loppytoon | vi | v3 | compilation error | 2026-04-18 |
+| lxhentai | vi | v28 | compilation error | 2026-05-03 |
 | mimihentai | vi | v4 | compilation error | 2026-04-18 |
 | newtruyentranh | vi | v7 | compilation error | 2026-04-18 |
-| yurigarden | vi | v6 | compilation error | 2026-04-18 |
+| yurigarden | vi | v7 | compilation error | 2026-04-18 |
 | yurineko | vi | v5 | compilation error | 2026-04-18 |
