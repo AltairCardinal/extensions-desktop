@@ -108,9 +108,9 @@
   },
   "src:all:everiaclub": {
     "status": "failed",
-    "timestamp": "2026-04-29",
+    "timestamp": "2026-05-03",
     "reason": "compilation error",
-    "version": 11
+    "version": 12
   },
   "src:all:everiaclubcom": {
     "status": "built",
@@ -981,9 +981,10 @@
     "version": 0
   },
   "src:es:catharsisworld": {
-    "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 10
+    "status": "failed",
+    "timestamp": "2026-05-03",
+    "reason": "compilation error",
+    "version": 11
   },
   "src:es:catmanhwas": {
     "status": "built",
@@ -1056,9 +1057,10 @@
     "version": 0
   },
   "src:es:emperorscan": {
-    "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 10
+    "status": "failed",
+    "timestamp": "2026-05-03",
+    "reason": "compilation error",
+    "version": 11
   },
   "src:es:escaneodeleyendas": {
     "status": "built",
@@ -7068,6 +7070,11 @@
     "status": "failed",
     "timestamp": "2026-05-02",
     "reason": "compilation error",
+    "version": 0
+  },
+  "src:es:elscansemanal": {
+    "status": "built",
+    "timestamp": "2026-05-03",
     "version": 0
   }
 }

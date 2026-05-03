@@ -1,6 +1,3 @@
-src:all:hentaiera
-src:all:manhuarm
-src:en:manhwareads
-src:es:barmanga
-src:es:richtoscan
-src:fr:japscan
+src:all:everiaclub
+src:es:catharsisworld
+src:es:emperorscan
