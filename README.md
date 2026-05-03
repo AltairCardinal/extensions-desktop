@@ -4,8 +4,8 @@ JVM-compatible extensions for [Mihon Desktop](https://github.com/AltairCardinal/
 
 ## Stats
 
-- Total extensions: 7
-- Compilation failures: 3 (3 fixable, 0 permanently unsupported)
+- Total extensions: 6
+- Compilation failures: 4 (4 fixable, 0 permanently unsupported)
 
 ## Installation
 
@@ -58,9 +58,9 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | catharsisworld | es | v11 | compilation error | 2026-05-03 |
 | emperorscan | es | v11 | compilation error | 2026-05-03 |
 | kazokuden | es | v0 | compilation error | 2026-04-20 |
-| leercapitulo | es | v15 | compilation error | 2026-03-25 |
-| mangasin | es | v5 | compilation error | 2026-03-25 |
-| mangasnosekai | es | v16 | compilation error | 2026-03-25 |
+| leercapitulo | es | v16 | compilation error | 2026-03-25 |
+| mangasin | es | v6 | compilation error | 2026-03-25 |
+| mangasnosekai | es | v17 | compilation error | 2026-03-25 |
 | richtoscan | es | v4 | compilation error | 2026-05-02 |
 | japscan | fr | v67 | compilation error | 2026-03-25 |
 | mgkomik | id | v19 | compilation error | 2026-05-01 |
@@ -71,7 +71,7 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | nebulosascan | pt | v0 | compilation error | 2026-04-23 |
 | randomscan | pt | v58 | compilation error | 2026-03-25 |
 | rfdragonscan | pt | v0 | compilation error | 2026-03-25 |
-| sakuramangas | pt | v4 | compilation error | 2026-03-25 |
+| sakuramangas | pt | v5 | compilation error | 2026-03-25 |
 | tiamanhwa | pt | v3 | compilation error | 2026-04-23 |
 | nudemoon | ru | v28 | compilation error | 2026-04-28 |
 | laviniafansub | tr | v5 | compilation error | 2026-05-01 |

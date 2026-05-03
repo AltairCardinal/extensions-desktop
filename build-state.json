@@ -6364,21 +6364,21 @@
   },
   "src:es:leercapitulo": {
     "status": "failed",
-    "timestamp": "2026-05-01",
+    "timestamp": "2026-05-03",
     "reason": "compilation error",
-    "version": 15
+    "version": 16
   },
   "src:es:mangasin": {
     "status": "failed",
-    "timestamp": "2026-03-25",
+    "timestamp": "2026-05-03",
     "reason": "compilation error",
-    "version": 5
+    "version": 6
   },
   "src:es:mangasnosekai": {
     "status": "failed",
-    "timestamp": "2026-03-25",
+    "timestamp": "2026-05-03",
     "reason": "compilation error",
-    "version": 16
+    "version": 17
   },
   "src:fr:japscan": {
     "status": "failed",
@@ -6430,9 +6430,9 @@
   },
   "src:pt:sakuramangas": {
     "status": "failed",
-    "timestamp": "2026-03-25",
+    "timestamp": "2026-05-03",
     "reason": "compilation error",
-    "version": 4
+    "version": 5
   },
   "src:ar:mangapro": {
     "status": "failed",

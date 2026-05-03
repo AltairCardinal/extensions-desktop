@@ -1,3 +1,4 @@
-src:all:everiaclub
-src:es:catharsisworld
-src:es:emperorscan
+src:es:leercapitulo
+src:es:mangasin
+src:es:mangasnosekai
+src:pt:sakuramangas
