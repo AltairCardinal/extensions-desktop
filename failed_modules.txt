@@ -1,4 +1,5 @@
+src:all:dragonballmultiverse
 src:es:mhscans
 src:fr:japscan
-src:vi:lxhentai
-src:vi:yurigarden
+src:tr:hayalistic
+src:tr:niverafansub

@@ -4,8 +4,8 @@ JVM-compatible extensions for [Mihon Desktop](https://github.com/AltairCardinal/
 
 ## Stats
 
-- Total extensions: 15
-- Compilation failures: 4 (4 fixable, 0 permanently unsupported)
+- Total extensions: 17
+- Compilation failures: 5 (5 fixable, 0 permanently unsupported)
 
 ## Installation
 
@@ -22,6 +22,7 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | beauty3600000 | all | v5 | compilation error | 2026-04-18 |
 | comikey | all | v5 | compilation error | 2026-03-25 |
 | cubari | all | v26 | compilation error | 2026-03-25 |
+| dragonballmultiverse | all | v7 | compilation error | 2026-05-04 |
 | everiaclub | all | v12 | compilation error | 2026-04-29 |
 | hentaienvy | all | v0 | compilation error | 2026-04-26 |
 | hentaiera | all | v2 | compilation error | 2026-05-02 |
@@ -61,9 +62,9 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | leercapitulo | es | v16 | compilation error | 2026-03-25 |
 | mangasin | es | v6 | compilation error | 2026-03-25 |
 | mangasnosekai | es | v17 | compilation error | 2026-03-25 |
-| mhscans | es | v11 | compilation error | 2026-05-03 |
+| mhscans | es | v12 | compilation error | 2026-05-03 |
 | richtoscan | es | v4 | compilation error | 2026-05-02 |
-| japscan | fr | v68 | compilation error | 2026-03-25 |
+| japscan | fr | v69 | compilation error | 2026-03-25 |
 | mgkomik | id | v19 | compilation error | 2026-05-01 |
 | softkomik | id | v11 | compilation error | 2026-04-09 |
 | unext | ja | v2 | compilation error | 2026-03-25 |
@@ -75,7 +76,9 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | sakuramangas | pt | v5 | compilation error | 2026-03-25 |
 | tiamanhwa | pt | v3 | compilation error | 2026-04-23 |
 | nudemoon | ru | v28 | compilation error | 2026-04-28 |
+| hayalistic | tr | v5 | compilation error | 2026-05-04 |
 | laviniafansub | tr | v5 | compilation error | 2026-05-01 |
+| niverafansub | tr | v3 | compilation error | 2026-05-04 |
 | hentaicube | vi | v27 | compilation error | 2026-04-28 |
 | loppytoon | vi | v3 | compilation error | 2026-04-18 |
 | lxhentai | vi | v28 | compilation error | 2026-05-03 |

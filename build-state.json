@@ -92,9 +92,10 @@
     "version": 9
   },
   "src:all:dragonballmultiverse": {
-    "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 6
+    "status": "failed",
+    "timestamp": "2026-05-04",
+    "reason": "compilation error",
+    "version": 7
   },
   "src:all:ehentai": {
     "status": "built",
@@ -1274,9 +1275,9 @@
   },
   "src:es:mhscans": {
     "status": "failed",
-    "timestamp": "2026-05-03",
+    "timestamp": "2026-05-04",
     "reason": "compilation error",
-    "version": 11
+    "version": 12
   },
   "src:es:monopolyscan": {
     "status": "built",
@@ -1320,8 +1321,8 @@
   },
   "src:es:plottwistnofansub": {
     "status": "built",
-    "timestamp": "2026-05-01",
-    "version": 12
+    "timestamp": "2026-05-04",
+    "version": 13
   },
   "src:es:ragnarokscanlation": {
     "status": "built",
@@ -2017,8 +2018,8 @@
   },
   "src:id:mikoroku": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 5
+    "timestamp": "2026-05-04",
+    "version": 6
   },
   "src:id:narasininja": {
     "status": "built",
@@ -3175,8 +3176,8 @@
   },
   "src:pt:leituramanga": {
     "status": "built",
-    "timestamp": "2026-04-23",
-    "version": 3
+    "timestamp": "2026-05-04",
+    "version": 4
   },
   "src:pt:ler999": {
     "status": "built",
@@ -3380,8 +3381,8 @@
   },
   "src:pt:sssscanlator": {
     "status": "built",
-    "timestamp": "2026-05-03",
-    "version": 42
+    "timestamp": "2026-05-04",
+    "version": 43
   },
   "src:pt:starlightscan": {
     "status": "built",
@@ -3881,9 +3882,10 @@
     "version": 42
   },
   "src:tr:hayalistic": {
-    "status": "built",
-    "timestamp": "2026-04-14",
-    "version": 4
+    "status": "failed",
+    "timestamp": "2026-05-04",
+    "reason": "compilation error",
+    "version": 5
   },
   "src:tr:holyscans": {
     "status": "built",
@@ -4012,9 +4014,10 @@
     "version": 0
   },
   "src:tr:niverafansub": {
-    "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 2
+    "status": "failed",
+    "timestamp": "2026-05-04",
+    "reason": "compilation error",
+    "version": 3
   },
   "src:tr:opiatoon": {
     "status": "built",
@@ -4246,8 +4249,8 @@
   },
   "src:vi:mimi": {
     "status": "built",
-    "timestamp": "2026-04-26",
-    "version": 3
+    "timestamp": "2026-05-04",
+    "version": 4
   },
   "src:vi:mimihentai": {
     "status": "failed",
@@ -5041,8 +5044,8 @@
   },
   "src:en:artlapsa": {
     "status": "built",
-    "timestamp": "2026-04-29",
-    "version": 4
+    "timestamp": "2026-05-04",
+    "version": 5
   },
   "src:en:arvencomics": {
     "status": "built",
@@ -5413,8 +5416,8 @@
   },
   "src:en:greedscans": {
     "status": "built",
-    "timestamp": "2026-04-14",
-    "version": 1
+    "timestamp": "2026-05-04",
+    "version": 32
   },
   "src:en:grimscans": {
     "status": "built",
@@ -5713,8 +5716,8 @@
   },
   "src:en:luminaretranslations": {
     "status": "built",
-    "timestamp": "2026-04-08",
-    "version": 2
+    "timestamp": "2026-05-04",
+    "version": 3
   },
   "src:en:lunatoons": {
     "status": "built",
@@ -5728,8 +5731,8 @@
   },
   "src:en:madarascans": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 1
+    "timestamp": "2026-05-04",
+    "version": 2
   },
   "src:en:madokami": {
     "status": "built",
@@ -6288,8 +6291,8 @@
   },
   "src:en:myhentaigallery": {
     "status": "built",
-    "timestamp": "2026-05-01",
-    "version": 7
+    "timestamp": "2026-05-04",
+    "version": 8
   },
   "src:en:necroscans": {
     "status": "built",
@@ -6384,9 +6387,9 @@
   },
   "src:fr:japscan": {
     "status": "failed",
-    "timestamp": "2026-05-03",
+    "timestamp": "2026-05-04",
     "reason": "compilation error",
-    "version": 68
+    "version": 69
   },
   "src:ja:unext": {
     "status": "failed",
@@ -7078,5 +7081,10 @@
     "status": "built",
     "timestamp": "2026-05-03",
     "version": 0
+  },
+  "src:en:leslievictims": {
+    "status": "built",
+    "timestamp": "2026-05-04",
+    "version": 1
   }
 }
