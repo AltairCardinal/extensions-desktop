@@ -1,5 +1,7 @@
 src:all:dragonballmultiverse
-src:es:mhscans
-src:fr:japscan
-src:tr:hayalistic
-src:tr:niverafansub
+src:en:atsumaru
+src:es:mangasnosekai
+src:es:nartag
+src:pt:amuy
+src:pt:kakuseiproject
+src:pt:noindexscan

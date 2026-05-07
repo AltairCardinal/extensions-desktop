@@ -4,8 +4,8 @@ JVM-compatible extensions for [Mihon Desktop](https://github.com/AltairCardinal/
 
 ## Stats
 
-- Total extensions: 17
-- Compilation failures: 5 (5 fixable, 0 permanently unsupported)
+- Total extensions: 25
+- Compilation failures: 7 (7 fixable, 0 permanently unsupported)
 
 ## Installation
 
@@ -22,7 +22,7 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | beauty3600000 | all | v5 | compilation error | 2026-04-18 |
 | comikey | all | v5 | compilation error | 2026-03-25 |
 | cubari | all | v26 | compilation error | 2026-03-25 |
-| dragonballmultiverse | all | v7 | compilation error | 2026-05-04 |
+| dragonballmultiverse | all | v8 | compilation error | 2026-05-04 |
 | everiaclub | all | v12 | compilation error | 2026-04-29 |
 | hentaienvy | all | v0 | compilation error | 2026-04-26 |
 | hentaiera | all | v2 | compilation error | 2026-05-02 |
@@ -39,7 +39,7 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | mangapro | ar | v47 | compilation error | 2026-03-25 |
 | allanime | en | v15 | compilation error | 2026-04-26 |
 | allporncomic | en | v2 | compilation error | 2026-05-01 |
-| atsumaru | en | v15 | compilation error | 2026-05-01 |
+| atsumaru | en | v16 | compilation error | 2026-05-01 |
 | bookwalker | en | v5 | compilation error | 2026-03-25 |
 | bunmanga | en | v0 | compilation error | 2026-04-26 |
 | comix | en | v11 | compilation error | 2026-04-14 |
@@ -61,16 +61,20 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | kazokuden | es | v0 | compilation error | 2026-04-20 |
 | leercapitulo | es | v16 | compilation error | 2026-03-25 |
 | mangasin | es | v6 | compilation error | 2026-03-25 |
-| mangasnosekai | es | v17 | compilation error | 2026-03-25 |
+| mangasnosekai | es | v18 | compilation error | 2026-03-25 |
 | mhscans | es | v12 | compilation error | 2026-05-03 |
+| nartag | es | v5 | compilation error | 2026-05-07 |
 | richtoscan | es | v4 | compilation error | 2026-05-02 |
 | japscan | fr | v69 | compilation error | 2026-03-25 |
 | mgkomik | id | v19 | compilation error | 2026-05-01 |
 | softkomik | id | v11 | compilation error | 2026-04-09 |
 | unext | ja | v2 | compilation error | 2026-03-25 |
 | zebrack | ja | v1 | compilation error | 2026-03-25 |
+| amuy | pt | v2 | compilation error | 2026-05-07 |
+| kakuseiproject | pt | v2 | compilation error | 2026-05-07 |
 | mrtenzus | pt | v0 | compilation error | 2026-04-23 |
 | nebulosascan | pt | v0 | compilation error | 2026-04-23 |
+| noindexscan | pt | v4 | compilation error | 2026-05-07 |
 | randomscan | pt | v58 | compilation error | 2026-03-25 |
 | rfdragonscan | pt | v0 | compilation error | 2026-03-25 |
 | sakuramangas | pt | v5 | compilation error | 2026-03-25 |
