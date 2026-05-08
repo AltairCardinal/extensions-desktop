@@ -3278,8 +3278,8 @@
   },
   "src:pt:manhastro": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 55
+    "timestamp": "2026-05-08",
+    "version": 56
   },
   "src:pt:mediocretoons": {
     "status": "built",
@@ -3543,8 +3543,8 @@
   },
   "src:ru:inkstory": {
     "status": "built",
-    "timestamp": "2026-04-16",
-    "version": 2
+    "timestamp": "2026-05-08",
+    "version": 3
   },
   "src:ru:mangabuff": {
     "status": "failed",
@@ -5242,9 +5242,9 @@
   },
   "src:en:comix": {
     "status": "failed",
-    "timestamp": "2026-05-07",
+    "timestamp": "2026-05-08",
     "reason": "compilation error",
-    "version": 12
+    "version": 14
   },
   "src:en:cucumbermanga": {
     "status": "built",
@@ -6911,8 +6911,8 @@
   },
   "src:es:onfmangas": {
     "status": "built",
-    "timestamp": "2026-04-23",
-    "version": 1
+    "timestamp": "2026-05-08",
+    "version": 2
   },
   "src:es:platinumlilyscan": {
     "status": "built",
