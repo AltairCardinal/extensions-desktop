@@ -4,8 +4,8 @@ JVM-compatible extensions for [Mihon Desktop](https://github.com/AltairCardinal/
 
 ## Stats
 
-- Total extensions: 7
-- Compilation failures: 0 (0 fixable, 0 permanently unsupported)
+- Total extensions: 15
+- Compilation failures: 4 (4 fixable, 0 permanently unsupported)
 
 ## Installation
 
@@ -54,7 +54,7 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | mangapro | ar | v47 | compilation error | 2026-03-25 |
 | allanime | en | v16 | compilation error | 2026-04-26 |
 | allporncomic | en | v2 | compilation error | 2026-05-01 |
-| atsumaru | en | v16 | compilation error | 2026-05-01 |
+| atsumaru | en | v17 | compilation error | 2026-05-01 |
 | bookwalker | en | v5 | compilation error | 2026-03-25 |
 | bunmanga | en | v0 | compilation error | 2026-04-26 |
 | comix | en | v14 | compilation error | 2026-04-14 |
@@ -62,11 +62,12 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | cutiecomics | en | v4 | compilation error | 2026-05-07 |
 | hentaihere | en | v7 | compilation error | 2026-05-07 |
 | hentainexus | en | v15 | compilation error | 2026-05-07 |
-| infinityscans | en | v7 | compilation error | 2026-03-25 |
+| infinityscans | en | v8 | compilation error | 2026-03-25 |
 | jnovel | en | v1 | compilation error | 2026-04-26 |
 | kagane | en | v24 | compilation error | 2026-03-25 |
 | kmanga | en | v5 | compilation error | 2026-05-07 |
 | likemanga | en | v7 | compilation error | 2026-05-07 |
+| linkmanga | en | v0 | compilation error | 2026-05-09 |
 | mangago | en | v32 | compilation error | 2026-03-25 |
 | mangagofun | en | v0 | compilation error | 2026-04-26 |
 | mangaka | en | v0 | compilation error | 2026-04-26 |
@@ -94,6 +95,7 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | mangasnosekai | es | v18 | compilation error | 2026-03-25 |
 | mhscans | es | v12 | compilation error | 2026-05-03 |
 | nartag | es | v5 | compilation error | 2026-05-07 |
+| ragnarokscanlation | es | v3 | compilation error | 2026-05-09 |
 | richtoscan | es | v4 | compilation error | 2026-05-02 |
 | bigsolo | fr | v5 | compilation error | 2026-05-07 |
 | japscan | fr | v69 | compilation error | 2026-03-25 |
@@ -132,7 +134,6 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | hayalistic | tr | v5 | compilation error | 2026-05-04 |
 | laviniafansub | tr | v5 | compilation error | 2026-05-01 |
 | niverafansub | tr | v3 | compilation error | 2026-05-04 |
-| dgmanga | uk | v1 | compilation error | 2026-05-07 |
 | faust | uk | v1 | compilation error | 2026-05-07 |
 | mangainua | uk | v9 | compilation error | 2026-05-07 |
 | hentaicube | vi | v27 | compilation error | 2026-04-28 |
