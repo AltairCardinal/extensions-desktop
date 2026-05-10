@@ -959,9 +959,9 @@
   },
   "src:es:barmanga": {
     "status": "failed",
-    "timestamp": "2026-05-02",
+    "timestamp": "2026-05-10",
     "reason": "compilation error",
-    "version": 10
+    "version": 11
   },
   "src:es:begatranslation": {
     "status": "built",
@@ -1604,8 +1604,8 @@
   },
   "src:fr:mangamoins": {
     "status": "built",
-    "timestamp": "2026-05-02",
-    "version": 5
+    "timestamp": "2026-05-10",
+    "version": 6
   },
   "src:fr:manganova": {
     "status": "failed",
@@ -5243,9 +5243,9 @@
   },
   "src:en:comix": {
     "status": "failed",
-    "timestamp": "2026-05-08",
+    "timestamp": "2026-05-10",
     "reason": "compilation error",
-    "version": 14
+    "version": 15
   },
   "src:en:cucumbermanga": {
     "status": "built",
@@ -6779,8 +6779,8 @@
   },
   "src:en:newmanhwa": {
     "status": "built",
-    "timestamp": "2026-04-14",
-    "version": 0
+    "timestamp": "2026-05-10",
+    "version": 33
   },
   "src:es:enchiladascan": {
     "status": "built",

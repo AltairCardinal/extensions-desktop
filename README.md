@@ -4,8 +4,8 @@ JVM-compatible extensions for [Mihon Desktop](https://github.com/AltairCardinal/
 
 ## Stats
 
-- Total extensions: 15
-- Compilation failures: 4 (4 fixable, 0 permanently unsupported)
+- Total extensions: 8
+- Compilation failures: 2 (2 fixable, 0 permanently unsupported)
 
 ## Installation
 
@@ -57,7 +57,7 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | atsumaru | en | v17 | compilation error | 2026-05-01 |
 | bookwalker | en | v5 | compilation error | 2026-03-25 |
 | bunmanga | en | v0 | compilation error | 2026-04-26 |
-| comix | en | v14 | compilation error | 2026-04-14 |
+| comix | en | v15 | compilation error | 2026-04-14 |
 | crowscans | en | v0 | compilation error | 2026-05-07 |
 | cutiecomics | en | v4 | compilation error | 2026-05-07 |
 | hentaihere | en | v7 | compilation error | 2026-05-07 |
@@ -84,7 +84,7 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | spyfakku | en | v14 | compilation error | 2026-03-25 |
 | vizshonenjump | en | v24 | compilation error | 2026-05-07 |
 | weebcentral | en | v20 | compilation error | 2026-05-07 |
-| barmanga | es | v10 | compilation error | 2026-05-02 |
+| barmanga | es | v11 | compilation error | 2026-05-02 |
 | catharsisworld | es | v11 | compilation error | 2026-05-03 |
 | emperorscan | es | v11 | compilation error | 2026-05-03 |
 | hentaimode | es | v6 | compilation error | 2026-05-07 |

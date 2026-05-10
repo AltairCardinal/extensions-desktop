@@ -1,4 +1,2 @@
-src:en:atsumaru
-src:en:infinityscans
-src:en:linkmanga
-src:es:ragnarokscanlation
+src:en:comix
+src:es:barmanga
