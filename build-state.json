@@ -1253,9 +1253,10 @@
     "version": 16
   },
   "src:es:manhwalatino": {
-    "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 9
+    "status": "failed",
+    "timestamp": "2026-05-10",
+    "reason": "compilation error",
+    "version": 10
   },
   "src:es:manhwaonline": {
     "status": "built",
@@ -1736,8 +1737,8 @@
   },
   "src:id:Luvyaa": {
     "status": "built",
-    "timestamp": "2026-04-12",
-    "version": 3
+    "timestamp": "2026-05-10",
+    "version": 4
   },
   "src:id:aarlas": {
     "status": "built",
@@ -2119,8 +2120,8 @@
   },
   "src:id:shinigami": {
     "status": "built",
-    "timestamp": "2026-03-28",
-    "version": 77
+    "timestamp": "2026-05-10",
+    "version": 78
   },
   "src:id:shirakami": {
     "status": "built",
@@ -3492,8 +3493,8 @@
   },
   "src:pt:yomumangas": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 4
+    "timestamp": "2026-05-10",
+    "version": 5
   },
   "src:pt:yugenmangas": {
     "status": "built",
@@ -5430,8 +5431,8 @@
   },
   "src:en:flamecomics": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 47
+    "timestamp": "2026-05-10",
+    "version": 48
   },
   "src:en:frierenonline": {
     "status": "built",
@@ -5854,8 +5855,8 @@
   },
   "src:en:mangacloud": {
     "status": "built",
-    "timestamp": "2026-05-08",
-    "version": 4
+    "timestamp": "2026-05-10",
+    "version": 5
   },
   "src:en:mangacute": {
     "status": "built",

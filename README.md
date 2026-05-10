@@ -4,8 +4,8 @@ JVM-compatible extensions for [Mihon Desktop](https://github.com/AltairCardinal/
 
 ## Stats
 
-- Total extensions: 8
-- Compilation failures: 2 (2 fixable, 0 permanently unsupported)
+- Total extensions: 11
+- Compilation failures: 1 (1 fixable, 0 permanently unsupported)
 
 ## Installation
 
@@ -93,6 +93,7 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | leercapitulo | es | v16 | compilation error | 2026-03-25 |
 | mangasin | es | v6 | compilation error | 2026-03-25 |
 | mangasnosekai | es | v18 | compilation error | 2026-03-25 |
+| manhwalatino | es | v10 | compilation error | 2026-05-10 |
 | mhscans | es | v12 | compilation error | 2026-05-03 |
 | nartag | es | v5 | compilation error | 2026-05-07 |
 | ragnarokscanlation | es | v3 | compilation error | 2026-05-09 |

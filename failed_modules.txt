@@ -1,2 +1,1 @@
-src:en:comix
-src:es:barmanga
+src:es:manhwalatino
