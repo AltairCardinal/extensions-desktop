@@ -3524,8 +3524,8 @@
   },
   "src:ru:comx": {
     "status": "built",
-    "timestamp": "2026-05-01",
-    "version": 35
+    "timestamp": "2026-05-11",
+    "version": 36
   },
   "src:ru:desu": {
     "status": "failed",
@@ -5244,9 +5244,9 @@
   },
   "src:en:comix": {
     "status": "failed",
-    "timestamp": "2026-05-10",
+    "timestamp": "2026-05-11",
     "reason": "compilation error",
-    "version": 15
+    "version": 16
   },
   "src:en:cucumbermanga": {
     "status": "built",
@@ -6275,8 +6275,8 @@
   },
   "src:en:manhwaz": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 35
+    "timestamp": "2026-05-11",
+    "version": 36
   },
   "src:en:manta": {
     "status": "built",

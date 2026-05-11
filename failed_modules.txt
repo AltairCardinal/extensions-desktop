@@ -1,1 +1,1 @@
-src:es:manhwalatino
+src:en:comix
