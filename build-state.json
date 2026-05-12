@@ -4195,9 +4195,10 @@
     "version": 1
   },
   "src:tr:yaoiflix": {
-    "status": "built",
-    "timestamp": "2026-04-18",
-    "version": 4
+    "status": "failed",
+    "timestamp": "2026-05-12",
+    "reason": "compilation error",
+    "version": 5
   },
   "src:tr:yaoimangaoku": {
     "status": "built",
@@ -5091,9 +5092,10 @@
     "version": 0
   },
   "src:en:aquamanga": {
-    "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 10
+    "status": "failed",
+    "timestamp": "2026-05-12",
+    "reason": "compilation error",
+    "version": 11
   },
   "src:en:arcrelight": {
     "status": "built",
@@ -6324,8 +6326,8 @@
   },
   "src:en:mistscans": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 0
+    "timestamp": "2026-05-12",
+    "version": 1
   },
   "src:en:monochromecustom": {
     "status": "built",
@@ -6928,8 +6930,8 @@
   },
   "src:es:onfmangas": {
     "status": "built",
-    "timestamp": "2026-05-09",
-    "version": 3
+    "timestamp": "2026-05-12",
+    "version": 4
   },
   "src:es:platinumlilyscan": {
     "status": "built",
