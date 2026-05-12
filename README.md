@@ -4,8 +4,8 @@ JVM-compatible extensions for [Mihon Desktop](https://github.com/AltairCardinal/
 
 ## Stats
 
-- Total extensions: 8
-- Compilation failures: 1 (1 fixable, 0 permanently unsupported)
+- Total extensions: 6
+- Compilation failures: 35 (35 fixable, 0 permanently unsupported)
 
 ## Installation
 
@@ -38,12 +38,13 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | mangafire | all | v21 | compilation error | 2026-03-25 |
 | mangaplus | all | v61 | compilation error | 2026-05-07 |
 | mangapluscreators | all | v3 | compilation error | 2026-05-07 |
-| mangaup | all | v7 | compilation error | 2026-03-25 |
+| mangaup | all | v8 | compilation error | 2026-03-25 |
 | manhuarm | all | v20 | compilation error | 2026-03-25 |
 | misskon | all | v3 | compilation error | 2026-04-29 |
 | namicomi | all | v5 | compilation error | 2026-05-07 |
 | nhentaixxx | all | v0 | compilation error | 2026-04-28 |
 | pandachaika | all | v3 | compilation error | 2026-05-07 |
+| peppercarrot | all | v5 | compilation error | 2026-05-12 |
 | projectsuki | all | v7 | compilation error | 2026-05-07 |
 | simplycosplay | all | v3 | compilation error | 2026-05-07 |
 | taddyink | all | v2 | compilation error | 2026-05-07 |
@@ -51,24 +52,26 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | xasiatalbums | all | v3 | compilation error | 2026-05-07 |
 | xinmeitulu | all | v7 | compilation error | 2026-05-07 |
 | anyonemanga | ar | v0 | compilation error | 2026-04-23 |
+| goonscans | ar | v0 | compilation error | 2026-05-12 |
 | mangapro | ar | v47 | compilation error | 2026-03-25 |
-| allanime | en | v16 | compilation error | 2026-04-26 |
+| allanime | en | v17 | compilation error | 2026-04-26 |
 | allporncomic | en | v2 | compilation error | 2026-05-01 |
 | atsumaru | en | v17 | compilation error | 2026-05-01 |
+| bbato | en | v1 | compilation error | 2026-05-12 |
 | bookwalker | en | v5 | compilation error | 2026-03-25 |
 | bunmanga | en | v0 | compilation error | 2026-04-26 |
-| comix | en | v16 | compilation error | 2026-04-14 |
+| comix | en | v17 | compilation error | 2026-04-14 |
 | crowscans | en | v0 | compilation error | 2026-05-07 |
 | cutiecomics | en | v4 | compilation error | 2026-05-07 |
 | hentaihere | en | v7 | compilation error | 2026-05-07 |
 | hentainexus | en | v15 | compilation error | 2026-05-07 |
 | infinityscans | en | v8 | compilation error | 2026-03-25 |
-| jnovel | en | v1 | compilation error | 2026-04-26 |
+| jnovel | en | v2 | compilation error | 2026-04-26 |
 | kagane | en | v24 | compilation error | 2026-03-25 |
 | kmanga | en | v5 | compilation error | 2026-05-07 |
 | likemanga | en | v7 | compilation error | 2026-05-07 |
 | linkmanga | en | v0 | compilation error | 2026-05-09 |
-| mangago | en | v32 | compilation error | 2026-03-25 |
+| mangago | en | v33 | compilation error | 2026-03-25 |
 | mangagofun | en | v0 | compilation error | 2026-04-26 |
 | mangaka | en | v0 | compilation error | 2026-04-26 |
 | manhwaget | en | v0 | compilation error | 2026-04-26 |
@@ -76,6 +79,7 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | mgreadio | en | v1 | compilation error | 2026-05-07 |
 | myhentaigallery | en | v9 | compilation error | 2026-05-07 |
 | ninehentai | en | v5 | compilation error | 2026-05-07 |
+| nixmanga | en | v1 | compilation error | 2026-05-12 |
 | octopusmanga | en | v0 | compilation error | 2026-04-26 |
 | oppaistream | en | v5 | compilation error | 2026-05-07 |
 | orionscans | en | v0 | compilation error | 2026-04-26 |
@@ -85,19 +89,21 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | vizshonenjump | en | v24 | compilation error | 2026-05-07 |
 | weebcentral | en | v20 | compilation error | 2026-05-07 |
 | barmanga | es | v11 | compilation error | 2026-05-02 |
-| catharsisworld | es | v11 | compilation error | 2026-05-03 |
+| catharsisworld | es | v12 | compilation error | 2026-05-03 |
 | emperorscan | es | v11 | compilation error | 2026-05-03 |
 | hentaimode | es | v6 | compilation error | 2026-05-07 |
 | kazokuden | es | v0 | compilation error | 2026-04-20 |
 | lectormonline | es | v2 | compilation error | 2026-05-07 |
 | leercapitulo | es | v16 | compilation error | 2026-03-25 |
-| mangasin | es | v6 | compilation error | 2026-03-25 |
+| mangasin | es | v7 | compilation error | 2026-03-25 |
 | mangasnosekai | es | v18 | compilation error | 2026-03-25 |
 | manhwalatino | es | v10 | compilation error | 2026-05-10 |
 | mhscans | es | v12 | compilation error | 2026-05-03 |
 | nartag | es | v5 | compilation error | 2026-05-07 |
+| neomanga | es | v1 | compilation error | 2026-05-12 |
 | ragnarokscanlation | es | v3 | compilation error | 2026-05-09 |
 | richtoscan | es | v4 | compilation error | 2026-05-02 |
+| topcomicpornonet | es | v0 | compilation error | 2026-05-12 |
 | bigsolo | fr | v5 | compilation error | 2026-05-07 |
 | japscan | fr | v69 | compilation error | 2026-03-25 |
 | manganova | fr | v2 | compilation error | 2026-05-07 |
@@ -107,7 +113,17 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | komikav | id | v4 | compilation error | 2026-05-07 |
 | mgkomik | id | v19 | compilation error | 2026-05-01 |
 | softkomik | id | v11 | compilation error | 2026-04-09 |
+| comicfuz | ja | v3 | compilation error | 2026-05-12 |
+| corocoroonline | ja | v10 | compilation error | 2026-05-12 |
+| flowercomics | ja | v2 | compilation error | 2026-05-12 |
+| gorakuweb | ja | v2 | compilation error | 2026-05-12 |
 | hachiraw | ja | v3 | compilation error | 2026-05-07 |
+| kadocomi | ja | v3 | compilation error | 2026-05-12 |
+| mangamee | ja | v2 | compilation error | 2026-05-12 |
+| mangameets | ja | v1 | compilation error | 2026-05-12 |
+| mangaone | ja | v2 | compilation error | 2026-05-12 |
+| mokuro | ja | v3 | compilation error | 2026-05-12 |
+| nicomanga | ja | v13 | compilation error | 2026-05-12 |
 | twi4 | ja | v6 | compilation error | 2026-05-07 |
 | unext | ja | v2 | compilation error | 2026-03-25 |
 | zebrack | ja | v1 | compilation error | 2026-03-25 |
@@ -115,7 +131,8 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | amuy | pt | v2 | compilation error | 2026-05-07 |
 | brasilhentai | pt | v4 | compilation error | 2026-05-07 |
 | exhentainetbr | pt | v3 | compilation error | 2026-05-07 |
-| kakuseiproject | pt | v2 | compilation error | 2026-05-07 |
+| kakuseiproject | pt | v3 | compilation error | 2026-05-07 |
+| leitordemangas | pt | v0 | compilation error | 2026-05-12 |
 | mangadash | pt | v1 | compilation error | 2026-05-07 |
 | mrtenzus | pt | v0 | compilation error | 2026-04-23 |
 | nebulosascan | pt | v0 | compilation error | 2026-04-23 |
@@ -134,22 +151,31 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | hattorimanga | tr | v43 | compilation error | 2026-05-07 |
 | hayalistic | tr | v5 | compilation error | 2026-05-04 |
 | laviniafansub | tr | v5 | compilation error | 2026-05-01 |
+| mangitto | tr | v1 | compilation error | 2026-05-12 |
 | niverafansub | tr | v3 | compilation error | 2026-05-04 |
 | faust | uk | v1 | compilation error | 2026-05-07 |
-| mangainua | uk | v9 | compilation error | 2026-05-07 |
+| mangainua | uk | v10 | compilation error | 2026-05-07 |
 | hentaicube | vi | v27 | compilation error | 2026-04-28 |
 | loppytoon | vi | v3 | compilation error | 2026-04-18 |
 | lxhentai | vi | v29 | compilation error | 2026-05-03 |
+| medamtruyen | vi | v3 | compilation error | 2026-05-12 |
 | mimi | vi | v5 | compilation error | 2026-05-07 |
 | mimihentai | vi | v4 | compilation error | 2026-04-18 |
 | moetruyen | vi | v3 | compilation error | 2026-05-07 |
 | newtruyentranh | vi | v7 | compilation error | 2026-04-18 |
+| panomic | vi | v2 | compilation error | 2026-05-12 |
+| soaicacomic | vi | v2 | compilation error | 2026-05-12 |
+| teamlanhlung | vi | v29 | compilation error | 2026-05-12 |
+| tusachxinhxinh | vi | v2 | compilation error | 2026-05-12 |
 | yurigarden | vi | v7 | compilation error | 2026-04-18 |
 | yurineko | vi | v5 | compilation error | 2026-04-18 |
+| bakamh | zh | v8 | compilation error | 2026-05-12 |
 | baozimanhua | zh | v27 | compilation error | 2026-05-07 |
+| creativecomic | zh | v2 | compilation error | 2026-05-12 |
 | jinmantiantang | zh | v56 | compilation error | 2026-05-07 |
 | komiic | zh | v6 | compilation error | 2026-05-07 |
 | kuaikanmanhua | zh | v12 | compilation error | 2026-05-07 |
 | mangabz | zh | v13 | compilation error | 2026-05-07 |
+| mangaxiaosi | zh | v1 | compilation error | 2026-05-12 |
 | manhuagui | zh | v27 | compilation error | 2026-05-07 |
 | tencentcomics | zh | v10 | compilation error | 2026-05-07 |
