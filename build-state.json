@@ -5066,9 +5066,9 @@
   },
   "src:en:allanime": {
     "status": "failed",
-    "timestamp": "2026-05-12",
+    "timestamp": "2026-05-13",
     "reason": "compilation error",
-    "version": 17
+    "version": 18
   },
   "src:en:allporncomic": {
     "status": "failed",
@@ -5260,9 +5260,9 @@
   },
   "src:en:comix": {
     "status": "failed",
-    "timestamp": "2026-05-12",
+    "timestamp": "2026-05-13",
     "reason": "compilation error",
-    "version": 17
+    "version": 18
   },
   "src:en:cucumbermanga": {
     "status": "built",

@@ -1,2 +1,2 @@
-src:en:aquamanga
-src:tr:yaoiflix
+src:en:allanime
+src:en:comix
