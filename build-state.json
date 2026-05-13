@@ -842,10 +842,9 @@
     "version": 4
   },
   "src:en:weebcentral": {
-    "status": "failed",
-    "timestamp": "2026-05-07",
-    "reason": "compilation error",
-    "version": 20
+    "status": "built",
+    "timestamp": "2026-05-13",
+    "version": 21
   },
   "src:en:whalemanga": {
     "status": "built",
@@ -1270,8 +1269,8 @@
   },
   "src:es:mantrazscan": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 4
+    "timestamp": "2026-05-13",
+    "version": 55
   },
   "src:es:marmota": {
     "status": "built",
@@ -1605,8 +1604,8 @@
   },
   "src:fr:mangamoins": {
     "status": "built",
-    "timestamp": "2026-05-10",
-    "version": 6
+    "timestamp": "2026-05-13",
+    "version": 7
   },
   "src:fr:manganova": {
     "status": "failed",
@@ -2741,13 +2740,13 @@
   },
   "src:all:komga": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 64
+    "timestamp": "2026-05-13",
+    "version": 65
   },
   "src:all:lanraragi": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 20
+    "timestamp": "2026-05-13",
+    "version": 21
   },
   "src:all:leagueoflegends": {
     "status": "built",
@@ -2786,10 +2785,9 @@
     "version": 0
   },
   "src:all:mangadex": {
-    "status": "failed",
-    "timestamp": "2026-05-07",
-    "reason": "compilation error",
-    "version": 208
+    "status": "built",
+    "timestamp": "2026-05-13",
+    "version": 209
   },
   "src:all:mangadraft": {
     "status": "built",
@@ -3570,8 +3568,8 @@
   },
   "src:ru:mangahub": {
     "status": "built",
-    "timestamp": "2026-05-01",
-    "version": 21
+    "timestamp": "2026-05-13",
+    "version": 22
   },
   "src:ru:mangalib": {
     "status": "built",
@@ -5262,7 +5260,7 @@
     "status": "failed",
     "timestamp": "2026-05-13",
     "reason": "compilation error",
-    "version": 18
+    "version": 19
   },
   "src:en:cucumbermanga": {
     "status": "built",
@@ -5905,9 +5903,10 @@
     "version": 16
   },
   "src:en:mangadotnet": {
-    "status": "built",
-    "timestamp": "2026-05-02",
-    "version": 3
+    "status": "failed",
+    "timestamp": "2026-05-13",
+    "reason": "compilation error",
+    "version": 4
   },
   "src:en:mangadrama": {
     "status": "built",
@@ -6216,8 +6215,8 @@
   },
   "src:en:manhwa18": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 12
+    "timestamp": "2026-05-13",
+    "version": 13
   },
   "src:en:manhwa18org": {
     "status": "built",
@@ -7295,6 +7294,31 @@
     "status": "failed",
     "timestamp": "2026-05-12",
     "reason": "compilation error",
+    "version": 1
+  },
+  "src:ar:ariatoon": {
+    "status": "built",
+    "timestamp": "2026-05-13",
+    "version": 1
+  },
+  "src:en:girlstop": {
+    "status": "built",
+    "timestamp": "2026-05-13",
+    "version": 1
+  },
+  "src:fr:lelscan": {
+    "status": "built",
+    "timestamp": "2026-05-13",
+    "version": 1
+  },
+  "src:fr:pornhwafr": {
+    "status": "built",
+    "timestamp": "2026-05-13",
+    "version": 0
+  },
+  "src:pt:revistasequadrinhos": {
+    "status": "built",
+    "timestamp": "2026-05-13",
     "version": 1
   }
 }

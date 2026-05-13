@@ -4,7 +4,7 @@ JVM-compatible extensions for [Mihon Desktop](https://github.com/AltairCardinal/
 
 ## Stats
 
-- Total extensions: 6
+- Total extensions: 19
 - Compilation failures: 2 (2 fixable, 0 permanently unsupported)
 
 ## Installation
@@ -34,7 +34,6 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | kiutaku | all | v5 | compilation error | 2026-05-07 |
 | koharu | all | v19 | compilation error | 2026-04-28 |
 | luscious | all | v32 | compilation error | 2026-04-28 |
-| mangadex | all | v208 | compilation error | 2026-05-07 |
 | mangafire | all | v21 | compilation error | 2026-03-25 |
 | mangaplus | all | v61 | compilation error | 2026-05-07 |
 | mangapluscreators | all | v3 | compilation error | 2026-05-07 |
@@ -61,7 +60,7 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | bbato | en | v1 | compilation error | 2026-05-12 |
 | bookwalker | en | v5 | compilation error | 2026-03-25 |
 | bunmanga | en | v0 | compilation error | 2026-04-26 |
-| comix | en | v18 | compilation error | 2026-04-14 |
+| comix | en | v19 | compilation error | 2026-04-14 |
 | crowscans | en | v0 | compilation error | 2026-05-07 |
 | cutiecomics | en | v4 | compilation error | 2026-05-07 |
 | hentaihere | en | v7 | compilation error | 2026-05-07 |
@@ -72,6 +71,7 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | kmanga | en | v5 | compilation error | 2026-05-07 |
 | likemanga | en | v7 | compilation error | 2026-05-07 |
 | linkmanga | en | v0 | compilation error | 2026-05-09 |
+| mangadotnet | en | v4 | compilation error | 2026-05-13 |
 | mangago | en | v33 | compilation error | 2026-03-25 |
 | mangagofun | en | v0 | compilation error | 2026-04-26 |
 | mangaka | en | v0 | compilation error | 2026-04-26 |
@@ -88,7 +88,6 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | revivalscans | en | v1 | compilation error | 2026-05-07 |
 | spyfakku | en | v14 | compilation error | 2026-03-25 |
 | vizshonenjump | en | v24 | compilation error | 2026-05-07 |
-| weebcentral | en | v20 | compilation error | 2026-05-07 |
 | barmanga | es | v11 | compilation error | 2026-05-02 |
 | catharsisworld | es | v12 | compilation error | 2026-05-03 |
 | emperorscan | es | v11 | compilation error | 2026-05-03 |

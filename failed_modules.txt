@@ -1,2 +1,2 @@
-src:en:allanime
 src:en:comix
+src:en:mangadotnet
