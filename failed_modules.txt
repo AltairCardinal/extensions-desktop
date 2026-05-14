@@ -1,2 +1,15 @@
+src:all:mangafire
+src:ar:dilar
+src:en:batcave
 src:en:comix
-src:en:mangadotnet
+src:en:scansgg
+src:en:zinmanga
+src:es:mangacrab
+src:ru:mangamen
+src:vi:dualeotruyen
+src:vi:medamtruyen
+src:vi:mehentai
+src:vi:teamlanhlung
+src:vi:toptruyen
+src:vi:truyenqq
+src:vi:zettruyen

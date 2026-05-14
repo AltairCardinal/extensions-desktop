@@ -927,9 +927,10 @@
     "version": 3
   },
   "src:en:zinmanga": {
-    "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 2
+    "status": "failed",
+    "timestamp": "2026-05-14",
+    "reason": "compilation error",
+    "version": 3
   },
   "src:en:zinmanganet": {
     "status": "built",
@@ -1217,9 +1218,10 @@
     "version": 0
   },
   "src:es:mangacrab": {
-    "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 21
+    "status": "failed",
+    "timestamp": "2026-05-14",
+    "reason": "compilation error",
+    "version": 22
   },
   "src:es:mangaesp": {
     "status": "built",
@@ -4235,9 +4237,10 @@
     "version": 4
   },
   "src:vi:dualeotruyen": {
-    "status": "built",
-    "timestamp": "2026-04-25",
-    "version": 16
+    "status": "failed",
+    "timestamp": "2026-05-14",
+    "reason": "compilation error",
+    "version": 17
   },
   "src:vi:goctruyentranh": {
     "status": "built",
@@ -4288,9 +4291,10 @@
     "version": 18
   },
   "src:vi:mehentai": {
-    "status": "built",
-    "timestamp": "2026-04-12",
-    "version": 5
+    "status": "failed",
+    "timestamp": "2026-05-14",
+    "reason": "compilation error",
+    "version": 6
   },
   "src:vi:mimi": {
     "status": "failed",
@@ -4353,14 +4357,15 @@
   },
   "src:vi:teamlanhlung": {
     "status": "failed",
-    "timestamp": "2026-05-12",
+    "timestamp": "2026-05-14",
     "reason": "compilation error",
-    "version": 29
+    "version": 30
   },
   "src:vi:toptruyen": {
-    "status": "built",
-    "timestamp": "2026-04-25",
-    "version": 25
+    "status": "failed",
+    "timestamp": "2026-05-14",
+    "reason": "compilation error",
+    "version": 26
   },
   "src:vi:tranh18": {
     "status": "built",
@@ -4378,9 +4383,10 @@
     "version": 10
   },
   "src:vi:truyenqq": {
-    "status": "built",
-    "timestamp": "2026-03-30",
-    "version": 22
+    "status": "failed",
+    "timestamp": "2026-05-14",
+    "reason": "compilation error",
+    "version": 23
   },
   "src:vi:truyentranh3q": {
     "status": "built",
@@ -4435,9 +4441,10 @@
     "version": 7
   },
   "src:vi:zettruyen": {
-    "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 3
+    "status": "failed",
+    "timestamp": "2026-05-14",
+    "reason": "compilation error",
+    "version": 4
   },
   "src:zh:baimangu": {
     "status": "built",
@@ -4838,9 +4845,10 @@
     "version": 3
   },
   "src:ar:dilar": {
-    "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 3
+    "status": "failed",
+    "timestamp": "2026-05-14",
+    "reason": "compilation error",
+    "version": 8
   },
   "src:ar:empirewebtoon": {
     "status": "built",
@@ -5182,9 +5190,10 @@
     "version": 0
   },
   "src:en:batcave": {
-    "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 5
+    "status": "failed",
+    "timestamp": "2026-05-14",
+    "reason": "compilation error",
+    "version": 6
   },
   "src:en:battleinfivesecondsaftermeeting": {
     "status": "built",
@@ -5258,9 +5267,9 @@
   },
   "src:en:comix": {
     "status": "failed",
-    "timestamp": "2026-05-13",
+    "timestamp": "2026-05-14",
     "reason": "compilation error",
-    "version": 19
+    "version": 20
   },
   "src:en:cucumbermanga": {
     "status": "built",
@@ -6476,9 +6485,9 @@
   },
   "src:all:mangafire": {
     "status": "failed",
-    "timestamp": "2026-05-01",
+    "timestamp": "2026-05-14",
     "reason": "compilation error",
-    "version": 21
+    "version": 22
   },
   "src:all:mangaup": {
     "status": "failed",
@@ -6836,9 +6845,9 @@
   },
   "src:vi:medamtruyen": {
     "status": "failed",
-    "timestamp": "2026-05-12",
+    "timestamp": "2026-05-14",
     "reason": "compilation error",
-    "version": 3
+    "version": 4
   },
   "src:zh:jcomic": {
     "status": "built",
@@ -7319,6 +7328,18 @@
   "src:pt:revistasequadrinhos": {
     "status": "built",
     "timestamp": "2026-05-13",
+    "version": 1
+  },
+  "src:en:scansgg": {
+    "status": "failed",
+    "timestamp": "2026-05-14",
+    "reason": "compilation error",
+    "version": 1
+  },
+  "src:ru:mangamen": {
+    "status": "failed",
+    "timestamp": "2026-05-14",
+    "reason": "compilation error",
     "version": 1
   }
 }
