@@ -1183,8 +1183,8 @@
   },
   "src:es:lectorjpg": {
     "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 45
+    "timestamp": "2026-05-15",
+    "version": 46
   },
   "src:es:lectormangalat": {
     "status": "built",
@@ -1480,8 +1480,8 @@
   },
   "src:es:yupmanga": {
     "status": "built",
-    "timestamp": "2026-05-03",
-    "version": 9
+    "timestamp": "2026-05-15",
+    "version": 10
   },
   "src:es:yurionline": {
     "status": "built",
@@ -2757,8 +2757,8 @@
   },
   "src:all:lunaranime": {
     "status": "built",
-    "timestamp": "2026-04-14",
-    "version": 5
+    "timestamp": "2026-05-15",
+    "version": 6
   },
   "src:all:luscious": {
     "status": "failed",
@@ -3420,8 +3420,8 @@
   },
   "src:pt:sssscanlator": {
     "status": "built",
-    "timestamp": "2026-05-04",
-    "version": 43
+    "timestamp": "2026-05-15",
+    "version": 44
   },
   "src:pt:starlightscan": {
     "status": "built",
@@ -3533,8 +3533,8 @@
   },
   "src:ru:comx": {
     "status": "built",
-    "timestamp": "2026-05-11",
-    "version": 36
+    "timestamp": "2026-05-15",
+    "version": 37
   },
   "src:ru:desu": {
     "status": "failed",
@@ -4010,8 +4010,8 @@
   },
   "src:tr:mangatr": {
     "status": "built",
-    "timestamp": "2026-04-11",
-    "version": 9
+    "timestamp": "2026-05-15",
+    "version": 22
   },
   "src:tr:mangawow": {
     "status": "built",
@@ -7340,6 +7340,11 @@
     "status": "failed",
     "timestamp": "2026-05-14",
     "reason": "compilation error",
+    "version": 1
+  },
+  "src:ja:amebamanga": {
+    "status": "built",
+    "timestamp": "2026-05-15",
     "version": 1
   }
 }
