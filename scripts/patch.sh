@@ -57,9 +57,10 @@ for dir in "$EXT_SRC/lib-multisrc"/*/; do
     fi
 done
 
-# 6. Replace the buildSrc lib-android convention plugin with a JVM version
-cp "$REPO_ROOT/patches/lib-android-build-jvm.gradle.kts" \
-   "$EXT_SRC/buildSrc/src/main/kotlin/lib-android.gradle.kts"
+# 6. Replace the build-logic PluginMultiSrc with a JVM version
+# The new project structure uses gradle/build-logic instead of buildSrc
+cp "$REPO_ROOT/patches/PluginMultiSrc-jvm.kt" \
+   "$EXT_SRC/gradle/build-logic/src/main/kotlin/PluginMultiSrc.kt"
 
 # 7. Replace lib build files (simple kotlin libs)
 for dir in "$EXT_SRC/lib"/*/; do
