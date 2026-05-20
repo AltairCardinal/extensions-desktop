@@ -815,9 +815,10 @@
     "version": 2
   },
   "src:en:wearehunger": {
-    "status": "built",
-    "timestamp": "2026-04-08",
-    "version": 1
+    "status": "failed",
+    "timestamp": "2026-05-20",
+    "reason": "compilation error",
+    "version": 2
   },
   "src:en:webcomics": {
     "status": "built",
@@ -993,9 +994,9 @@
   },
   "src:es:catharsisworld": {
     "status": "failed",
-    "timestamp": "2026-05-12",
+    "timestamp": "2026-05-20",
     "reason": "compilation error",
-    "version": 12
+    "version": 13
   },
   "src:es:catmanhwas": {
     "status": "built",
@@ -1211,9 +1212,10 @@
     "version": 0
   },
   "src:es:lmtoonline": {
-    "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 2
+    "status": "failed",
+    "timestamp": "2026-05-20",
+    "reason": "compilation error",
+    "version": 53
   },
   "src:es:lolivault": {
     "status": "built",
@@ -1669,9 +1671,9 @@
   },
   "src:fr:raijinscans": {
     "status": "failed",
-    "timestamp": "2026-05-18",
+    "timestamp": "2026-05-20",
     "reason": "compilation error",
-    "version": 59
+    "version": 60
   },
   "src:fr:reaperscans": {
     "status": "built",
@@ -1689,9 +1691,10 @@
     "version": 4
   },
   "src:fr:scanmanga": {
-    "status": "built",
-    "timestamp": "2026-03-30",
-    "version": 20
+    "status": "failed",
+    "timestamp": "2026-05-20",
+    "reason": "compilation error",
+    "version": 21
   },
   "src:fr:scanr": {
     "status": "failed",
@@ -3003,9 +3006,10 @@
     "version": 3
   },
   "src:pl:mangahona": {
-    "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 0
+    "status": "failed",
+    "timestamp": "2026-05-20",
+    "reason": "compilation error",
+    "version": 51
   },
   "src:pt:amuy": {
     "status": "failed",
@@ -3853,9 +3857,10 @@
     "version": 1
   },
   "src:tr:afroditscans": {
-    "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 0
+    "status": "failed",
+    "timestamp": "2026-05-20",
+    "reason": "compilation error",
+    "version": 31
   },
   "src:tr:alucardscans": {
     "status": "built",
@@ -4260,9 +4265,10 @@
     "version": 10
   },
   "src:vi:goctruyentranhvui": {
-    "status": "built",
-    "timestamp": "2026-04-26",
-    "version": 12
+    "status": "failed",
+    "timestamp": "2026-05-20",
+    "reason": "compilation error",
+    "version": 13
   },
   "src:vi:hentaicube": {
     "status": "failed",
@@ -4316,9 +4322,9 @@
   },
   "src:vi:mimihentai": {
     "status": "failed",
-    "timestamp": "2026-05-01",
+    "timestamp": "2026-05-20",
     "reason": "compilation error",
-    "version": 4
+    "version": 5
   },
   "src:vi:minotruyen": {
     "status": "built",
@@ -4432,9 +4438,10 @@
     "version": 7
   },
   "src:vi:vihentai": {
-    "status": "built",
-    "timestamp": "2026-04-14",
-    "version": 2
+    "status": "failed",
+    "timestamp": "2026-05-20",
+    "reason": "compilation error",
+    "version": 3
   },
   "src:vi:vinahentai": {
     "status": "built",
@@ -7141,9 +7148,10 @@
     "version": 0
   },
   "src:all:e621": {
-    "status": "built",
-    "timestamp": "2026-04-29",
-    "version": 1
+    "status": "failed",
+    "timestamp": "2026-05-20",
+    "reason": "compilation error",
+    "version": 2
   },
   "src:en:kingcomix": {
     "status": "built",
@@ -7633,6 +7641,228 @@
   "src:vi:truyenmm": {
     "status": "failed",
     "timestamp": "2026-05-18",
+    "reason": "compilation error",
+    "version": 1
+  },
+  "src:es:labibliotecadeodin": {
+    "status": "failed",
+    "timestamp": "2026-05-20",
+    "reason": "compilation error",
+    "version": 0
+  },
+  "src:es:lasprofanadasscan": {
+    "status": "failed",
+    "timestamp": "2026-05-20",
+    "reason": "compilation error",
+    "version": 0
+  },
+  "src:es:lastexilescan": {
+    "status": "failed",
+    "timestamp": "2026-05-20",
+    "reason": "compilation error",
+    "version": 0
+  },
+  "src:es:limboscanlation": {
+    "status": "failed",
+    "timestamp": "2026-05-20",
+    "reason": "compilation error",
+    "version": 0
+  },
+  "src:es:lolietazura": {
+    "status": "failed",
+    "timestamp": "2026-05-20",
+    "reason": "compilation error",
+    "version": 0
+  },
+  "src:es:michuscan": {
+    "status": "failed",
+    "timestamp": "2026-05-20",
+    "reason": "compilation error",
+    "version": 0
+  },
+  "src:es:nerotranslations": {
+    "status": "failed",
+    "timestamp": "2026-05-20",
+    "reason": "compilation error",
+    "version": 0
+  },
+  "src:es:okamiscan": {
+    "status": "failed",
+    "timestamp": "2026-05-20",
+    "reason": "compilation error",
+    "version": 0
+  },
+  "src:es:omegascanlation": {
+    "status": "failed",
+    "timestamp": "2026-05-20",
+    "reason": "compilation error",
+    "version": 0
+  },
+  "src:es:phantomnofansub": {
+    "status": "failed",
+    "timestamp": "2026-05-20",
+    "reason": "compilation error",
+    "version": 0
+  },
+  "src:es:pinkgardentranslation": {
+    "status": "failed",
+    "timestamp": "2026-05-20",
+    "reason": "compilation error",
+    "version": 0
+  },
+  "src:es:puchiscan": {
+    "status": "failed",
+    "timestamp": "2026-05-20",
+    "reason": "compilation error",
+    "version": 0
+  },
+  "src:es:sacachispa": {
+    "status": "failed",
+    "timestamp": "2026-05-20",
+    "reason": "compilation error",
+    "version": 0
+  },
+  "src:es:saitoutranslations": {
+    "status": "failed",
+    "timestamp": "2026-05-20",
+    "reason": "compilation error",
+    "version": 0
+  },
+  "src:es:scanreview": {
+    "status": "failed",
+    "timestamp": "2026-05-20",
+    "reason": "compilation error",
+    "version": 0
+  },
+  "src:es:scanstarts": {
+    "status": "failed",
+    "timestamp": "2026-05-20",
+    "reason": "compilation error",
+    "version": 0
+  },
+  "src:es:scanz": {
+    "status": "failed",
+    "timestamp": "2026-05-20",
+    "reason": "compilation error",
+    "version": 0
+  },
+  "src:es:sectablscan": {
+    "status": "failed",
+    "timestamp": "2026-05-20",
+    "reason": "compilation error",
+    "version": 0
+  },
+  "src:es:seinenden": {
+    "status": "failed",
+    "timestamp": "2026-05-20",
+    "reason": "compilation error",
+    "version": 0
+  },
+  "src:es:senorchofli": {
+    "status": "failed",
+    "timestamp": "2026-05-20",
+    "reason": "compilation error",
+    "version": 0
+  },
+  "src:es:shoshinshascans": {
+    "status": "failed",
+    "timestamp": "2026-05-20",
+    "reason": "compilation error",
+    "version": 0
+  },
+  "src:es:soulcraftfansub": {
+    "status": "failed",
+    "timestamp": "2026-05-20",
+    "reason": "compilation error",
+    "version": 0
+  },
+  "src:es:spacefansub": {
+    "status": "failed",
+    "timestamp": "2026-05-20",
+    "reason": "compilation error",
+    "version": 0
+  },
+  "src:es:sweeticecream": {
+    "status": "failed",
+    "timestamp": "2026-05-20",
+    "reason": "compilation error",
+    "version": 0
+  },
+  "src:es:templodejeny": {
+    "status": "failed",
+    "timestamp": "2026-05-20",
+    "reason": "compilation error",
+    "version": 0
+  },
+  "src:es:templodescarlet": {
+    "status": "failed",
+    "timestamp": "2026-05-20",
+    "reason": "compilation error",
+    "version": 0
+  },
+  "src:es:terrascans": {
+    "status": "failed",
+    "timestamp": "2026-05-20",
+    "reason": "compilation error",
+    "version": 0
+  },
+  "src:es:thegrimoriodelawitch": {
+    "status": "failed",
+    "timestamp": "2026-05-20",
+    "reason": "compilation error",
+    "version": 0
+  },
+  "src:es:traduccionesmuylentas": {
+    "status": "failed",
+    "timestamp": "2026-05-20",
+    "reason": "compilation error",
+    "version": 0
+  },
+  "src:es:traduccionespaltanobu": {
+    "status": "failed",
+    "timestamp": "2026-05-20",
+    "reason": "compilation error",
+    "version": 0
+  },
+  "src:es:tsukinomusumescan": {
+    "status": "failed",
+    "timestamp": "2026-05-20",
+    "reason": "compilation error",
+    "version": 0
+  },
+  "src:es:tuerizotraducciones": {
+    "status": "failed",
+    "timestamp": "2026-05-20",
+    "reason": "compilation error",
+    "version": 0
+  },
+  "src:es:unknownrealmfansub": {
+    "status": "failed",
+    "timestamp": "2026-05-20",
+    "reason": "compilation error",
+    "version": 0
+  },
+  "src:es:weepingangel": {
+    "status": "failed",
+    "timestamp": "2026-05-20",
+    "reason": "compilation error",
+    "version": 0
+  },
+  "src:vi:nettruyens": {
+    "status": "failed",
+    "timestamp": "2026-05-20",
+    "reason": "compilation error",
+    "version": 1
+  },
+  "src:zh:hcomic": {
+    "status": "failed",
+    "timestamp": "2026-05-20",
+    "reason": "compilation error",
+    "version": 1
+  },
+  "src:zh:manhuashe": {
+    "status": "failed",
+    "timestamp": "2026-05-20",
     "reason": "compilation error",
     "version": 1
   }
