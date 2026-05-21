@@ -5,7 +5,7 @@ JVM-compatible extensions for [Mihon Desktop](https://github.com/AltairCardinal/
 ## Stats
 
 - Total extensions: 6
-- Compilation failures: 48 (48 fixable, 0 permanently unsupported)
+- Compilation failures: 15 (15 fixable, 0 permanently unsupported)
 
 ## Installation
 
@@ -36,6 +36,7 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | kiutaku | all | v5 | compilation error | 2026-05-07 |
 | koharu | all | v19 | compilation error | 2026-04-28 |
 | luscious | all | v32 | compilation error | 2026-04-28 |
+| mangadna | all | v1 | compilation error | 2026-05-21 |
 | mangafire | all | v23 | compilation error | 2026-03-25 |
 | mangaplus | all | v61 | compilation error | 2026-05-07 |
 | mangapluscreators | all | v3 | compilation error | 2026-05-07 |
@@ -52,6 +53,7 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | taddyink | all | v2 | compilation error | 2026-05-07 |
 | webtoons | all | v54 | compilation error | 2026-05-07 |
 | xasiatalbums | all | v3 | compilation error | 2026-05-07 |
+| xgmn | all | v3 | compilation error | 2026-05-21 |
 | xinmeitulu | all | v7 | compilation error | 2026-05-07 |
 | anyonemanga | ar | v0 | compilation error | 2026-04-23 |
 | dilar | ar | v8 | compilation error | 2026-05-14 |
@@ -78,8 +80,9 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | kmanga | en | v5 | compilation error | 2026-05-07 |
 | likemanga | en | v7 | compilation error | 2026-05-07 |
 | linkmanga | en | v0 | compilation error | 2026-05-09 |
+| mangack | en | v1 | compilation error | 2026-05-21 |
 | mangacloud | en | v6 | compilation error | 2026-05-18 |
-| mangadotnet | en | v4 | compilation error | 2026-05-13 |
+| mangadotnet | en | v5 | compilation error | 2026-05-13 |
 | mangagg | en | v3 | compilation error | 2026-05-18 |
 | mangago | en | v33 | compilation error | 2026-03-25 |
 | mangagofun | en | v0 | compilation error | 2026-04-26 |
@@ -96,6 +99,7 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | octopusmanga | en | v0 | compilation error | 2026-04-26 |
 | oppaistream | en | v5 | compilation error | 2026-05-07 |
 | orionscans | en | v0 | compilation error | 2026-04-26 |
+| philiascans | en | v53 | compilation error | 2026-05-21 |
 | readcomiconline | en | v43 | compilation error | 2026-05-18 |
 | reimanga | en | v1 | compilation error | 2026-04-18 |
 | revivalscans | en | v1 | compilation error | 2026-05-07 |
@@ -103,6 +107,7 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | spyfakku | en | v14 | compilation error | 2026-03-25 |
 | stonescape | en | v49 | compilation error | 2026-05-18 |
 | vizshonenjump | en | v24 | compilation error | 2026-05-07 |
+| voyceme | en | v5 | compilation error | 2026-05-21 |
 | wearehunger | en | v2 | compilation error | 2026-05-20 |
 | zinmanga | en | v3 | compilation error | 2026-05-14 |
 | alphacentauri | es | v0 | compilation error | 2026-05-18 |
@@ -205,20 +210,25 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | japscan | fr | v69 | compilation error | 2026-03-25 |
 | mangamoins | fr | v8 | compilation error | 2026-05-18 |
 | manganova | fr | v2 | compilation error | 2026-05-07 |
+| ono | fr | v1 | compilation error | 2026-05-21 |
 | poseidonscans | fr | v51 | compilation error | 2026-05-18 |
 | raijinscans | fr | v60 | compilation error | 2026-05-18 |
 | scanmanga | fr | v21 | compilation error | 2026-05-20 |
 | scanr | fr | v3 | compilation error | 2026-05-07 |
+| twatt | fr | v1 | compilation error | 2026-05-21 |
 | dailysuka | id | v1 | compilation error | 2026-05-07 |
+| doujindesu | id | v14 | compilation error | 2026-05-21 |
 | dreamteamsscans | id | v32 | compilation error | 2026-05-07 |
 | komikav | id | v4 | compilation error | 2026-05-07 |
 | mgkomik | id | v19 | compilation error | 2026-05-01 |
 | otascans | id | v2 | compilation error | 2026-05-18 |
 | softkomik | id | v11 | compilation error | 2026-04-09 |
+| comicearthstar | ja | v1 | compilation error | 2026-05-21 |
 | comicfuz | ja | v3 | compilation error | 2026-05-12 |
 | corocoroonline | ja | v10 | compilation error | 2026-05-12 |
 | flowercomics | ja | v2 | compilation error | 2026-05-12 |
 | fodfuji | ja | v1 | compilation error | 2026-05-18 |
+| ganma | ja | v5 | compilation error | 2026-05-21 |
 | gorakuweb | ja | v2 | compilation error | 2026-05-12 |
 | hachiraw | ja | v3 | compilation error | 2026-05-07 |
 | kadocomi | ja | v3 | compilation error | 2026-05-12 |
@@ -227,12 +237,14 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | mangaone | ja | v2 | compilation error | 2026-05-12 |
 | mokuro | ja | v3 | compilation error | 2026-05-12 |
 | nicomanga | ja | v13 | compilation error | 2026-05-12 |
+| sokuyomi | ja | v1 | compilation error | 2026-05-21 |
 | twi4 | ja | v6 | compilation error | 2026-05-07 |
-| unext | ja | v2 | compilation error | 2026-03-25 |
+| unext | ja | v3 | compilation error | 2026-03-25 |
 | zebrack | ja | v1 | compilation error | 2026-03-25 |
 | manatoki | ko | v1 | compilation error | 2026-05-07 |
 | mangahona | pl | v51 | compilation error | 2026-05-20 |
 | amuy | pt | v2 | compilation error | 2026-05-07 |
+| bakai | pt | v16 | compilation error | 2026-05-21 |
 | brasilhentai | pt | v4 | compilation error | 2026-05-07 |
 | exhentainetbr | pt | v3 | compilation error | 2026-05-07 |
 | imperiodabritannia | pt | v53 | compilation error | 2026-05-18 |
@@ -291,6 +303,7 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | bakamh | zh | v8 | compilation error | 2026-05-12 |
 | baozimanhua | zh | v27 | compilation error | 2026-05-07 |
 | creativecomic | zh | v2 | compilation error | 2026-05-12 |
+| happymh | zh | v22 | compilation error | 2026-05-21 |
 | hcomic | zh | v1 | compilation error | 2026-05-20 |
 | jinmantiantang | zh | v56 | compilation error | 2026-05-07 |
 | komiic | zh | v6 | compilation error | 2026-05-07 |
