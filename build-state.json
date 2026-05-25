@@ -5312,7 +5312,7 @@
     "status": "failed",
     "timestamp": "2026-05-25",
     "reason": "compilation error",
-    "version": 21
+    "version": 22
   },
   "src:en:cucumbermanga": {
     "status": "built",

@@ -5,7 +5,7 @@ JVM-compatible extensions for [Mihon Desktop](https://github.com/AltairCardinal/
 ## Stats
 
 - Total extensions: 6
-- Compilation failures: 18 (18 fixable, 0 permanently unsupported)
+- Compilation failures: 1 (1 fixable, 0 permanently unsupported)
 
 ## Installation
 
@@ -69,7 +69,7 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | bookwalker | en | v5 | compilation error | 2026-03-25 |
 | bunmanga | en | v0 | compilation error | 2026-04-26 |
 | comickfan | en | v2 | compilation error | 2026-05-24 |
-| comix | en | v21 | compilation error | 2026-04-14 |
+| comix | en | v22 | compilation error | 2026-04-14 |
 | crowscans | en | v0 | compilation error | 2026-05-07 |
 | cutiecomics | en | v4 | compilation error | 2026-05-07 |
 | explosm | en | v5 | compilation error | 2026-05-18 |
