@@ -1,1 +1,5 @@
+src:all:mangaball
 src:en:comix
+src:fr:raijinscans
+src:pt:argoscomics
+src:vi:vinahentai

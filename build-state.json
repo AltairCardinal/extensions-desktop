@@ -1678,9 +1678,9 @@
   },
   "src:fr:raijinscans": {
     "status": "failed",
-    "timestamp": "2026-05-20",
+    "timestamp": "2026-05-26",
     "reason": "compilation error",
-    "version": 60
+    "version": 61
   },
   "src:fr:reaperscans": {
     "status": "built",
@@ -2802,9 +2802,10 @@
     "version": 3
   },
   "src:all:mangaball": {
-    "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 2
+    "status": "failed",
+    "timestamp": "2026-05-26",
+    "reason": "compilation error",
+    "version": 3
   },
   "src:all:mangacrazy": {
     "status": "built",
@@ -3046,9 +3047,10 @@
     "version": 0
   },
   "src:pt:argoscomics": {
-    "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 53
+    "status": "failed",
+    "timestamp": "2026-05-26",
+    "reason": "compilation error",
+    "version": 54
   },
   "src:pt:argosscan": {
     "status": "built",
@@ -4464,9 +4466,9 @@
   },
   "src:vi:vinahentai": {
     "status": "failed",
-    "timestamp": "2026-05-25",
+    "timestamp": "2026-05-26",
     "reason": "compilation error",
-    "version": 5
+    "version": 6
   },
   "src:vi:vlogtruyen": {
     "status": "built",
@@ -5310,9 +5312,9 @@
   },
   "src:en:comix": {
     "status": "failed",
-    "timestamp": "2026-05-25",
+    "timestamp": "2026-05-26",
     "reason": "compilation error",
-    "version": 22
+    "version": 23
   },
   "src:en:cucumbermanga": {
     "status": "built",
