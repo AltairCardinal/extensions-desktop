@@ -5,7 +5,7 @@ JVM-compatible extensions for [Mihon Desktop](https://github.com/AltairCardinal/
 ## Stats
 
 - Total extensions: 6
-- Compilation failures: 18 (18 fixable, 0 permanently unsupported)
+- Compilation failures: 3 (3 fixable, 0 permanently unsupported)
 
 ## Installation
 
@@ -57,6 +57,7 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | xgmn | all | v3 | compilation error | 2026-05-21 |
 | xinmeitulu | all | v7 | compilation error | 2026-05-07 |
 | anyonemanga | ar | v0 | compilation error | 2026-04-23 |
+| comicverse | ar | v2 | compilation error | 2026-05-30 |
 | dilar | ar | v8 | compilation error | 2026-05-14 |
 | goonscans | ar | v0 | compilation error | 2026-05-12 |
 | mangapro | ar | v47 | compilation error | 2026-03-25 |
@@ -239,6 +240,7 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | dreamteamsscans | id | v32 | compilation error | 2026-05-07 |
 | komikav | id | v4 | compilation error | 2026-05-07 |
 | manhwaindo | id | v10 | compilation error | 2026-05-29 |
+| manhwalistid | id | v6 | compilation error | 2026-05-30 |
 | mgkomik | id | v19 | compilation error | 2026-05-01 |
 | otascans | id | v2 | compilation error | 2026-05-18 |
 | softkomik | id | v11 | compilation error | 2026-04-09 |
@@ -306,6 +308,7 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | kuroimanga | tr | v4 | compilation error | 2026-05-25 |
 | laviniafansub | tr | v5 | compilation error | 2026-05-01 |
 | mangitto | tr | v1 | compilation error | 2026-05-12 |
+| moondaisyscans | tr | v4 | compilation error | 2026-05-30 |
 | niverafansub | tr | v3 | compilation error | 2026-05-04 |
 | yaoiflix | tr | v5 | compilation error | 2026-05-12 |
 | faust | uk | v1 | compilation error | 2026-05-07 |

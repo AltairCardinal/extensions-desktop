@@ -2033,9 +2033,10 @@
     "version": 9
   },
   "src:id:manhwalistid": {
-    "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 5
+    "status": "failed",
+    "timestamp": "2026-05-30",
+    "reason": "compilation error",
+    "version": 6
   },
   "src:id:manhwalistorg": {
     "status": "built",
@@ -4090,9 +4091,10 @@
     "version": 3
   },
   "src:tr:moondaisyscans": {
-    "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 3
+    "status": "failed",
+    "timestamp": "2026-05-30",
+    "reason": "compilation error",
+    "version": 4
   },
   "src:tr:nemesisscans": {
     "status": "built",
@@ -4884,9 +4886,10 @@
     "version": 44
   },
   "src:ar:comicverse": {
-    "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 1
+    "status": "failed",
+    "timestamp": "2026-05-30",
+    "reason": "compilation error",
+    "version": 2
   },
   "src:ar:crowscans": {
     "status": "built",
