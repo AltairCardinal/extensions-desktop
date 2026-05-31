@@ -5,7 +5,7 @@ JVM-compatible extensions for [Mihon Desktop](https://github.com/AltairCardinal/
 ## Stats
 
 - Total extensions: 6
-- Compilation failures: 27 (27 fixable, 0 permanently unsupported)
+- Compilation failures: 1 (1 fixable, 0 permanently unsupported)
 
 ## Installation
 
@@ -89,6 +89,7 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | kmanga | en | v5 | compilation error | 2026-05-07 |
 | likemanga | en | v7 | compilation error | 2026-05-07 |
 | linkmanga | en | v0 | compilation error | 2026-05-09 |
+| mangabuddy | en | v26 | compilation error | 2026-05-31 |
 | mangack | en | v1 | compilation error | 2026-05-21 |
 | mangacloud | en | v6 | compilation error | 2026-05-18 |
 | mangadotnet | en | v7 | compilation error | 2026-05-13 |
