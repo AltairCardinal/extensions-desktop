@@ -1,1 +1,12 @@
+src:all:manhuarm
+src:all:manta
+src:en:atsumaru
+src:en:comix
+src:en:mangabay
 src:en:mangabuddy
+src:en:resetscans
+src:en:utoon
+src:es:catmanhwas
+src:es:lectorjpg
+src:fr:raijinscans
+src:pt:littletyrant
