@@ -5,7 +5,7 @@ JVM-compatible extensions for [Mihon Desktop](https://github.com/AltairCardinal/
 ## Stats
 
 - Total extensions: 6
-- Compilation failures: 33 (33 fixable, 0 permanently unsupported)
+- Compilation failures: 1 (1 fixable, 0 permanently unsupported)
 
 ## Installation
 
@@ -33,6 +33,7 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | hentaiera | all | v2 | compilation error | 2026-05-02 |
 | hentairox | all | v0 | compilation error | 2026-04-28 |
 | hentaizap | all | v0 | compilation error | 2026-04-28 |
+| kagane | all | v25 | compilation error | 2026-06-05 |
 | kiutaku | all | v5 | compilation error | 2026-05-07 |
 | koharu | all | v19 | compilation error | 2026-04-28 |
 | luscious | all | v32 | compilation error | 2026-04-28 |

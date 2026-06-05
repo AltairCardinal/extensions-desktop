@@ -8064,5 +8064,11 @@
     "timestamp": "2026-06-05",
     "reason": "compilation error",
     "version": 1
+  },
+  "src:all:kagane": {
+    "status": "failed",
+    "timestamp": "2026-06-05",
+    "reason": "compilation error",
+    "version": 25
   }
 }
