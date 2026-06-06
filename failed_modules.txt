@@ -1,1 +1,11 @@
+src:all:comicfury
 src:all:kagane
+src:all:manhuarm
+src:ar:yokai
+src:es:gistamishouse
+src:es:mantrazscan
+src:es:nexusscanlation
+src:id:aarlas
+src:ja:comicfesta
+src:ja:firecross
+src:pt:littletyrant

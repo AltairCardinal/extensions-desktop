@@ -38,9 +38,10 @@
     "version": 9
   },
   "src:all:comicfury": {
-    "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 7
+    "status": "failed",
+    "timestamp": "2026-06-06",
+    "reason": "compilation error",
+    "version": 8
   },
   "src:all:comicgrowl": {
     "status": "built",
@@ -1101,9 +1102,10 @@
     "version": 2
   },
   "src:es:gistamishouse": {
-    "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 0
+    "status": "failed",
+    "timestamp": "2026-06-06",
+    "reason": "compilation error",
+    "version": 1
   },
   "src:es:gremorymangas": {
     "status": "built",
@@ -1291,9 +1293,10 @@
     "version": 11
   },
   "src:es:mantrazscan": {
-    "status": "built",
-    "timestamp": "2026-05-13",
-    "version": 55
+    "status": "failed",
+    "timestamp": "2026-06-06",
+    "reason": "compilation error",
+    "version": 56
   },
   "src:es:marmota": {
     "status": "built",
@@ -1771,9 +1774,9 @@
   },
   "src:id:aarlas": {
     "status": "failed",
-    "timestamp": "2026-05-31",
+    "timestamp": "2026-06-06",
     "reason": "compilation error",
-    "version": 2
+    "version": 3
   },
   "src:id:ainzscansid": {
     "status": "built",
@@ -2416,9 +2419,10 @@
     "version": 3
   },
   "src:ja:firecross": {
-    "status": "built",
-    "timestamp": "2026-04-05",
-    "version": 2
+    "status": "failed",
+    "timestamp": "2026-06-06",
+    "reason": "compilation error",
+    "version": 3
   },
   "src:ja:flowercomics": {
     "status": "failed",
@@ -3285,9 +3289,9 @@
   },
   "src:pt:littletyrant": {
     "status": "failed",
-    "timestamp": "2026-06-01",
+    "timestamp": "2026-06-06",
     "reason": "compilation error",
-    "version": 4
+    "version": 5
   },
   "src:pt:lycantoons": {
     "status": "built",
@@ -5096,9 +5100,10 @@
     "version": 0
   },
   "src:ar:yokai": {
-    "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 1
+    "status": "failed",
+    "timestamp": "2026-06-06",
+    "reason": "compilation error",
+    "version": 2
   },
   "src:ar:yonabar": {
     "status": "built",
@@ -6590,9 +6595,9 @@
   },
   "src:all:manhuarm": {
     "status": "failed",
-    "timestamp": "2026-06-01",
+    "timestamp": "2026-06-06",
     "reason": "compilation error",
-    "version": 21
+    "version": 22
   },
   "src:pt:randomscan": {
     "status": "failed",
@@ -6911,9 +6916,10 @@
     "version": 1
   },
   "src:es:nexusscanlation": {
-    "status": "built",
-    "timestamp": "2026-05-01",
-    "version": 2
+    "status": "failed",
+    "timestamp": "2026-06-06",
+    "reason": "compilation error",
+    "version": 3
   },
   "src:id:komikdewasaart": {
     "status": "built",
@@ -8067,8 +8073,14 @@
   },
   "src:all:kagane": {
     "status": "failed",
-    "timestamp": "2026-06-05",
+    "timestamp": "2026-06-06",
     "reason": "compilation error",
-    "version": 25
+    "version": 26
+  },
+  "src:ja:comicfesta": {
+    "status": "failed",
+    "timestamp": "2026-06-06",
+    "reason": "compilation error",
+    "version": 1
   }
 }
