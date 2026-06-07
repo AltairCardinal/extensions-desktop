@@ -2063,9 +2063,9 @@
   },
   "src:id:mgkomik": {
     "status": "failed",
-    "timestamp": "2026-06-05",
+    "timestamp": "2026-06-07",
     "reason": "compilation error",
-    "version": 20
+    "version": 21
   },
   "src:id:mihentai": {
     "status": "built",
@@ -4514,9 +4514,9 @@
   },
   "src:vi:yurigarden": {
     "status": "failed",
-    "timestamp": "2026-05-03",
+    "timestamp": "2026-06-07",
     "reason": "compilation error",
-    "version": 7
+    "version": 8
   },
   "src:vi:zettruyen": {
     "status": "failed",
@@ -6119,9 +6119,10 @@
     "version": 7
   },
   "src:en:mangamob": {
-    "status": "built",
-    "timestamp": "2026-05-02",
-    "version": 2
+    "status": "failed",
+    "timestamp": "2026-06-07",
+    "reason": "compilation error",
+    "version": 3
   },
   "src:en:mangamonk": {
     "status": "built",
@@ -6696,9 +6697,9 @@
   },
   "src:vi:moetruyen": {
     "status": "failed",
-    "timestamp": "2026-05-29",
+    "timestamp": "2026-06-07",
     "reason": "compilation error",
-    "version": 4
+    "version": 5
   },
   "src:vi:otakusic": {
     "status": "built",
@@ -8080,6 +8081,12 @@
   "src:ja:comicfesta": {
     "status": "failed",
     "timestamp": "2026-06-06",
+    "reason": "compilation error",
+    "version": 1
+  },
+  "src:ja:mangasaison": {
+    "status": "failed",
+    "timestamp": "2026-06-07",
     "reason": "compilation error",
     "version": 1
   }

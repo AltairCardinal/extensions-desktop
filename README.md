@@ -5,7 +5,7 @@ JVM-compatible extensions for [Mihon Desktop](https://github.com/AltairCardinal/
 ## Stats
 
 - Total extensions: 6
-- Compilation failures: 11 (11 fixable, 0 permanently unsupported)
+- Compilation failures: 5 (5 fixable, 0 permanently unsupported)
 
 ## Installation
 
@@ -105,6 +105,7 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | mangagofun | en | v0 | compilation error | 2026-04-26 |
 | mangaka | en | v0 | compilation error | 2026-04-26 |
 | mangamirai | en | v1 | compilation error | 2026-05-31 |
+| mangamob | en | v3 | compilation error | 2026-06-07 |
 | mangarawclub | en | v32 | compilation error | 2026-05-18 |
 | manhwaget | en | v0 | compilation error | 2026-04-26 |
 | manhwanex | en | v0 | compilation error | 2026-05-24 |
@@ -267,7 +268,7 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | komikcast | id | v79 | compilation error | 2026-05-31 |
 | manhwaindo | id | v10 | compilation error | 2026-05-29 |
 | manhwalistid | id | v6 | compilation error | 2026-05-30 |
-| mgkomik | id | v20 | compilation error | 2026-05-01 |
+| mgkomik | id | v21 | compilation error | 2026-05-01 |
 | otascans | id | v2 | compilation error | 2026-05-18 |
 | softkomik | id | v12 | compilation error | 2026-04-09 |
 | themanga | id | v48 | compilation error | 2026-06-05 |
@@ -288,6 +289,7 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | mangamura | ja | v2 | compilation error | 2026-05-25 |
 | mangano | ja | v1 | compilation error | 2026-05-25 |
 | mangaone | ja | v2 | compilation error | 2026-05-12 |
+| mangasaison | ja | v1 | compilation error | 2026-06-07 |
 | mokuro | ja | v3 | compilation error | 2026-05-12 |
 | nicomanga | ja | v13 | compilation error | 2026-05-12 |
 | piccoma | ja | v2 | compilation error | 2026-05-29 |
@@ -367,7 +369,7 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | mehentai | vi | v6 | compilation error | 2026-05-14 |
 | mimi | vi | v5 | compilation error | 2026-05-07 |
 | mimihentai | vi | v5 | compilation error | 2026-04-18 |
-| moetruyen | vi | v4 | compilation error | 2026-05-07 |
+| moetruyen | vi | v5 | compilation error | 2026-05-07 |
 | muntruyen | vi | v1 | compilation error | 2026-05-31 |
 | nettruyens | vi | v1 | compilation error | 2026-05-20 |
 | newtruyentranh | vi | v7 | compilation error | 2026-04-18 |
@@ -382,7 +384,7 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | tusachxinhxinh | vi | v2 | compilation error | 2026-05-12 |
 | vihentai | vi | v3 | compilation error | 2026-05-20 |
 | vinahentai | vi | v6 | compilation error | 2026-05-25 |
-| yurigarden | vi | v7 | compilation error | 2026-04-18 |
+| yurigarden | vi | v8 | compilation error | 2026-04-18 |
 | yurineko | vi | v5 | compilation error | 2026-04-18 |
 | zettruyen | vi | v5 | compilation error | 2026-05-14 |
 | bakamh | zh | v8 | compilation error | 2026-05-12 |
