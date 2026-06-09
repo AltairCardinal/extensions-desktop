@@ -5,7 +5,7 @@ JVM-compatible extensions for [Mihon Desktop](https://github.com/AltairCardinal/
 ## Stats
 
 - Total extensions: 6
-- Compilation failures: 30 (30 fixable, 0 permanently unsupported)
+- Compilation failures: 5 (5 fixable, 0 permanently unsupported)
 
 ## Installation
 
@@ -78,7 +78,7 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | bunmanga | en | v0 | compilation error | 2026-04-26 |
 | comicasura | en | v1 | compilation error | 2026-06-05 |
 | comickfan | en | v2 | compilation error | 2026-05-24 |
-| comix | en | v27 | compilation error | 2026-04-14 |
+| comix | en | v28 | compilation error | 2026-04-14 |
 | crowscans | en | v0 | compilation error | 2026-05-07 |
 | cutiecomics | en | v4 | compilation error | 2026-05-07 |
 | emaqi | en | v1 | compilation error | 2026-05-31 |
@@ -115,6 +115,7 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | manhwanex | en | v0 | compilation error | 2026-05-24 |
 | manhwareads | en | v0 | compilation error | 2026-05-02 |
 | mgreadio | en | v1 | compilation error | 2026-05-07 |
+| myadultcomics | en | v1 | compilation error | 2026-06-09 |
 | myhentaigallery | en | v9 | compilation error | 2026-05-07 |
 | newmanhwa | en | v34 | compilation error | 2026-05-18 |
 | ninehentai | en | v6 | compilation error | 2026-05-07 |
@@ -261,9 +262,9 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | manganova | fr | v2 | compilation error | 2026-05-07 |
 | ono | fr | v1 | compilation error | 2026-05-21 |
 | poseidonscans | fr | v51 | compilation error | 2026-05-18 |
-| raijinscans | fr | v64 | compilation error | 2026-05-18 |
+| raijinscans | fr | v65 | compilation error | 2026-05-18 |
 | rimuscans | fr | v35 | compilation error | 2026-06-05 |
-| scanmanga | fr | v22 | compilation error | 2026-05-20 |
+| scanmanga | fr | v23 | compilation error | 2026-05-20 |
 | scanr | fr | v3 | compilation error | 2026-05-07 |
 | softepsilonscan | fr | v52 | compilation error | 2026-06-08 |
 | twatt | fr | v1 | compilation error | 2026-05-21 |
@@ -294,6 +295,7 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | gorakuweb | ja | v2 | compilation error | 2026-05-12 |
 | hachiraw | ja | v3 | compilation error | 2026-05-07 |
 | kadocomi | ja | v3 | compilation error | 2026-05-12 |
+| kmansin09 | ja | v0 | compilation error | 2026-06-09 |
 | mangamee | ja | v2 | compilation error | 2026-05-12 |
 | mangameets | ja | v1 | compilation error | 2026-05-12 |
 | mangamura | ja | v2 | compilation error | 2026-05-25 |

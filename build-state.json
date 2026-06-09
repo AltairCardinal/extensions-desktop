@@ -1694,9 +1694,9 @@
   },
   "src:fr:raijinscans": {
     "status": "failed",
-    "timestamp": "2026-06-01",
+    "timestamp": "2026-06-09",
     "reason": "compilation error",
-    "version": 64
+    "version": 65
   },
   "src:fr:reaperscans": {
     "status": "built",
@@ -1716,9 +1716,9 @@
   },
   "src:fr:scanmanga": {
     "status": "failed",
-    "timestamp": "2026-06-05",
+    "timestamp": "2026-06-09",
     "reason": "compilation error",
-    "version": 22
+    "version": 23
   },
   "src:fr:scanr": {
     "status": "failed",
@@ -5367,9 +5367,9 @@
   },
   "src:en:comix": {
     "status": "failed",
-    "timestamp": "2026-06-08",
+    "timestamp": "2026-06-09",
     "reason": "compilation error",
-    "version": 27
+    "version": 28
   },
   "src:en:cucumbermanga": {
     "status": "built",
@@ -8121,6 +8121,18 @@
   "src:tr:limonmanga": {
     "status": "failed",
     "timestamp": "2026-06-08",
+    "reason": "compilation error",
+    "version": 0
+  },
+  "src:en:myadultcomics": {
+    "status": "failed",
+    "timestamp": "2026-06-09",
+    "reason": "compilation error",
+    "version": 1
+  },
+  "src:ja:kmansin09": {
+    "status": "failed",
+    "timestamp": "2026-06-09",
     "reason": "compilation error",
     "version": 0
   }
