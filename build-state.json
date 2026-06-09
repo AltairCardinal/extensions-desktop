@@ -6639,9 +6639,9 @@
   },
   "src:en:bookwalker": {
     "status": "failed",
-    "timestamp": "2026-03-25",
+    "timestamp": "2026-06-09",
     "reason": "compilation error",
-    "version": 5
+    "version": 6
   },
   "src:en:infinityscans": {
     "status": "failed",
@@ -7166,9 +7166,9 @@
   },
   "src:en:jnovel": {
     "status": "failed",
-    "timestamp": "2026-05-12",
+    "timestamp": "2026-06-09",
     "reason": "compilation error",
-    "version": 2
+    "version": 3
   },
   "src:en:mangagofun": {
     "status": "failed",

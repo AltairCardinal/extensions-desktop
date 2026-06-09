@@ -1,5 +1,2 @@
-src:en:comix
-src:en:myadultcomics
-src:fr:raijinscans
-src:fr:scanmanga
-src:ja:kmansin09
+src:en:bookwalker
+src:en:jnovel

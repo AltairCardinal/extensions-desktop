@@ -5,7 +5,7 @@ JVM-compatible extensions for [Mihon Desktop](https://github.com/AltairCardinal/
 ## Stats
 
 - Total extensions: 6
-- Compilation failures: 5 (5 fixable, 0 permanently unsupported)
+- Compilation failures: 2 (2 fixable, 0 permanently unsupported)
 
 ## Installation
 
@@ -74,7 +74,7 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | atsumaru | en | v18 | compilation error | 2026-05-01 |
 | batcave | en | v6 | compilation error | 2026-05-14 |
 | bbato | en | v1 | compilation error | 2026-05-12 |
-| bookwalker | en | v5 | compilation error | 2026-03-25 |
+| bookwalker | en | v6 | compilation error | 2026-03-25 |
 | bunmanga | en | v0 | compilation error | 2026-04-26 |
 | comicasura | en | v1 | compilation error | 2026-06-05 |
 | comickfan | en | v2 | compilation error | 2026-05-24 |
@@ -88,7 +88,7 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | hentainexus | en | v16 | compilation error | 2026-05-07 |
 | imanevilgod | en | v0 | compilation error | 2026-06-08 |
 | infinityscans | en | v9 | compilation error | 2026-03-25 |
-| jnovel | en | v2 | compilation error | 2026-04-26 |
+| jnovel | en | v3 | compilation error | 2026-04-26 |
 | kagane | en | v24 | compilation error | 2026-03-25 |
 | kaliscancom | en | v1 | compilation error | 2026-05-31 |
 | kaynscans | en | v2 | compilation error | 2026-06-08 |
