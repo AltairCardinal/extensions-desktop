@@ -5,7 +5,7 @@ JVM-compatible extensions for [Mihon Desktop](https://github.com/AltairCardinal/
 ## Stats
 
 - Total extensions: 6
-- Compilation failures: 361 (361 fixable, 0 permanently unsupported)
+- Compilation failures: 4 (4 fixable, 0 permanently unsupported)
 
 ## Installation
 
@@ -133,7 +133,7 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | kagane | en | v24 | compilation error | 2026-03-25 |
 | kaliscancom | en | v1 | compilation error | 2026-05-31 |
 | kappabeast | en | v33 | compilation error | 2026-06-09 |
-| kaynscans | en | v2 | compilation error | 2026-06-08 |
+| kaynscans | en | v3 | compilation error | 2026-06-08 |
 | killsixbilliondemons | en | v6 | compilation error | 2026-05-25 |
 | kissmangain | en | v4 | compilation error | 2026-05-18 |
 | kmanga | en | v5 | compilation error | 2026-05-07 |
@@ -150,7 +150,7 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | mangacloud | en | v7 | compilation error | 2026-05-18 |
 | mangadass | en | v1 | compilation error | 2026-06-09 |
 | mangademon | en | v19 | compilation error | 2026-06-09 |
-| mangadotnet | en | v8 | compilation error | 2026-05-13 |
+| mangadotnet | en | v9 | compilation error | 2026-05-13 |
 | mangafox | en | v9 | compilation error | 2026-06-09 |
 | mangagg | en | v3 | compilation error | 2026-05-18 |
 | mangago | en | v34 | compilation error | 2026-03-25 |
@@ -382,7 +382,7 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | dreamteamsscans | id | v33 | compilation error | 2026-05-07 |
 | inazumanga | id | v28 | compilation error | 2026-06-05 |
 | izanamiscans | id | v1 | compilation error | 2026-06-09 |
-| kiryuu | id | v50 | compilation error | 2026-06-09 |
+| kiryuu | id | v51 | compilation error | 2026-06-09 |
 | komikav | id | v5 | compilation error | 2026-05-07 |
 | komikcast | id | v80 | compilation error | 2026-05-31 |
 | komikindo | id | v6 | compilation error | 2026-06-09 |
@@ -516,6 +516,7 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | randomscan | pt | v59 | compilation error | 2026-03-25 |
 | remangas | pt | v53 | compilation error | 2026-05-31 |
 | rfdragonscan | pt | v12 | compilation error | 2026-03-25 |
+| roxinha | pt | v2 | compilation error | 2026-06-10 |
 | saikaiscan | pt | v13 | compilation error | 2026-06-09 |
 | sakuramangas | pt | v5 | compilation error | 2026-03-25 |
 | spectralscan | pt | v62 | compilation error | 2026-06-09 |

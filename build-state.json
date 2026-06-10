@@ -1933,9 +1933,9 @@
   },
   "src:id:kiryuu": {
     "status": "failed",
-    "timestamp": "2026-06-09",
+    "timestamp": "2026-06-10",
     "reason": "compilation error",
-    "version": 50
+    "version": 51
   },
   "src:id:klikmanga": {
     "status": "built",
@@ -5985,9 +5985,9 @@
   },
   "src:en:kaynscans": {
     "status": "failed",
-    "timestamp": "2026-06-08",
+    "timestamp": "2026-06-10",
     "reason": "compilation error",
-    "version": 2
+    "version": 3
   },
   "src:en:keenspot": {
     "status": "built",
@@ -6213,9 +6213,9 @@
   },
   "src:en:mangadotnet": {
     "status": "failed",
-    "timestamp": "2026-06-05",
+    "timestamp": "2026-06-10",
     "reason": "compilation error",
-    "version": 8
+    "version": 9
   },
   "src:en:mangadrama": {
     "status": "built",
@@ -7298,9 +7298,10 @@
     "version": 0
   },
   "src:pt:roxinha": {
-    "status": "built",
-    "timestamp": "2026-04-23",
-    "version": 1
+    "status": "failed",
+    "timestamp": "2026-06-10",
+    "reason": "compilation error",
+    "version": 2
   },
   "src:tr:okutoon": {
     "status": "built",
