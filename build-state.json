@@ -448,9 +448,10 @@
     "version": 43
   },
   "src:en:readcomicsonline": {
-    "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 0
+    "status": "failed",
+    "timestamp": "2026-06-18",
+    "reason": "compilation error",
+    "version": 1
   },
   "src:en:readfairytailedenszeromangaonline": {
     "status": "built",
@@ -519,9 +520,9 @@
   },
   "src:en:resetscans": {
     "status": "failed",
-    "timestamp": "2026-06-16",
+    "timestamp": "2026-06-18",
     "reason": "compilation error",
-    "version": 13
+    "version": 14
   },
   "src:en:restscans": {
     "status": "built",
@@ -1005,9 +1006,9 @@
   },
   "src:es:begatranslation": {
     "status": "failed",
-    "timestamp": "2026-06-08",
+    "timestamp": "2026-06-18",
     "reason": "compilation error",
-    "version": 2
+    "version": 3
   },
   "src:es:bibliopanda": {
     "status": "failed",
@@ -1325,15 +1326,16 @@
     "version": 11
   },
   "src:es:manhwaonline": {
-    "status": "built",
-    "timestamp": "2026-04-02",
-    "version": 1
+    "status": "failed",
+    "timestamp": "2026-06-18",
+    "reason": "compilation error",
+    "version": 2
   },
   "src:es:manhwaweb": {
     "status": "failed",
-    "timestamp": "2026-06-09",
+    "timestamp": "2026-06-18",
     "reason": "compilation error",
-    "version": 12
+    "version": 13
   },
   "src:es:mantrazscan": {
     "status": "failed",
@@ -1749,9 +1751,9 @@
   },
   "src:fr:raijinscans": {
     "status": "failed",
-    "timestamp": "2026-06-16",
+    "timestamp": "2026-06-18",
     "reason": "compilation error",
-    "version": 67
+    "version": 68
   },
   "src:fr:reaperscans": {
     "status": "built",
@@ -2673,9 +2675,9 @@
   },
   "src:ja:mokuro": {
     "status": "failed",
-    "timestamp": "2026-05-12",
+    "timestamp": "2026-06-18",
     "reason": "compilation error",
-    "version": 3
+    "version": 4
   },
   "src:ja:momonga": {
     "status": "built",
@@ -2974,9 +2976,10 @@
     "version": 11
   },
   "src:all:manhwa18cc": {
-    "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 6
+    "status": "failed",
+    "timestamp": "2026-06-18",
+    "reason": "compilation error",
+    "version": 7
   },
   "src:all:manhwa18net": {
     "status": "failed",
@@ -3059,9 +3062,9 @@
   },
   "src:all:pandachaika": {
     "status": "failed",
-    "timestamp": "2026-05-07",
+    "timestamp": "2026-06-18",
     "reason": "compilation error",
-    "version": 3
+    "version": 4
   },
   "src:all:peppercarrot": {
     "status": "failed",
@@ -3276,9 +3279,9 @@
   },
   "src:pt:fenixproject": {
     "status": "failed",
-    "timestamp": "2026-06-09",
+    "timestamp": "2026-06-18",
     "reason": "compilation error",
-    "version": 2
+    "version": 3
   },
   "src:pt:fleurblanche": {
     "status": "failed",
@@ -3382,9 +3385,9 @@
   },
   "src:pt:kuromangas": {
     "status": "failed",
-    "timestamp": "2026-06-13",
+    "timestamp": "2026-06-18",
     "reason": "compilation error",
-    "version": 6
+    "version": 7
   },
   "src:pt:leituramanga": {
     "status": "failed",
@@ -3629,9 +3632,9 @@
   },
   "src:pt:sssscanlator": {
     "status": "failed",
-    "timestamp": "2026-06-13",
+    "timestamp": "2026-06-18",
     "reason": "compilation error",
-    "version": 50
+    "version": 51
   },
   "src:pt:starlightscan": {
     "status": "failed",
@@ -3823,9 +3826,9 @@
   },
   "src:ru:nudemoon": {
     "status": "failed",
-    "timestamp": "2026-05-01",
+    "timestamp": "2026-06-18",
     "reason": "compilation error",
-    "version": 28
+    "version": 29
   },
   "src:ru:readmanga": {
     "status": "built",
@@ -4465,9 +4468,9 @@
   },
   "src:vi:doctruyen3q": {
     "status": "failed",
-    "timestamp": "2026-06-09",
+    "timestamp": "2026-06-18",
     "reason": "compilation error",
-    "version": 25
+    "version": 26
   },
   "src:vi:doctruyen5s": {
     "status": "built",
@@ -4476,9 +4479,9 @@
   },
   "src:vi:dualeotruyen": {
     "status": "failed",
-    "timestamp": "2026-06-09",
+    "timestamp": "2026-06-18",
     "reason": "compilation error",
-    "version": 20
+    "version": 21
   },
   "src:vi:goctruyentranh": {
     "status": "failed",
@@ -4596,9 +4599,10 @@
     "version": 3
   },
   "src:vi:sayhentai": {
-    "status": "built",
-    "timestamp": "2026-04-25",
-    "version": 17
+    "status": "failed",
+    "timestamp": "2026-06-18",
+    "reason": "compilation error",
+    "version": 18
   },
   "src:vi:teamlanhlung": {
     "status": "failed",
@@ -4677,9 +4681,9 @@
   },
   "src:vi:vinahentai": {
     "status": "failed",
-    "timestamp": "2026-06-09",
+    "timestamp": "2026-06-18",
     "reason": "compilation error",
-    "version": 8
+    "version": 9
   },
   "src:vi:vlogtruyen": {
     "status": "failed",
@@ -4695,9 +4699,9 @@
   },
   "src:vi:zettruyen": {
     "status": "failed",
-    "timestamp": "2026-06-09",
+    "timestamp": "2026-06-18",
     "reason": "compilation error",
-    "version": 7
+    "version": 8
   },
   "src:zh:baimangu": {
     "status": "built",
@@ -6225,9 +6229,9 @@
   },
   "src:en:mangadotnet": {
     "status": "failed",
-    "timestamp": "2026-06-16",
+    "timestamp": "2026-06-18",
     "reason": "compilation error",
-    "version": 10
+    "version": 11
   },
   "src:en:mangadrama": {
     "status": "built",
@@ -6799,9 +6803,9 @@
   },
   "src:ja:unext": {
     "status": "failed",
-    "timestamp": "2026-05-21",
+    "timestamp": "2026-06-18",
     "reason": "compilation error",
-    "version": 3
+    "version": 4
   },
   "src:ja:zebrack": {
     "status": "failed",
@@ -6853,9 +6857,9 @@
   },
   "src:en:bookwalker": {
     "status": "failed",
-    "timestamp": "2026-06-09",
+    "timestamp": "2026-06-18",
     "reason": "compilation error",
-    "version": 6
+    "version": 7
   },
   "src:en:infinityscans": {
     "status": "failed",
@@ -6913,15 +6917,16 @@
     "version": 22
   },
   "src:vi:ariverse": {
-    "status": "built",
-    "timestamp": "2026-03-28",
-    "version": 1
+    "status": "failed",
+    "timestamp": "2026-06-18",
+    "reason": "compilation error",
+    "version": 52
   },
   "src:vi:damconuong": {
     "status": "failed",
-    "timestamp": "2026-06-09",
+    "timestamp": "2026-06-18",
     "reason": "compilation error",
-    "version": 5
+    "version": 6
   },
   "src:vi:moetruyen": {
     "status": "failed",
@@ -6986,15 +6991,15 @@
   },
   "src:vi:thienthaitruyen": {
     "status": "failed",
-    "timestamp": "2026-06-09",
+    "timestamp": "2026-06-18",
     "reason": "compilation error",
-    "version": 3
+    "version": 4
   },
   "src:vi:truyenhentaivn": {
     "status": "failed",
-    "timestamp": "2026-06-09",
+    "timestamp": "2026-06-18",
     "reason": "compilation error",
-    "version": 3
+    "version": 4
   },
   "src:vi:tuitruyen": {
     "status": "failed",
@@ -7016,9 +7021,9 @@
   },
   "src:vi:luottruyen": {
     "status": "failed",
-    "timestamp": "2026-06-05",
+    "timestamp": "2026-06-18",
     "reason": "compilation error",
-    "version": 3
+    "version": 4
   },
   "src:all:manhwa18uncensored": {
     "status": "built",
@@ -7286,9 +7291,9 @@
   },
   "src:es:onfmangas": {
     "status": "failed",
-    "timestamp": "2026-05-29",
+    "timestamp": "2026-06-18",
     "reason": "compilation error",
-    "version": 5
+    "version": 6
   },
   "src:es:platinumlilyscan": {
     "status": "built",
@@ -7397,9 +7402,9 @@
   },
   "src:en:jnovel": {
     "status": "failed",
-    "timestamp": "2026-06-09",
+    "timestamp": "2026-06-18",
     "reason": "compilation error",
-    "version": 3
+    "version": 4
   },
   "src:en:mangagofun": {
     "status": "failed",
@@ -8209,9 +8214,9 @@
   },
   "src:fr:ono": {
     "status": "failed",
-    "timestamp": "2026-05-21",
+    "timestamp": "2026-06-18",
     "reason": "compilation error",
-    "version": 1
+    "version": 2
   },
   "src:fr:twatt": {
     "status": "failed",
@@ -8281,9 +8286,9 @@
   },
   "src:vi:muntruyen": {
     "status": "failed",
-    "timestamp": "2026-06-09",
+    "timestamp": "2026-06-18",
     "reason": "compilation error",
-    "version": 2
+    "version": 3
   },
   "src:zh:hentaiclub": {
     "status": "failed",
@@ -8335,9 +8340,9 @@
   },
   "src:ja:mangasaison": {
     "status": "failed",
-    "timestamp": "2026-06-07",
+    "timestamp": "2026-06-18",
     "reason": "compilation error",
-    "version": 1
+    "version": 2
   },
   "src:en:imanevilgod": {
     "status": "failed",
@@ -8438,6 +8443,36 @@
   "src:tr:sleptmanga": {
     "status": "failed",
     "timestamp": "2026-06-16",
+    "reason": "compilation error",
+    "version": 1
+  },
+  "src:en:sabrinaonline": {
+    "status": "failed",
+    "timestamp": "2026-06-18",
+    "reason": "compilation error",
+    "version": 1
+  },
+  "src:en:sacachispa": {
+    "status": "failed",
+    "timestamp": "2026-06-18",
+    "reason": "compilation error",
+    "version": 1
+  },
+  "src:fr:hanabook": {
+    "status": "failed",
+    "timestamp": "2026-06-18",
+    "reason": "compilation error",
+    "version": 1
+  },
+  "src:id:otsugami": {
+    "status": "failed",
+    "timestamp": "2026-06-18",
+    "reason": "compilation error",
+    "version": 0
+  },
+  "src:id:wurmz": {
+    "status": "failed",
+    "timestamp": "2026-06-18",
     "reason": "compilation error",
     "version": 1
   }
