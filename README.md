@@ -5,7 +5,7 @@ JVM-compatible extensions for [Mihon Desktop](https://github.com/AltairCardinal/
 ## Stats
 
 - Total extensions: 6
-- Compilation failures: 36 (36 fixable, 0 permanently unsupported)
+- Compilation failures: 4 (4 fixable, 0 permanently unsupported)
 
 ## Installation
 
@@ -141,6 +141,7 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | kaliscancom | en | v1 | compilation error | 2026-05-31 |
 | kappabeast | en | v33 | compilation error | 2026-06-09 |
 | kaynscans | en | v3 | compilation error | 2026-06-08 |
+| kenscans | en | v10 | compilation error | 2026-06-20 |
 | killsixbilliondemons | en | v6 | compilation error | 2026-05-25 |
 | kissmangain | en | v4 | compilation error | 2026-05-18 |
 | kmanga | en | v5 | compilation error | 2026-05-07 |
@@ -191,7 +192,7 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | oppaistream | en | v5 | compilation error | 2026-05-07 |
 | orionscans | en | v0 | compilation error | 2026-04-26 |
 | paritehaber | en | v1 | compilation error | 2026-05-25 |
-| philiascans | en | v57 | compilation error | 2026-05-21 |
+| philiascans | en | v58 | compilation error | 2026-05-21 |
 | qiscans | en | v24 | compilation error | 2026-06-13 |
 | readcomiconline | en | v43 | compilation error | 2026-05-18 |
 | readcomicsonline | en | v1 | compilation error | 2026-06-18 |
@@ -410,6 +411,7 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | komikindo | id | v6 | compilation error | 2026-06-09 |
 | komikindoco | id | v6 | compilation error | 2026-06-09 |
 | komikstation | id | v7 | compilation error | 2026-06-09 |
+| komiku | id | v21 | compilation error | 2026-06-20 |
 | kumapoi | id | v4 | compilation error | 2026-06-09 |
 | lianscans | id | v2 | compilation error | 2026-06-09 |
 | mangacan | id | v1 | compilation error | 2026-06-09 |
@@ -571,6 +573,7 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | mangabuff | ru | v6 | compilation error | 2026-05-07 |
 | mangahub | ru | v23 | compilation error | 2026-06-09 |
 | mangamen | ru | v2 | compilation error | 2026-05-14 |
+| mangapoisk | ru | v15 | compilation error | 2026-06-20 |
 | mangashi | ru | v52 | compilation error | 2026-05-18 |
 | nudemoon | ru | v29 | compilation error | 2026-04-28 |
 | unicomics | ru | v10 | compilation error | 2026-05-07 |

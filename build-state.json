@@ -346,9 +346,9 @@
   },
   "src:en:philiascans": {
     "status": "failed",
-    "timestamp": "2026-06-16",
+    "timestamp": "2026-06-20",
     "reason": "compilation error",
-    "version": 57
+    "version": 58
   },
   "src:en:platinumcrown": {
     "status": "built",
@@ -2011,9 +2011,10 @@
     "version": 4
   },
   "src:id:komiku": {
-    "status": "built",
-    "timestamp": "2026-03-28",
-    "version": 20
+    "status": "failed",
+    "timestamp": "2026-06-20",
+    "reason": "compilation error",
+    "version": 21
   },
   "src:id:komikucom": {
     "status": "built",
@@ -3804,9 +3805,10 @@
     "version": 75
   },
   "src:ru:mangapoisk": {
-    "status": "built",
-    "timestamp": "2026-05-01",
-    "version": 14
+    "status": "failed",
+    "timestamp": "2026-06-20",
+    "reason": "compilation error",
+    "version": 15
   },
   "src:ru:mangashi": {
     "status": "failed",
@@ -6011,9 +6013,10 @@
     "version": 3
   },
   "src:en:kenscans": {
-    "status": "built",
-    "timestamp": "2026-03-25",
-    "version": 9
+    "status": "failed",
+    "timestamp": "2026-06-20",
+    "reason": "compilation error",
+    "version": 10
   },
   "src:en:kewnscans": {
     "status": "built",
