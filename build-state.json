@@ -5556,9 +5556,9 @@
   },
   "src:en:comix": {
     "status": "failed",
-    "timestamp": "2026-06-16",
+    "timestamp": "2026-06-21",
     "reason": "compilation error",
-    "version": 30
+    "version": 31
   },
   "src:en:cucumbermanga": {
     "status": "built",

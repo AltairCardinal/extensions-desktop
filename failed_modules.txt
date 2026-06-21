@@ -1,4 +1,1 @@
-src:en:kenscans
-src:en:philiascans
-src:id:komiku
-src:ru:mangapoisk
+src:en:comix

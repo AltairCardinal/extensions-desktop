@@ -5,7 +5,7 @@ JVM-compatible extensions for [Mihon Desktop](https://github.com/AltairCardinal/
 ## Stats
 
 - Total extensions: 6
-- Compilation failures: 4 (4 fixable, 0 permanently unsupported)
+- Compilation failures: 1 (1 fixable, 0 permanently unsupported)
 
 ## Installation
 
@@ -110,7 +110,7 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | cocomic | en | v2 | compilation error | 2026-06-09 |
 | comicasura | en | v2 | compilation error | 2026-06-05 |
 | comickfan | en | v2 | compilation error | 2026-05-24 |
-| comix | en | v30 | compilation error | 2026-04-14 |
+| comix | en | v31 | compilation error | 2026-04-14 |
 | coolmic | en | v1 | compilation error | 2026-06-16 |
 | crowscans | en | v0 | compilation error | 2026-05-07 |
 | culturedworks | en | v1 | compilation error | 2026-06-09 |
