@@ -5626,9 +5626,9 @@
   },
   "src:en:divascans": {
     "status": "failed",
-    "timestamp": "2026-06-23",
+    "timestamp": "2026-06-24",
     "reason": "compilation error",
-    "version": 22
+    "version": 24
   },
   "src:en:doujinio": {
     "status": "failed",

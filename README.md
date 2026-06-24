@@ -5,7 +5,7 @@ JVM-compatible extensions for [Mihon Desktop](https://github.com/AltairCardinal/
 ## Stats
 
 - Total extensions: 6
-- Compilation failures: 20 (20 fixable, 0 permanently unsupported)
+- Compilation failures: 1 (1 fixable, 0 permanently unsupported)
 
 ## Installation
 
@@ -117,7 +117,7 @@ The following extensions fail to compile on JVM. Extensions known to be permanen
 | culturedworks | en | v1 | compilation error | 2026-06-09 |
 | cutiecomics | en | v5 | compilation error | 2026-05-07 |
 | darthsdroids | en | v2 | compilation error | 2026-06-09 |
-| divascans | en | v22 | compilation error | 2026-06-23 |
+| divascans | en | v24 | compilation error | 2026-06-23 |
 | doujinio | en | v3 | compilation error | 2026-06-09 |
 | dragontea | en | v5 | compilation error | 2026-06-09 |
 | drakescans | en | v16 | compilation error | 2026-06-09 |
